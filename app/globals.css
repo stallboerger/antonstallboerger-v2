@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* h2, h3, h4 {
+  @apply font-semibold
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:6xl font-bold tracking-tight
+} */

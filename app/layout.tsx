@@ -66,7 +66,7 @@ export default function RootLayout({
         'text-zinc-900 bg-white dark:text-zinc-100 dark:bg-black'
       )}
     >
-      <body className=''>
+      <body className='initialized pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0'>
         {/* <Navbar /> */}
         <main className=''>
           {children}
