@@ -1,10 +1,13 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+// import { Space_Grotesk } from 'next/font/google'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
+
+// const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +22,7 @@ export const metadata: Metadata = {
     siteName: 'Anton Stallbörger',
     images: [
       {
-        url: 'https://leerob.io/og.jpg',
+        url: 'https://antonstallboerger.com/og.jpg',
         width: 1920,
         height: 1080,
       },
@@ -41,13 +44,14 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Anton Stallbörger',
     card: 'summary_large_image',
+    description: 'Digital Product Designer and Developer.',
   },
   icons: {
     shortcut: '/favicon.ico',
   },
-  verification: {
-    google: 'google-site-verification=sD6u1ZwlQ5H2dnzBEhKvZ_uHxFIgaOd5P63k-_0AA7M',
-  },
+  // verification: {
+  //   google: 'google-site-verification=sD6u1ZwlQ5H2dnzBEhKvZ_uHxFIgaOd5P63k-_0AA7M',
+  // },
 };
 
 export default function RootLayout({
@@ -59,8 +63,7 @@ export default function RootLayout({
     <html 
       lang="en"
       className={clsx(
-        'text-black bg-white dark:text-white dark:bg-black',
-
+        'text-zinc-900 bg-white dark:text-zinc-100 dark:bg-black'
       )}
     >
       <body className=''>
