@@ -1,13 +1,13 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-// import { Space_Grotesk } from 'next/font/google'
+import { Space_Grotesk } from 'next/font/google'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 
-const inter = Inter({ subsets: ['latin'] })
-
-// const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: {
@@ -62,11 +62,9 @@ export default function RootLayout({
   return (
     <html 
       lang="en"
-      className={clsx(
-        'text-zinc-900 bg-white dark:text-zinc-100 dark:bg-black'
-      )}
+      className={spaceGrotesk.className}
     >
-      <body className='initialized pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0'>
+      <body className='antialiased pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0 text-zinc-900 bg-white dark:text-zinc-100 dark:bg-black'>
         {/* <Navbar /> */}
         <main className=''>
           {children}
