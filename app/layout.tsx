@@ -3,6 +3,7 @@ import { Space_Grotesk } from 'next/font/google'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
+import Navbar from '../components/navbar'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -64,9 +65,9 @@ export default function RootLayout({
       lang="en"
       className={spaceGrotesk.className}
     >
-      <body className='antialiased pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0 text-zinc-900 bg-white dark:text-zinc-100 dark:bg-black'>
-        {/* <Navbar /> */}
-        <main className=''>
+      <body className='antialiased text-[#111111] bg-white dark:text-zinc-100 dark:bg-black'>
+        <Navbar />
+        <main className='pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0'>
           {children}
           <Analytics />
         </main>
