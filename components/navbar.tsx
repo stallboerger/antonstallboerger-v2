@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Explore from '../components/explore';
 
 export default function Navbar() {
     return (
@@ -9,7 +10,7 @@ export default function Navbar() {
                 <Link href='/' className='font-medium self-center ml-4'>
                     Anton Stallbörger
                 </Link>
-                {/* <Explore /> */}
+                <Explore />
             </div>
             {/* Dropdown */}
         </div>
