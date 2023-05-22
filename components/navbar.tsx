@@ -31,6 +31,10 @@ export default function Navbar() {
                 <Link href='/playground' className='hover:underline-offset-8 hover:underline'>
                     Playground
                 </Link>
+                <div className='bg-zinc-100 w-0.5' />
+                <Link href='/' className='hover:text-zinc-500'>
+                    Get in touch
+                </Link>
             </div>
             {/* Dropdown */}
         </div>
