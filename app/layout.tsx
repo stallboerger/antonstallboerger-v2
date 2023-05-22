@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -71,7 +72,7 @@ export default function RootLayout({
           {children}
           <Analytics />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )
