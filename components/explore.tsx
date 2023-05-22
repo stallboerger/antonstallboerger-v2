@@ -5,24 +5,24 @@ import { Fragment, useState } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import Link from 'next/link';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ')
+// }
 
-export default function AntonDropdown() {
-  const [open, setOpen] = useState(false);
-  const [timeoutId, setTimeoutId] = useState(null);
+// export default function AntonDropdown() {
+//   const [open, setOpen] = useState(false);
+//   const [timeoutId, setTimeoutId] = useState(null);
 
-  function handleMouseEnter() {
-    setOpen(true);
-    clearTimeout(timeoutId);
-  }
+//   function handleMouseEnter() {
+//     setOpen(true);
+//     clearTimeout(timeoutId);
+//   }
 
-  function handleMouseLeave() {
-    setTimeoutId(setTimeout(() => {
-      setOpen(false);
-    }, 100));
-  }
+//   function handleMouseLeave() {
+//     setTimeoutId(setTimeout(() => {
+//       setOpen(false);
+//     }, 100));
+//   }
 
   return (
     <Menu as="div" className="relative inline-block text-left">
