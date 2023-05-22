@@ -22,13 +22,13 @@ export default function Navbar() {
                 {/* <Explore /> */}
             </Link>
             <div className='flex gap-6 mr-6'>
-                <Link href='/about' className='hover:text-zinc-500 hover:underline-offset-8 hover:underline'>
+                <Link href='/about' className='hover:underline-offset-8 hover:underline'>
                     About
                 </Link>
-                <Link href='/thoughts' className='hover:text-zinc-500 hover:underline-offset-8 hover:underline'>
+                <Link href='/thoughts' className='hover:underline-offset-8 hover:underline'>
                     Thoughts
                 </Link>
-                <Link href='/playground' className='hover:text-zinc-500 hover:underline-offset-8 hover:underline'>
+                <Link href='/playground' className='hover:underline-offset-8 hover:underline'>
                     Playground
                 </Link>
             </div>
