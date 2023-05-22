@@ -1,16 +1,36 @@
 'use client';
 
 import Link from 'next/link';
-import Explore from '../components/explore';
+import Image from 'next/image';
+// import Explore from '../components/explore';
 
 export default function Navbar() {
     return (
-        <div className='fixed w-full h-[53px] z-50  border-b border-zinc-200 dark:border-zinc-800'>
-            <div className='content-center flex h-full'>
-                <Link href='/' className='font-medium self-center ml-4'>
+        <div className='fixed flex justify-between items-center w-full h-[53px] z-50 border-b border-zinc-200 dark:border-zinc-800'>
+            <Link className='content-center flex ml-6 gap-2' href='/'>
+                <Image 
+                    alt='Logo | Anton Stallbörger'
+                    className='rounded-full'
+                    src='/images/main/logo_anton.png'
+                    width={32}
+                    height={32}
+                    priority
+                />
+                <p className='font-medium self-center'>
                     Anton Stallbörger
+                </p>
+                {/* <Explore /> */}
+            </Link>
+            <div className='flex gap-6 mr-6'>
+                <Link href='/about' className='hover:text-zinc-500 hover:underline-offset-8 hover:underline'>
+                    About
                 </Link>
-                <Explore />
+                <Link href='/thoughts' className='hover:text-zinc-500 hover:underline-offset-8 hover:underline'>
+                    Thoughts
+                </Link>
+                <Link href='/playground' className='hover:text-zinc-500 hover:underline-offset-8 hover:underline'>
+                    Playground
+                </Link>
             </div>
             {/* Dropdown */}
         </div>
