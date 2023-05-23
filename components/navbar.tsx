@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
     return (
-        <div className='fixed flex justify-between items-center w-full h-[53px] z-50 border-b border-zinc-200 dark:border-zinc-800 dark:bg-black'>
+        <div className='fixed flex justify-between items-center w-full h-[53px] z-50 border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black'>
             <Link className='content-center flex ml-6 gap-4' href='/'>
                 <Image 
                     alt='Logo | Anton Stallbörger'
