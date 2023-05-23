@@ -34,7 +34,7 @@ export default function AboutPage() {
         <br />
         <br />
         Limitation of liability for internal content
-        The contents of this website have been created with my utmost care. However, I cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, I'm furthermore responsible for my own content. In this context, please note that I'm accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity.
+        The contents of this website have been created with my utmost care. However, I cannot guarantee the contents&apos; accuracy, completeness or topicality. According to statutory provisions, I&apos;m furthermore responsible for my own content. In this context, please note that I&apos;m accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity.
         <br />
         <br />
         My obligation to remove or block the use of information under generally applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).
