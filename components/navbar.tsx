@@ -9,24 +9,24 @@ export default function Navbar() {
             <Link className='content-center flex ml-6 gap-4' href='/'>
                 <Image 
                     alt='Logo | Anton Stallbörger'
-                    className='rounded-full border border-zinc-200 dark:border-zinc-800'
+                    className='rounded-full border border-zinc-200 dark:border-zinc-800 hover:filter hover:invert'
                     src='/images/main/logo.svg'
                     width={32}
                     height={32}
                     priority
                 />
-                <p className='font-medium self-center'>
+                <p className='font-medium self-center '>
                     Anton Stallbörger
                 </p>
             </Link>
             <div className='flex gap-6 mr-6'>
-                <Link href='/about' className='hover:underline-offset-[20px] hover:underline'>
+                <Link href='/about' className='hover:underline-offset-[19px] hover:underline'>
                     About
                 </Link>
-                <Link href='/thoughts' className='hover:underline-offset-[20px] hover:underline'>
+                <Link href='/thoughts' className='hover:underline-offset-[19px] hover:underline'>
                     Thoughts
                 </Link>
-                <Link href='/playground' className='hover:underline-offset-[20px] hover:underline'>
+                <Link href='/playground' className='hover:underline-offset-[19px] hover:underline'>
                     Playground
                 </Link>
                 <div className='bg-zinc-200 dark:bg-zinc-800 w-[1px]' />

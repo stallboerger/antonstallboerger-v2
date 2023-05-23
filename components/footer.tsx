@@ -10,58 +10,63 @@ export default function Footer() {
             <div className="w-full h-[1px] bg-zinc-200 dark:bg-zinc-800 mb-6" />
 
             <div className="flex sm:flex-row flex-row gap-6 sm:gap-0 justify-between text-zinc-500">
-                <div className="flex gap-20 text-sm">
-                    <div className="flex flex-col gap-2">
-                        <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                            Connect
+                <div className="flex flex-col gap-8 text-sm">
+                    <div className='flex flex-row gap-20 border-b border-dashed pb-8'>
+                        <div className="flex flex-col gap-2">
+                            <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                Connect
+                            </p>
+                            <a 
+                                href="https://twitter.com/AntonStalli" 
+                                className="hover:text-blue-600" 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                Twitter
+                            </a>
+                            <a 
+                                href="https://github.com/antonstallboerger" 
+                                className="hover:text-purple-600" 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                GitHub
+                            </a>
+                            <a 
+                                href="https://read.cv/antonsta" 
+                                className="hover:text-zinc-900 dark:hover:text-zinc-100" 
+                                target="_blank" 
+                                rel="noreferrer"
+                            >
+                                Read.cv
+                            </a>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                Explore
+                            </p>
+                            <Link 
+                                href='/about' 
+                                className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                            >
+                                About
+                            </Link>
+                            <Link 
+                                href='/thoughts' 
+                                className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                            >
+                                Thoughts
+                            </Link>
+                            <Link 
+                                href='/playground' 
+                                className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                            >
+                                Playground
+                            </Link>
+                        </div>
+                        <p>
+                            this is a quote
                         </p>
-                        <a 
-                            href="https://twitter.com/AntonStalli" 
-                            className="hover:text-blue-600" 
-                            target="_blank" 
-                            rel="noreferrer"
-                        >
-                            Twitter
-                        </a>
-                        <a 
-                            href="https://github.com/antonstallboerger" 
-                            className="hover:text-purple-600" 
-                            target="_blank" 
-                            rel="noreferrer"
-                        >
-                            GitHub
-                        </a>
-                        <a 
-                            href="https://read.cv/antonsta" 
-                            className="hover:text-zinc-900 dark:hover:text-zinc-100" 
-                            target="_blank" 
-                            rel="noreferrer"
-                        >
-                            Read.cv
-                        </a>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                            Explore
-                        </p>
-                        <Link 
-                            href='/about' 
-                            className="hover:text-zinc-900 dark:hover:text-zinc-100"
-                        >
-                            About
-                        </Link>
-                        <Link 
-                            href='/thoughts' 
-                            className="hover:text-zinc-900 dark:hover:text-zinc-100"
-                        >
-                            Thoughts
-                        </Link>
-                        <Link 
-                            href='/playground' 
-                            className="hover:text-zinc-900 dark:hover:text-zinc-100"
-                        >
-                            Playground
-                        </Link>
                     </div>
                     {/* <div className="flex flex-col gap-2">
                         <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">Information</p>
@@ -69,7 +74,7 @@ export default function Footer() {
                         <Link href='/legalnotice' className="hover:text-zinc-900 dark:hover:text-zinc-100">Legal Notice</Link>
                         <Link href='/privacypolicy' className="hover:text-zinc-900 dark:hover:text-zinc-100">Privacy Policy</Link>
                     </div> */}
-                    <div className='flex flex-col gap-2 text-sm'>   
+                    <div className='flex flex-row gap-4 text-sm'>   
                         <p className="text-sm text-zinc-900 font-medium dark:text-zinc-100">&copy; 2023 Anton Stallbörger</p>
                         <Link 
                             href='/colophon' 
@@ -84,8 +89,7 @@ export default function Footer() {
                             Imprint
                         </Link>
                     </div>
-                </div>
-                    
+                </div>   
             </div>
         </div>
     );
