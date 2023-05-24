@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Navbar() {
+
     return (
         <div className='fixed flex justify-between items-center w-full h-[53px] z-50 border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black'>
             <Link className='content-center flex ml-6 gap-4' href='/'>
@@ -20,13 +21,13 @@ export default function Navbar() {
                 </p>
             </Link>
             <div className='flex gap-6 mr-6'>
-                <Link href='/about' className='hover:underline-offset-[19px] hover:underline'>
+                <Link href='/about' className='hover:underline-offset-[19px] hover:underline decoration-zinc-300 dark:decoration-[#dadada]'>
                     About
                 </Link>
-                <Link href='/thoughts' className='hover:underline-offset-[19px] hover:underline'>
+                <Link href='/thoughts' className='hover:underline-offset-[19px] hover:underline decoration-zinc-300 dark:decoration-[#dadada]'>
                     Thoughts
                 </Link>
-                <Link href='/playground' className='hover:underline-offset-[19px] hover:underline'>
+                <Link href='/playground' className='hover:underline-offset-[19px] hover:underline decoration-zinc-300 dark:decoration-[#dadada]'>
                     Playground
                 </Link>
                 <div className='bg-zinc-200 dark:bg-zinc-800 w-[1px]' />

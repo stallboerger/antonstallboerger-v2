@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+// import { useRouter } from 'next/router';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -6,6 +7,8 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  // const router = useRouter();
+
   return (
     <section>
       <h1 className="font-bold text-3xl">About</h1>
