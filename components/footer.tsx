@@ -73,7 +73,7 @@ export default function Footer() {
                             </Link>
                         </div>
                         <p>
-                            op-7 ui here
+                            tp-7 ui here
                         </p>
                     </div>
                     {/* <div className="flex flex-col gap-2">
