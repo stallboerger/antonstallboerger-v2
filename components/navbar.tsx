@@ -27,7 +27,7 @@ export default function Navbar() {
                 <Link href='/thoughts' className='hover:underline-offset-[19px] hover:underline decoration-zinc-300 dark:decoration-[#dadada]'>
                     Thoughts
                 </Link>
-                <Link href='/playground' className='hover:underline-offset-[19px] hover:underline decoration-zinc-300 dark:decoration-[#dadada]'>
+                <Link href='/playground' className='hover:underline-offset-[19px] hover:underline decoration-zinc-300 dark:decoration-[#dadada] h-full'>
                     Playground
                 </Link>
                 <div className='bg-zinc-200 dark:bg-zinc-800 w-[1px]' />

@@ -55,7 +55,7 @@ export default function Home() {
         I am a passionate designer and developer who is driven by a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
         <br />
         <br />
-        Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-zinc-500 hover:underline'>side projects</Link>.
+        Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-zinc-500 hover:underline'>side projects</Link>.
       </p>    
       <div className='bg-zinc-200 dark:bg-zinc-800 w-full h-[1px] mb-20'/> 
       <Card 
@@ -63,8 +63,16 @@ export default function Home() {
         imageSrc='/images/main/curations.png'
         imageAlt='Curations | Anton Stallbörger'
         description='A curated collection of stunning tools and website inspirations for free. Helping designers, developers, and everyone else discover new and innovative tools and ideas for their projects.'
-        year='2022'
+        year='2022 - Present'
         link='/curations'
+      />
+      <Card
+        title='Boost'
+        imageSrc='/images/main/boost.png'
+        imageAlt='Boost | Anton Stallbörger'
+        description='A app and product that focuses on personalized nutrients.'
+        year='2023'
+        link='/boost'
       />
       <Card
         title='UPS App'
@@ -72,10 +80,10 @@ export default function Home() {
         imageAlt='UPS App | Anton Stallbörger'
         description='A redesign concept of the UPS App for a faster and easier way to send and track your packages.'
         year='2022'
-        link='/ups-app'
+        link='/ups'
       />
       <p className=''>
-        I am a passionate designer and developer who is driven by a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer. 
+        If you'd like to <Link href="/about" className='text-zinc-500 hover:underline'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:anton@stallboerger.de" className='text-zinc-500 hover:underline'>reach out</a>. I'm always happy to chat. 
       </p>
     </section>
   )
