@@ -20,7 +20,7 @@ export default function Navbar() {
                     Anton Stallbörger
                 </p>
             </Link>
-            <div className='flex gap-6 mr-6'>
+            <div className='md:flex gap-6 mr-6 hidden md:visible'>
                 <Link href='/about' className='hover:underline-offset-[19px] hover:underline decoration-zinc-300 dark:decoration-[#dadada]'>
                     About
                 </Link>

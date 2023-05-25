@@ -72,7 +72,7 @@ export default function Footer() {
                                 Playground
                             </Link>
                         </div>
-                        <p>
+                        <p className='hidden sm:visible'>
                             tp-7 ui here
                         </p>
                     </div>
