@@ -11,7 +11,7 @@ export default function Footer() {
 
             <div className="flex sm:flex-row flex-row gap-6 sm:gap-0 justify-between text-zinc-500">
                 <div className="flex flex-col gap-8 text-sm justify-between w-full">
-                    <div className='flex flex-row gap-20 border-b border-dashed dark:border-zinc-800 pb-8'>
+                    <div className='flex flex-row gap-32 border-b border-dashed dark:border-zinc-800 pb-8'>
                         <div className="flex flex-col gap-2">
                             <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
                                 Connect
@@ -33,7 +33,7 @@ export default function Footer() {
                                 GitHub
                             </a>
                             <a 
-                                href="https://github.com/antonstallboerger" 
+                                href="https://www.cosmos.so/antonsta" 
                                 className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline" 
                                 target="_blank" 
                                 rel="noreferrer"
@@ -50,7 +50,7 @@ export default function Footer() {
                             </a>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:underline">
+                            <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
                                 Explore
                             </p>
                             <Link 
@@ -73,7 +73,7 @@ export default function Footer() {
                             </Link>
                         </div>
                         <p>
-                            this is a quote
+                            op-7 ui here
                         </p>
                     </div>
                     {/* <div className="flex flex-col gap-2">

@@ -68,7 +68,7 @@ export default function Home() {
       />
       <Card
         title='UPS App'
-        imageSrc='/images/main/curations.png'
+        imageSrc='/images/main/upsapp.png'
         imageAlt='UPS App | Anton Stallbörger'
         description='A redesign concept of the UPS App for a faster and easier way to send and track your packages.'
         year='2022'
