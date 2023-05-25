@@ -83,7 +83,7 @@ export default function Home() {
         link='/ups'
       />
       <p className=''>
-        If you'd like to <Link href="/about" className='text-zinc-500 hover:underline'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:anton@stallboerger.de" className='text-zinc-500 hover:underline'>reach out</a>. I'm always happy to chat. 
+        If you&apos;d like to <Link href="/about" className='text-zinc-500 hover:underline'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:anton@stallboerger.de" className='text-zinc-500 hover:underline'>reach out</a>. I&apos;m always happy to chat. 
       </p>
     </section>
   )
