@@ -31,9 +31,9 @@ export default function Navbar() {
                     Playground
                 </Link>
                 <div className='bg-zinc-200 dark:bg-zinc-800 w-[1px]' />
-                <Link href='/' className='hover:text-zinc-500'>
+                <a href='mailto:anton@stallboerger.de' className='hover:text-zinc-500'>
                     Get in touch
-                </Link>
+                </a>
             </div>
         </div>
     );

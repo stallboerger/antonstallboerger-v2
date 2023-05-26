@@ -10,9 +10,9 @@ export default function AboutPage() {
     <section>
         <h1 className="font-bold text-3xl mb-6">Imprint</h1>
         <p>
-            <span className='text-zinc-500'>
-                Last updated May 23, 2023
-            </span>
+        <span className='text-zinc-500'>
+            Last updated May 26, 2023
+        </span>
         <br />
         <br />
         Information according to German §5 of TMG

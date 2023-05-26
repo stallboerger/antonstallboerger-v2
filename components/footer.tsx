@@ -76,12 +76,6 @@ export default function Footer() {
                             tp-7 ui here
                         </p>
                     </div>
-                    {/* <div className="flex flex-col gap-2">
-                        <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">Information</p>
-                        <Link href='/colophon' className="hover:text-zinc-900 dark:hover:text-zinc-100">Colophon</Link>
-                        <Link href='/legalnotice' className="hover:text-zinc-900 dark:hover:text-zinc-100">Legal Notice</Link>
-                        <Link href='/privacypolicy' className="hover:text-zinc-900 dark:hover:text-zinc-100">Privacy Policy</Link>
-                    </div> */}
                     <div className='flex flex-row gap-4 text-sm'>   
                         <p className="text-sm text-zinc-900 font-medium dark:text-zinc-100">&copy; 2023 Anton Stallbörger</p>
                         <Link 
