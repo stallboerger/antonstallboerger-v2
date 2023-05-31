@@ -1,15 +1,20 @@
 import './globals.css'
-import { Space_Grotesk } from 'next/font/google'
-import clsx from 'clsx'
+// import { Space_Grotesk } from 'next/font/google'
+import Space_Grotesk from 'next/font/local'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
+  src: '../public/font/SpaceGrotesk-Variable.woff2',
   display: 'swap',
 });
+
+// const spaceGrotesk = Space_Grotesk({
+//   subsets: ['latin'],
+//   display: 'swap',
+// });
 
 export const metadata: Metadata = {
   title: {

@@ -11,7 +11,7 @@ export default function Navbar() {
                 <Image 
                     alt='Logo | Anton Stallbörger'
                     className='rounded-full border border-zinc-200 dark:border-zinc-800 hover:filter hover:invert'
-                    src='/images/main/logo.svg'
+                    src='/logo.svg'
                     width={32}
                     height={32}
                     priority
