@@ -11,6 +11,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-feature-settings: "ss04";
-  font-feature-settings: "case";
+  font-feature-settings: "ss04", 'case';
 }
