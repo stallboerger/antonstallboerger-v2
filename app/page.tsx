@@ -49,10 +49,10 @@ export default function Home() {
       <p className='pb-20'>
         <span className='font-medium'>Anton Stallbörger</span>
         <br />
-        Based in Schwäbisch Gmünd, Germany.
+        Software Designer & Developer
       </p>
       <p className='pb-8'>
-        I am a passionate designer and developer who is driven by a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
+        Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
         <br />
         <br />
         Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-zinc-500 hover:underline'>side projects</Link>.

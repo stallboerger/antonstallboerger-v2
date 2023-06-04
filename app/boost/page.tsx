@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Boost',
@@ -12,6 +13,14 @@ export default function AboutPage() {
       <p className='mb-20'>
         Boost is a app and product that focuses on personalized nutrients. It solves the problem of having to take multiple supplements with varying doses, by providing users with their own personalized nutrient pack. Boost has a seamless onboarding process that collects information about the user&apos;s lifestyle, basic information, and real-time data to calculate the exact nutrients that the user needs.
       </p>
+      <Image 
+        src='/images/boost/app_mockups.png'
+        alt='Boost App Mockups | Anton Stallbörger'
+        width={3840}
+        height={2560}
+        className='w-full h-auto bg-zinc-100 dark:bg-zinc-900 mb-20'
+        priority
+      />
       <h2 className='text-xl mb-4 font-medium'>Onboarding</h2>
       <p className='mb-20'>
         Boost onboarding is simple and straightforward. It starts with a series of questions that help us understand nutritional requirements and current diet. Based on the answers, we create a personalized nutrition profile that takes into account your age, gender, weight, height, activity level and various different aspects of your everyday life.

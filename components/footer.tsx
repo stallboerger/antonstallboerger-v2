@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <div className='max-w-[593px] mx-auto px-4 sm:px-0 mt-60 mb-20'>
+        <div className='max-w-[593px] mx-auto px-4 sm:px-0 mt-60 mb-10'>
 
             <div className="w-full h-[1px] bg-zinc-200 dark:bg-zinc-800 mb-6" />
 
@@ -17,7 +17,7 @@ export default function Footer() {
                                 Connect
                             </p>
                             <a 
-                                href="https://twitter.com/AntonStalli" 
+                                href="https://twitter.com/antonstallbrgr" 
                                 className="hover:text-blue-600 hover:underline" 
                                 target="_blank" 
                                 rel="noreferrer"
@@ -33,7 +33,7 @@ export default function Footer() {
                                 GitHub
                             </a>
                             <a 
-                                href="https://www.cosmos.so/antonsta" 
+                                href="https://www.cosmos.so/antonstallbrgr" 
                                 className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline" 
                                 target="_blank" 
                                 rel="noreferrer"

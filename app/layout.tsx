@@ -11,15 +11,10 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
-// const spaceGrotesk = Space_Grotesk({
-//   subsets: ['latin'],
-//   display: 'swap',
-// });
-
 export const metadata: Metadata = {
   title: {
     default: 'Anton Stallbörger',
-    template: '%s | Anton Stallbörger',
+    template: '%s · Anton Stallbörger',
   },
   description: 'Digital Product Designer and Developer.',
   openGraph: {
@@ -71,9 +66,9 @@ export default function RootLayout({
       lang="en"
       className={spaceGrotesk.className}
     >
-      <body className='antialiased text-[#111111] bg-white dark:text-[#dadada] dark:bg-black text-[17px] sm:text-base'>
+      <body className='antialiased text-[#111111] bg-white dark:text-[#dadada] dark:bg-black text-[17px] sm:text-base selection:bg-[#D8ECFC] selection:text-[#008CFF]'>
         <Navbar />
-        <main className='pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0'>
+        <main className='pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0 '>
           {children}
           <Analytics />
         </main>
