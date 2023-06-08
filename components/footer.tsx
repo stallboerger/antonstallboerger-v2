@@ -1,7 +1,7 @@
 'use client';
 
-import clsx from 'clsx';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -11,70 +11,77 @@ export default function Footer() {
 
             <div className="flex sm:flex-row flex-row gap-6 sm:gap-0 justify-between text-zinc-500">
                 <div className="flex flex-col gap-8 text-sm justify-between w-full">
-                    <div className='flex flex-row gap-32 border-b border-dashed dark:border-zinc-800 pb-8'>
-                        <div className="flex flex-col gap-2">
-                            <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                                Connect
-                            </p>
-                            <a 
-                                href="https://twitter.com/antonstallbrgr" 
-                                className="hover:text-blue-600 hover:underline" 
-                                target="_blank" 
-                                rel="noreferrer"
-                            >
-                                Twitter
-                            </a>
-                            <a 
-                                href="https://github.com/antonstallboerger" 
-                                className="hover:text-purple-600 hover:underline" 
-                                target="_blank" 
-                                rel="noreferrer"
-                            >
-                                GitHub
-                            </a>
-                            <a 
-                                href="https://www.cosmos.so/antonstallbrgr" 
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline" 
-                                target="_blank" 
-                                rel="noreferrer"
-                            >
-                                Cosmos
-                            </a>
-                            <a 
-                                href="https://read.cv/antonsta" 
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline" 
-                                target="_blank" 
-                                rel="noreferrer"
-                            >
-                                Read.cv
-                            </a>
+                    <div className='flex flex-row justify-between border-b border-dashed dark:border-zinc-800 pb-8'>
+                        <div className='flex flex-row gap-32'>
+                            <div className="flex flex-col gap-2">
+                                <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                    Connect
+                                </p>
+                                <a 
+                                    href="https://twitter.com/antonstallbrgr" 
+                                    className="hover:text-blue-600 hover:underline" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    Twitter
+                                </a>
+                                <a 
+                                    href="https://github.com/antonstallboerger" 
+                                    className="hover:text-purple-600 hover:underline" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    GitHub
+                                </a>
+                                <a 
+                                    href="https://www.cosmos.so/antonsta" 
+                                    className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    Cosmos
+                                </a>
+                                <a 
+                                    href="https://read.cv/antonsta" 
+                                    className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    Read.cv
+                                </a>
+                            </div>
+                            <div className="flex flex-col gap-2">
+                                <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                    Explore
+                                </p>
+                                <Link 
+                                    href='/about' 
+                                    className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline"
+                                >
+                                    About
+                                </Link>
+                                <Link 
+                                    href='/thoughts' 
+                                    className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline"
+                                >
+                                    Thoughts
+                                </Link>
+                                <Link 
+                                    href='/playground' 
+                                    className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline"
+                                >
+                                    Playground
+                                </Link>
+                            </div>
                         </div>
-                        <div className="flex flex-col gap-2">
-                            <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                                Explore
-                            </p>
-                            <Link 
-                                href='/about' 
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline"
-                            >
-                                About
-                            </Link>
-                            <Link 
-                                href='/thoughts' 
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline"
-                            >
-                                Thoughts
-                            </Link>
-                            <Link 
-                                href='/playground' 
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline"
-                            >
-                                Playground
-                            </Link>
-                        </div>
-                        <p className='hidden sm:visible'>
-                            tp-7 ui here
-                        </p>
+                        <Image
+                            alt='TP-7 Screen | Anton Stallbörger'
+                            className='w-[100px] h-fit'
+                            src='/images/main/tp7_example.svg'
+                            width={129}
+                            height={58}
+                            priority
+                        />
                     </div>
                     <div className='flex flex-row gap-4 text-sm'>   
                         <p className="text-sm text-zinc-900 font-medium dark:text-zinc-100">&copy; 2023 Anton Stallbörger</p>
