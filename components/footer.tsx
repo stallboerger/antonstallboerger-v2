@@ -13,6 +13,14 @@ export default function Footer() {
                 <div className="flex flex-col gap-8 text-sm justify-between w-full">
                     <div className='flex flex-row justify-between border-b border-dashed dark:border-zinc-800 pb-8'>
                         <div className='flex flex-row gap-32'>
+                            <Image
+                                alt='Logo | Anton Stallbörger'
+                                className='rounded-full h-6 w-6 border border-zinc-200 dark:border-zinc-800 hover:filter hover:invert hover:animate-spin-slow'
+                                src='/logo.svg'
+                                width={32}
+                                height={32}
+                                priority
+                            />
                             <div className="flex flex-col gap-2">
                                 <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
                                     Connect
@@ -74,14 +82,14 @@ export default function Footer() {
                                 </Link>
                             </div>
                         </div>
-                        <Image
+                        {/* <Image
                             alt='TP-7 Screen | Anton Stallbörger'
                             className='w-[100px] h-fit'
                             src='/images/main/tp7_example.svg'
                             width={129}
                             height={58}
                             priority
-                        />
+                        /> */}
                     </div>
                     <div className='flex flex-row gap-4 text-sm'>   
                         <p className="text-sm text-zinc-900 font-medium dark:text-zinc-100">&copy; 2023 Anton Stallbörger</p>

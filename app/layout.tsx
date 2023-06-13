@@ -66,7 +66,7 @@ export default function RootLayout({
       lang="en"
       className={spaceGrotesk.className}
     >
-      <body className='antialiased text-[#111111] bg-white dark:text-[#dadada] dark:bg-black text-[17px] sm:text-base selection:bg-[#FFEACC] selection:text-[#FF9500]'>
+      <body className='antialiased text-[#111111] bg-white dark:text-[#dadada] dark:bg-black text-[17px] sm:text-base selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35]'>
         <Navbar />
         <main className='pt-[140px] md:pt-[180px] max-w-[593px] h-auto mx-auto flex px-4 sm:px-0 '>
           {children}

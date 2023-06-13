@@ -58,6 +58,14 @@ export default function Home() {
         Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-zinc-500 hover:underline'>side projects</Link>.
       </p>    
       <div className='bg-zinc-200 dark:bg-zinc-800 w-full h-[1px] mb-20'/> 
+      <Card
+        title='Boost'
+        imageSrc='/images/main/boost.png'
+        imageAlt='Boost | Anton Stallbörger'
+        description='A app and product that focuses on personalized nutrients.'
+        year='2023'
+        link='/boost'
+      />
       <Card 
         title='Curations'
         imageSrc='/images/main/curations.png'
@@ -67,16 +75,8 @@ export default function Home() {
         link='/curations'
       />
       <Card
-        title='Boost'
-        imageSrc='/images/main/boost.png'
-        imageAlt='Boost | Anton Stallbörger'
-        description='A app and product that focuses on personalized nutrients.'
-        year='2023'
-        link='/boost'
-      />
-      <Card
         title='UPS App'
-        imageSrc='/images/main/upsapp.png'
+        imageSrc='/images/main/ups.png'
         imageAlt='UPS App | Anton Stallbörger'
         description='A redesign concept of the UPS App for a faster and easier way to send and track your packages.'
         year='2022'
