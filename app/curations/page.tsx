@@ -44,7 +44,6 @@ export default function AboutPage() {
         width={3840}
         height={2560}
         className='w-full h-auto bg-zinc-100 dark:bg-zinc-900 mb-20'
-        priority
       />
       <h2 className='text-xl mb-4 font-medium'>Interface</h2>
       <p className='mb-20'>
@@ -56,7 +55,6 @@ export default function AboutPage() {
         width={3840}
         height={2560}
         className='w-full h-auto bg-zinc-100 dark:bg-zinc-900 mb-20'
-        priority
       />
       <h2 className='text-xl mb-4 font-medium'>Conclusion</h2>
       <p className=''>

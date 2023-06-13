@@ -14,8 +14,8 @@ export default function AboutPage() {
         Boost is a app and product that focuses on personalized nutrients. It solves the problem of having to take multiple supplements with varying doses, by providing users with their own personalized nutrient pack. Boost has a seamless onboarding process that collects information about the user&apos;s lifestyle, basic information, and real-time data to calculate the exact nutrients that the user needs.
       </p>
       <Image 
-        src='/images/boost/screens.png'
-        alt='Boost App Mockups · Anton Stallbörger'
+        src='/images/boost/mockup.png'
+        alt='Boost Mockup · Anton Stallbörger'
         width={3840}
         height={2560}
         className='w-full h-auto bg-zinc-100 dark:bg-zinc-900 mb-20'
@@ -27,7 +27,7 @@ export default function AboutPage() {
       </p>
       <Image 
         src='/images/boost/screens.png'
-        alt='Boost App Mockups · Anton Stallbörger'
+        alt='Boost App Screens · Anton Stallbörger'
         width={3840}
         height={2560}
         className='w-full h-auto bg-zinc-100 dark:bg-zinc-900 mb-20'
@@ -38,8 +38,8 @@ export default function AboutPage() {
         Based on your nutritional profile, Boost calculates your daily nutrient needs and gives you customized recommendations for vitamins, minerals, and other essential nutrients. Recommendations are updated daily based on weather and your step count to ensure you get the right amount of nutrients at the right time.
       </p>
       <Image 
-        src='/images/boost/screens.png'
-        alt='Boost App Mockups · Anton Stallbörger'
+        src='/images/boost/device.png'
+        alt='Boost Device · Anton Stallbörger'
         width={3840}
         height={2560}
         className='w-full h-auto bg-zinc-100 dark:bg-zinc-900 mb-20'
