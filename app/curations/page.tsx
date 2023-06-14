@@ -73,7 +73,7 @@ export default function AboutPage() {
           <p className='font-medium'>
             Boost
           </p>
-          <p className='text-sm text-zinc-500 group-hover:text-zinc-900 group-hover:underline'>
+          <p className='text-sm text-zinc-500 group-hover:underline'>
             View case study
           </p>
         </div>

@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex sm:flex-row flex-row gap-6 sm:gap-0 justify-between text-zinc-500">
                 <div className="flex flex-col gap-8 text-sm justify-between w-full">
                     <div className='flex flex-row justify-between border-b border-dashed dark:border-zinc-800 pb-8'>
-                        <div className='flex flex-row gap-32'>
+                        <div className='flex flex-row sm:gap-32 gap-20'>
                             <Image
                                 alt='Logo | Anton Stallbörger'
                                 className='rounded-full h-6 w-6 border border-zinc-200 dark:border-zinc-800 hover:filter hover:invert hover:animate-spin-slow'
