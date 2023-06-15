@@ -11,7 +11,7 @@ export default function AboutPage() {
         <h1 className="font-bold text-3xl mb-6">Imprint</h1>
         <p>
         <span className='text-zinc-500'>
-            Last updated May 26, 2023
+            Last updated Jun 15, 2023
         </span>
         <br />
         <br />
@@ -23,10 +23,11 @@ export default function AboutPage() {
         <br />
         70192 Stuttgart, Germany
         <br />
-        anton@stallboerger.de
+        <a href="mailto:anton@stallboerger.de" className='text-zinc-500 hover:underline'>anton@stallboerger.de</a>
         <br />
         <br />
         Copyright
+        <br />
         This website and its contents are subject to German copyright law. Unless expressly permitted by law (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject to copyright protection on this website requires my prior consents.
         <br />
         <br />
@@ -34,6 +35,7 @@ export default function AboutPage() {
         <br />
         <br />
         Limitation of liability for internal content
+        <br />
         The contents of this website have been created with my utmost care. However, I cannot guarantee the contents&apos; accuracy, completeness or topicality. According to statutory provisions, I&apos;m furthermore responsible for my own content. In this context, please note that I&apos;m accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity.
         <br />
         <br />

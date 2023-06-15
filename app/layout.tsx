@@ -1,5 +1,4 @@
 import './globals.css'
-// import { Space_Grotesk } from 'next/font/google'
 import Space_Grotesk from 'next/font/local'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
