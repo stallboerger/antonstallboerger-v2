@@ -34,12 +34,12 @@ export default function Footer() {
                                     Twitter
                                 </a>
                                 <a 
-                                    href="https://github.com/antonstallboerger" 
-                                    className="hover:text-purple-600 hover:underline" 
+                                    href="imessage://anton@stallboerger.de" 
+                                    className="hover:text-zinc-900 dark:hover:text-zinc-100 hover:underline" 
                                     target="_blank" 
                                     rel="noreferrer"
                                 >
-                                    GitHub
+                                    iMessage
                                 </a>
                                 <a 
                                     href="https://www.cosmos.so/antonsta" 

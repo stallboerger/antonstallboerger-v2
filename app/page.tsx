@@ -62,7 +62,7 @@ export default function Home() {
         title='Boost'
         imageSrc='/images/main/boost.png'
         imageAlt='Boost | Anton Stallbörger'
-        description='A app and product that focuses on personalized nutrients.'
+        description='A app and product that helps you get a clear overview over your nutrients and gives you personalised recommendations.'
         year='2023'
         link='/boost'
       />
