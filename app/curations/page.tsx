@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Curations',
-  description: 'Digital Product Designer and Developer.',
+  description: 'Software Designer and Developer',
 };
 
 export default function AboutPage() {

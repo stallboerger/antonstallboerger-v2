@@ -33,8 +33,8 @@ const Card: React.FC<Props> = ({
         {description}
       </p>
       <div className='mb-8 flex flex-row justify-between'>
-        <p className='text-sm'>{year}</p>
-        <Link href={link} className='group hover:underline text-zinc-500 text-sm'>
+        <p className=''>{year}</p>
+        <Link href={link} className='group hover:underline text-zinc-500'>
           Learn more
         </Link>
       </div>
@@ -55,7 +55,7 @@ export default function Home() {
         Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
         <br />
         <br />
-        Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-zinc-500 hover:underline hover:underline-offset-2'>side projects</Link>.
+        Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-zinc-500 hover:underline'>side projects</Link>.
       </p>    
       <div className='bg-zinc-200 dark:bg-zinc-800 w-full h-[1px] mb-20'/> 
       <Card

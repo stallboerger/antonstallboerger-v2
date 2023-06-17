@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Boost',
-  description: 'Digital Product Designer and Developer.',
+  description: 'Software Designer and Developer',
 };
 
 export default function AboutPage() {
