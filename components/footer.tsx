@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className='flex flex-row justify-between 2 border-b border-dashed pb-8'>
                         <Image
                             alt='Logo | Anton Stallbörger'
-                            className='rounded-full h-8 w-8 hover:filter hover:invert hover:animate-spin-slow'
+                            className='rounded-full h-8 w-8 hover:filter hover:invert hover:animate-spin-slow hidden sm:block'
                             src='/logo.svg'
                             width={32}
                             height={32}
