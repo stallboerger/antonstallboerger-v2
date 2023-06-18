@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className='fixed flex justify-between items-center w-full h-[53px] z-50 border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black'>
             <Link className='content-center flex ml-4 sm:ml-6 gap-4' href='/'>
                 <Image 
-                    alt='Logo | Anton Stallbörger'
+                    alt='Logo · Anton Stallbörger'
                     className='rounded-full border border-zinc-200 dark:border-zinc-800 hover:filter hover:invert hover:animate-spin-slow'
                     src='/logo.svg'
                     width={32}
