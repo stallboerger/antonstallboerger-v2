@@ -25,7 +25,7 @@ export default function Footer() {
                                 Connect
                             </p>
                             <a 
-                                href="https://twitter.com/antonstallbrgr" 
+                                href="https://twitter.com/stallboerger" 
                                 className="hover:text-blue-600 hover:underline" 
                                 target="_blank" 
                                 rel="noreferrer"
@@ -41,7 +41,7 @@ export default function Footer() {
                                 iMessage
                             </a>
                             <a 
-                                href="https://www.cosmos.so/antonsta" 
+                                href="https://www.cosmos.so/stallboerger" 
                                 className="hover:text-zinc-900 hover:underline" 
                                 target="_blank" 
                                 rel="noreferrer"
@@ -49,7 +49,7 @@ export default function Footer() {
                                 Cosmos
                             </a>
                             <a 
-                                href="https://read.cv/antonsta" 
+                                href="https://read.cv/stallboerger" 
                                 className="hover:text-zinc-900 hover:underline" 
                                 target="_blank" 
                                 rel="noreferrer"
