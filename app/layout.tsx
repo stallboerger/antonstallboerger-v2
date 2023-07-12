@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     default: 'Anton Stallbörger',
     template: '%s · Anton Stallbörger',
   },
-  description: 'Digital Product Designer and Developer.',
+  description: 'Software Designer',
   openGraph: {
     title: 'Anton Stallbörger',
-    description: 'Digital Product Designer and Developer.',
-    url: 'https://antonstallboerger.com',
+    description: 'Software Designer',
+    url: 'https://antonstallboerger-v2.vercel.app/',
     siteName: 'Anton Stallbörger',
     images: [
       {
-        url: 'https://antonstallboerger.com/og.jpg',
+        url: 'https://antonstallboerger-v2.vercel.app/og.jpg',
         width: 1920,
         height: 1080,
       },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Anton Stallbörger',
     card: 'summary_large_image',
-    description: 'Digital Product Designer and Developer.',
+    description: 'Software Designer',
   },
   icons: {
     shortcut: '/favicon.ico',
