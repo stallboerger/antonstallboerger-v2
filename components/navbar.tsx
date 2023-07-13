@@ -10,10 +10,10 @@ export default function Navbar() {
             <Link className='content-center flex ml-4 sm:ml-6 gap-4' href='/'>
                 <Image 
                     alt='Logo · Anton Stallbörger'
-                    className='rounded-full border border-zinc-200 dark:border-zinc-800 hover:filter hover:invert hover:animate-spin-slow'
+                    className='hover:animate-spin-slow'
                     src='/logo.svg'
-                    width={32}
-                    height={32}
+                    width={24}
+                    height={24}
                     priority
                 />
                 <p className='font-medium self-center '>
