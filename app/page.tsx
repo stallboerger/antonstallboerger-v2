@@ -19,16 +19,20 @@ const Card: React.FC<Props> = ({
   link,
 }) => {
   return (
-    <div className='mb-24'>
+    <div  className='mb-24'>
       <p className='mb-8'>{title}</p>
-      <Image
-        alt={imageAlt}
-        className='mb-8 dark:bg-zinc-900 bg-zinc-100'
-        src={imageSrc}
-        width={3840}
-        height={3840}
-        priority
-      />
+      <div className='mb-8 dark:bg-zinc-900 bg-zinc-100'>
+        <Link href={link}>
+          <Image
+            alt={imageAlt}
+            className='hover:scale-105 transform transition-all duration-700'
+            src={imageSrc}
+            width={3840}
+            height={3840}
+            priority
+          />
+        </Link>
+      </div>
       <p className=' border-dashed dark:border-zinc-800 boder-zinc-200  mb-8'>
         {description}
       </p>
