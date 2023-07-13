@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section>
-        <h1 className="font-bold text-3xl mb-6">Imprint</h1>
-        <h2 className='text-base mb-4 font-medium'>Last updated Jun 15, 2023</h2>
+        <h1 className="font-bold mb-4">Imprint</h1>
+        <h2 className='text-base mb-20'>Last updated Jun 15, 2023</h2>
         <h2 className='text-base mb-4 font-medium'>Information according to German §5 of TMG</h2>
         <p className='mb-20'>
         Anton Stallbörger

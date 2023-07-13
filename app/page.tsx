@@ -19,8 +19,8 @@ const Card: React.FC<Props> = ({
   link,
 }) => {
   return (
-    <div  className='mb-24'>
-      <p className='mb-8'>{title}</p>
+    <div className='mb-24'>
+      <p className='mb-8 font-bold'>{title}</p>
       <div className='mb-8 dark:bg-zinc-900 bg-zinc-100'>
         <Link href={link}>
           <Image
@@ -51,9 +51,9 @@ export default function Home() {
   return (
     <section>
       <p className='pb-20'>
-        <span className='font-medium'>Anton Stallbörger</span>
+        <span className='font-bold'>Anton Stallbörger</span>
         <br />
-        Software Designer & Developer
+        Software Designer
       </p>
       <p className='pb-8'>
         Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
@@ -65,7 +65,7 @@ export default function Home() {
       <Card
         title='Boost'
         imageSrc='/images/main/boost.png'
-        imageAlt='Boost | Anton Stallbörger'
+        imageAlt='Boost · Anton Stallbörger'
         description='A app and product that helps you get a clear overview over your nutrients and gives you personalised recommendations.'
         year='2023'
         link='/boost'
@@ -73,7 +73,7 @@ export default function Home() {
       <Card 
         title='Curations'
         imageSrc='/images/main/curations.png'
-        imageAlt='Curations | Anton Stallbörger'
+        imageAlt='Curations · Anton Stallbörger'
         description='A curated collection of stunning tools and website inspirations for free. Helping designers, developers, and everyone else discover new and innovative tools and ideas for their projects.'
         year='2022 - Present'
         link='/curations'
@@ -81,7 +81,7 @@ export default function Home() {
       <Card
         title='UPS App'
         imageSrc='/images/main/ups.png'
-        imageAlt='UPS App | Anton Stallbörger'
+        imageAlt='UPS App · Anton Stallbörger'
         description='A redesign concept of the UPS App for a faster and easier way to send and track your packages.'
         year='2022'
         link='/ups'
