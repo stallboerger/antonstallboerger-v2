@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function ColophonPage() {
   return (
-    <section>
+    <section className='col-span-full md:col-span-12 lg:col-span-5 lg:top-[calc(53px_+_32px)] lg:self-start'>
       <h1 className="mb-4">Colophon</h1>
       <p className='mb-20'>Last updated Jul 13, 2023</p>
       

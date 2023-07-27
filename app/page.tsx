@@ -52,7 +52,7 @@ const Card: React.FC<Props> = ({
 export default function Home() {
   return (
     <>
-      <section className='col-span-5 sticky top-[calc(53px_+_32px)] self-start'>
+      <section className='col-span-full md:col-span-12 lg:col-span-5 lg:sticky lg:top-[calc(53px_+_32px)] lg:self-start mb-20 lg:mb-0'>
         <p className='mb-8'>
           <span className='font-bold'>Anton Stallbörger</span>
           <br />
@@ -69,7 +69,7 @@ export default function Home() {
         </p>  
       </section>
 
-      <section className='col-start-9 col-span-8'>
+      <section className='col-span-full lg:col-start-9 lg:col-span-8'>
         <Card
           title='Boost'
           imageSrc='/images/main/boost.png'
