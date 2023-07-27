@@ -17,3 +17,7 @@ body {
 h1, h2 {
   @apply font-semibold
 }
+
+a {
+  @apply text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 hover:underline
+}
