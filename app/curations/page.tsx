@@ -36,7 +36,7 @@ export default function CurationsPage() {
       />
       <h2 className='text-base mb-4 font-bold'>Web Inspiration</h2>
       <p className='mb-20'>
-        In addition to its design resources, Curations also features a section dedicated to website inspiration. This section showcases some of the most beautifully designed websites from around the world, offering users a chance to see what&apos;s possible with modern design techniques and technologies.
+        In addition to its design resources, Curations also features a section dedicated to website inspiration. This section showcases some of the most beautifully designed websites from around the world, offering users a chance to see what&rsquo;s possible with modern design techniques and technologies.
       </p>
       <Image 
         src='/images/curations/screen2.png'
@@ -47,7 +47,7 @@ export default function CurationsPage() {
       />
       <h2 className='text-base mb-4 font-bold'>Interface</h2>
       <p className='mb-20'>
-        Another key aspect of Curations is its user-friendly interface. The website is easy to navigate and users can search for specific resources or browse through the different categories to find what they need. This makes it easy for users to find the resources they need, even if they don&apos;t know exactly what they&apos;re looking for.
+        Another key aspect of Curations is its user-friendly interface. The website is easy to navigate and users can search for specific resources or browse through the different categories to find what they need. This makes it easy for users to find the resources they need, even if they don&rsquo;t know exactly what they&rsquo;re looking for.
       </p>
       <Image 
         src='/images/curations/ad.png'

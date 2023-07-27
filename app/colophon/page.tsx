@@ -14,7 +14,7 @@ export default function ColophonPage() {
       
       <h2 className='mb-4 text-base'>Typography</h2>
       <p className='mb-20 leading-relaxed'>
-          <a href='https://floriankarsten.github.io/space-grotesk/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Space Grotesk</a> is a typeface designed and published by <a href='https://fonts.floriankarsten.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Florian Karsten Typefaces</a>. A proportional sans-serif typeface variant based on <a href='https://www.colophon-foundry.org/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Colophon Foundry</a>&apos;s fixed-width Space Mono family. Free for personal and commercial use.
+          <a href='https://floriankarsten.github.io/space-grotesk/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Space Grotesk</a> is a typeface designed and published by <a href='https://fonts.floriankarsten.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Florian Karsten Typefaces</a>. A proportional sans-serif typeface variant based on <a href='https://www.colophon-foundry.org/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Colophon Foundry</a>&rsquo;s fixed-width Space Mono family. Free for personal and commercial use.
       </p>
       <h2 className='mb-4 text-base'>Tech stack</h2>
       <p className='mb-6 leading-relaxed'>

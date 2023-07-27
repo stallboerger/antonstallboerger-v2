@@ -91,10 +91,10 @@ export default function Footer() {
                     </div>   
                 </div>
             </section>
-            <section className='self-start col-start-9 col-span-8'> 
+            <section className='self-start col-start-9 col-span-8 h-[100%]'> 
                 <div className='flex flex-col justfy-between h-[100%] border-t pt-6 border-zinc-200 dark:border-zinc-800'> 
                     <Clock />  
-                    <p>
+                    <p className='mt-auto text-zinc-500'>
                         Local time
                     </p>                 
                 </div>
