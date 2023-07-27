@@ -66,6 +66,13 @@ export const metadata: Metadata = {
     title: 'Anton Stallbörger',
     card: 'summary_large_image',
     description: 'Software Designer',
+    images: [
+      {
+        url: 'https://antonstallboerger-v2.vercel.app/og.jpg',
+        width: 1920,
+        height: 1080,
+      },
+    ],
   },
   icons: {
     shortcut: '/favicon.ico',
