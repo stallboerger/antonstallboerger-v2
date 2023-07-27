@@ -19,7 +19,7 @@ const Card: React.FC<Props> = ({
   link,
 }) => {
   return (
-    <div className='mb-24 border-b border-zinc-200 dark:border-zinc-800 [&:last-child]:border-transparent'>
+    <div className='mb-24 [&:last-child]:mb-0 [&:last-child>div:last-child]:mb-0 [&:last-child>div:last-child>p]:mb-0 border-b border-zinc-200 dark:border-zinc-800 [&:last-child]:border-transparent'>
       <p className='mb-8'>
         <span className='font-bold'>{title}</span>
         <br />
@@ -38,14 +38,13 @@ const Card: React.FC<Props> = ({
         </Link>
       </div>
       <div className='mb-8 grid grid-cols-8 gap-8'>
-        <p className='mb-8 col-span-5'>
+        <p className='mb-8 col-span-6'>
           {description}
         </p>
-        <Link href={link} className='group hover:underline text-zinc-500 lg:col-span-3 col-span-3 justify-self-end'>
+        <Link href={link} className='group hover:underline text-zinc-500 col-span-2 justify-self-end'>
           Learn more
         </Link>
       </div>
-      {/* <div className='bg-zinc-200 dark:bg-zinc-800 w-full h-[1px]' /> */}
     </div>
   );
 };
@@ -59,7 +58,7 @@ export default function Home() {
           <br />
           Software Designer
         </p>
-        <p className='pb-8'>
+        <p className=''>
           Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
           <br />
           <br />

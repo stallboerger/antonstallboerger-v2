@@ -1,20 +1,19 @@
 'use client';
 
+import dynamic from 'next/dynamic'
 import Link from 'next/link';
-import Image from 'next/image';
+
+const Clock = dynamic(() => import('./clock'), { ssr: false })
 
 export default function Footer() {
     return (
         <footer className='mt-40 grid-cols-16 grid gap-8 mx-8 px-4 sm:px-0 mb-8'>
-            <div className='self-start col-span-8'>
-
-                <div className="w-full h-[1px] bg-zinc-200 dark:bg-zinc-800 mb-6" />
-
-                <div className="w-full flex sm:flex-row flex-row gap-6 sm:gap-0 justify-between text-zinc-500">
+            <section className='self-start col-span-8'>
+                <div className="w-full flex sm:flex-row flex-row gap-6 sm:gap-0 justify-between border-t pt-6 border-zinc-200 dark:border-zinc-800">
                     <div className="flex flex-col gap-8 text-sm justify-between w-full">
                         <div className='flex flex-row gap-12'>
                             <div className="flex flex-col gap-2">
-                                <p className="text-sm font-medium text-zinc-900 dark:text-zinc-200">
+                                <p className="text-sm font-bold text-zinc-900 dark:text-zinc-200">
                                     Connect
                                 </p>
                                 <a 
@@ -27,7 +26,7 @@ export default function Footer() {
                                 </a>
                                 <a 
                                     href="imessage://anton@stallboerger.de" 
-                                    className=''
+                                    className='hover:text-green-600'
                                     target="_blank" 
                                     rel="noreferrer"
                                 >
@@ -51,7 +50,7 @@ export default function Footer() {
                                 </a>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <p className="text-sm font-medium text-zinc-900 dark:text-zinc-200">
+                                <p className="text-sm font-bold text-zinc-900 dark:text-zinc-200">
                                     Explore
                                 </p>
                                 <Link 
@@ -75,23 +74,31 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className='flex flex-row gap-3 text-sm'>  
-                            <p className="text-sm text-zinc-900 dark:text-zinc-200 font-medium">&copy; 2023 Anton Stallbörger</p>
+                            <p className="text-sm text-zinc-900 dark:text-zinc-200 font-bold">&copy; 2023 Anton Stallbörger</p>
                             <Link 
                                 href='/colophon' 
-                                className="hover:text-zinc-900 hover:underline"
+                                className=''
                             >
                                 Colophon
                             </Link>
                             <Link 
                                 href='/imprint' 
-                                className="hover:text-zinc-900 hover:underline"
+                                className=''
                             >
                                 Imprint
                             </Link>
                         </div>
                     </div>   
                 </div>
-            </div>
+            </section>
+            <section className='self-start col-start-9 col-span-8'> 
+                <div className='flex flex-col justfy-between h-[100%] border-t pt-6 border-zinc-200 dark:border-zinc-800'> 
+                    <Clock />  
+                    <p>
+                        Local time
+                    </p>                 
+                </div>
+            </section>
         </footer>
     );
 }
