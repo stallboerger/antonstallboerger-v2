@@ -8,7 +8,7 @@ const Clock = dynamic(() => import('./clock'), { ssr: false })
 export default function Footer() {
     return (
         <footer className='mt-40 grid-cols-8 sm:grid-cols-16 grid gap-4 md:gap-8 px-4 md:px-8 mb-8 text-sm'>
-            <section className='col-span-full lg:col-span-8 self-start'>
+            <section className='col-span-full lg:col-span-8 row-start-2 lg:row-auto self-start'>
                 <div className="flex flex-col gap-8 border-t pt-6 border-zinc-200 dark:border-zinc-800">
                     <div className='flex flex-row gap-12'>
                         <div className="flex flex-col gap-2">
@@ -89,9 +89,9 @@ export default function Footer() {
                     </div>
                 </div>   
             </section>
-            <section className='col-span-full lg:col-start-9 lg:col-span-8 h-[100%] self-start'> 
-                <div className='flex flex-col justfy-between h-[100%] border-t pt-6 border-zinc-200 dark:border-zinc-800'> 
-                    <Clock />  
+            <section className='col-span-full lg:col-start-9 lg:col-span-8 row-start-1 lg:row-auto h-[100%] self-start'> 
+                <div className='flex flex-col justfy-between h-[100%] lg:border-t pt-6 border-zinc-200 dark:border-zinc-800'> 
+                    <Clock />
                     <p className='mt-auto'>
                         Local time
                     </p>                 
