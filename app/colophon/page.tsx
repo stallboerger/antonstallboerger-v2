@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Digital Product Designer and Developer.',
 };
 
-export default function AboutPage() {
+export default function ColophonPage() {
   return (
     <section>
       <h1 className="mb-4">Colophon</h1>

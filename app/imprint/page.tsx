@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Digital Product Designer and Developer.',
 };
 
-export default function AboutPage() {
+export default function ImprintPage() {
   return (
     <section>
         <h1 className="mb-4">Imprint</h1>

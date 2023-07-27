@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Software Designer and Developer',
 };
 
-export default function AboutPage() {
+export default function BoostPage() {
   return (
     <section>
       <h1 className="mb-10">Boost</h1>
