@@ -94,7 +94,7 @@ export default function RootLayout({
     >
       <body className='antialiased text-[#343433] bg-white dark:text-[#cbcbcc] dark:bg-black text-[17px] sm:text-base selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35]'>
         <Navbar />
-        <main className='pt-[140px] md:pt-[180px] h-auto mx-8 px-4 sm:px-0 grid-cols-16 grid gap-8'>
+        <main className='pt-[140px] md:pt-[180px] h-auto px-4 lg:px-8 grid-cols-8 sm:grid-cols-16 grid gap-4 md:gap-8'>
           {children}
           <Analytics />
         </main>
