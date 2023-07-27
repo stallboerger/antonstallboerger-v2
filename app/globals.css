@@ -11,5 +11,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-feature-settings: "ss04", 'case';
+  font-feature-settings: 'case', 'calt';
+}
+
+h1, h2 {
+  @apply font-semibold
 }

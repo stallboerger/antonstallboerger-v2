@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-8 text-sm justify-between w-full">
                     <div className='flex flex-row justify-between 2 border-b border-dashed pb-8'>
                         <Image
-                            alt='Logo | Anton Stallbörger'
+                            alt='Logo · Anton Stallbörger'
                             className='h-6 w-6 hover:animate-spin-slow hidden sm:block'
                             src='/logo.svg'
                             width={32}

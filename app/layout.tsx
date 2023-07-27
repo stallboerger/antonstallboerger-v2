@@ -1,14 +1,34 @@
 import './globals.css'
-import Space_Grotesk from 'next/font/local'
+import Soehne from 'next/font/local'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
-const spaceGrotesk = Space_Grotesk({
-  src: '../public/font/SpaceGrotesk-Variable.woff2',
-  display: 'swap',
-});
+// const spaceGrotesk = Space_Grotesk({
+//   src: '../public/font/SpaceGrotesk-Variable.woff2',
+//   display: 'swap',
+// });
+
+const soehne = Soehne({
+  src: [
+    {
+      path: '../public/font/soehne-buch.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/font/soehne-buch-kursiv.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../public/font/soehne-halbfett.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
+})
 
 export const metadata: Metadata = {
   title: {
@@ -63,7 +83,7 @@ export default function RootLayout({
   return (
     <html 
       lang="en"
-      className={spaceGrotesk.className}
+      className={soehne.className}
     >
       <body className='antialiased text-[#343433] bg-white dark:text-[#cbcbcc] dark:bg-black text-[17px] sm:text-base selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35]'>
         <Navbar />

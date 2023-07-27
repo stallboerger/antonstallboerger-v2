@@ -25,7 +25,7 @@ const Card: React.FC<Props> = ({
         <Link href={link}>
           <Image
             alt={imageAlt}
-            className='hover:scale-105 transform transition-all duration-700'
+            className='hover:scale-105 transform transition-all duration-300'
             src={imageSrc}
             width={3840}
             height={3840}

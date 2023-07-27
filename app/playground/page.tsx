@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section>
-      <h1 className="font-bold text-3xl">Playground</h1>
+      <h1 className="mb-10">Playground</h1>
     </section>
   );
 }
