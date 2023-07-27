@@ -38,10 +38,10 @@ const Card: React.FC<Props> = ({
         </Link>
       </div>
       <div className='mb-8 grid grid-cols-8 gap-8'>
-        <p className='mb-8 col-span-6'>
+        <p className='mb-8 col-span-full sm:col-span-6'>
           {description}
         </p>
-        <Link href={link} className='group hover:underline text-zinc-500 col-span-2 justify-self-end'>
+        <Link href={link} className='group hover:underline text-zinc-500 col-span-full sm:col-span-2 sm:justify-self-end'>
           Learn more
         </Link>
       </div>
