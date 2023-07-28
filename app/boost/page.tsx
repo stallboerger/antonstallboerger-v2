@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function BoostPage() {
   return (
-    <section>
+    <section className="col-span-full">
       <h1 className="mb-10">Boost</h1>
       <p className='mb-20'>
         Boost is a app and product that focuses on personalized nutrients. It solves the problem of having to take multiple supplements with varying doses, by providing users with their own personalized nutrient pack. Boost has a seamless onboarding process that collects information about the user&rsquo;s lifestyle, basic information, and real-time data to calculate the exact nutrients that the user needs.
