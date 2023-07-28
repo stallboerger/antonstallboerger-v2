@@ -92,9 +92,9 @@ export default function RootLayout({
       lang="en"
       className={soehne.className}
     >
-      <body className='antialiased text-[#343433] bg-white dark:text-[#cbcbcc] dark:bg-black text-[17px] sm:text-base selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35]'>
+      <body className='antialiased text-[#343433] bg-white dark:text-[#cbcbcc] dark:bg-black text-[17px] sm:text-base selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35] min-h-full flex flex-col'>
         <Navbar />
-        <main className='pt-[140px] md:pt-[180px] h-auto px-4 lg:px-8 grid-cols-8 sm:grid-cols-16 grid gap-4 md:gap-8'>
+        <main className='pt-[140px] md:pt-[180px] h-auto px-4 mb-auto lg:px-8 grid-cols-8 sm:grid-cols-16 grid gap-4 md:gap-8'>
           {children}
           <Analytics />
         </main>
