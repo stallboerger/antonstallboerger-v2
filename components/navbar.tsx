@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Navbar() {
 
     return (
-        <nav className='fixed grid-cols-16 grid gap-6 justify-between items-center w-full h-[53px] z-50 px-8 border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black select-none'>
+        <nav className='fixed grid-cols-16 grid gap-4 md:gap-8 justify-between items-center w-full h-[53px] z-50 px-8 border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black select-none'>
             <Link href='/' className='hover:underline'>
                 Home
             </Link>

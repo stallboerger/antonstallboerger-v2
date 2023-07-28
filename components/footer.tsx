@@ -7,7 +7,7 @@ const Clock = dynamic(() => import('./clock'), { ssr: false })
 
 export default function Footer() {
     return (
-        <footer className='mt-40 grid-cols-8 sm:grid-cols-16 grid gap-4 md:gap-8 px-4 md:px-8 mb-8 text-sm'>
+        <footer className='mt-40 grid-cols-8 sm:grid-cols-16 grid gap-6 md:gap-8 px-4 md:px-8 mb-8 text-sm'>
             <section className='col-span-full lg:col-span-8 row-start-2 lg:row-auto self-start'>
                 <div className="flex flex-col gap-8 border-t pt-6 border-zinc-200 dark:border-zinc-800">
                     <div className='flex flex-row gap-12'>
