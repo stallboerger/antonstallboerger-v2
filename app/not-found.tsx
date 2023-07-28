@@ -1,10 +1,48 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function NotFound() {
     return (
-        <div className='col-span-5 justify-center items-center h-screen'>
-            <h1 className='text-9xl font-bold'>404</h1>
-            <p className='text-3xl font-bold'>Page not found</p>
-        </div>
+        <>
+            <section className='col-span-8'>
+                <p className='font-bold'>404</p>
+                <p className=''>Page not found</p>
+            </section>
+            <section className='col-span-8 col-start-9 self-start'>
+                <p className=''>
+                    You just hit a route that doesn&#39;t exist&ndash;the sadness.
+                </p>
+                <p className='mb-8'>
+                    Keep exploring
+                </p>
+                <div className="flex flex-col gap-2">
+                            <Link 
+                                href='./' 
+                                className='self-start'
+                            >
+                                Home
+                            </Link>
+                            <Link 
+                                href='/about' 
+                                className='self-start'
+                            >
+                                About
+                            </Link>
+                            <Link 
+                                href='/thoughts' 
+                                className='self-start'
+                            >
+                                Thoughts
+                            </Link>
+                            <Link 
+                                href='/playground' 
+                                className='self-start'
+                            >
+                                Playground
+                            </Link>
+                        </div>
+            </section>
+        </>  
     );
 }
