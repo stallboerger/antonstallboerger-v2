@@ -11,37 +11,37 @@ export default function NotFound() {
             </section>
             <section className='col-span-8 col-start-9 self-start'>
                 <p className=''>
-                    You just hit a route that doesn&#39;t exist&ndash;the sadness.
+                    You just hit a route that doesn&#39;t exist.
                 </p>
                 <p className='mb-8'>
-                    Keep exploring
+                    This page is just as lost as you are.
                 </p>
                 <div className="flex flex-col gap-2">
-                            <Link 
-                                href='./' 
-                                className='self-start'
-                            >
-                                Home
-                            </Link>
-                            <Link 
-                                href='/about' 
-                                className='self-start'
-                            >
-                                About
-                            </Link>
-                            <Link 
-                                href='/thoughts' 
-                                className='self-start'
-                            >
-                                Thoughts
-                            </Link>
-                            <Link 
-                                href='/playground' 
-                                className='self-start'
-                            >
-                                Playground
-                            </Link>
-                        </div>
+                    <Link 
+                        href='/' 
+                        className='self-start'
+                    >
+                        Home
+                    </Link>
+                    <Link 
+                        href='/about' 
+                        className='self-start'
+                    >
+                        About
+                    </Link>
+                    <Link 
+                        href='/thoughts' 
+                        className='self-start'
+                    >
+                        Thoughts
+                    </Link>
+                    <Link 
+                        href='/playground' 
+                        className='self-start'
+                    >
+                        Playground
+                    </Link>
+                </div>
             </section>
         </>  
     );
