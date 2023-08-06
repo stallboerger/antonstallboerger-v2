@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 export default function ColophonPage() {
   return (
     <section className='col-span-full md:col-span-12 lg:col-span-5 lg:top-[calc(53px_+_32px)] lg:self-start'>
-      <h1 className="mb-4">Colophon</h1>
+      <h1 className=''>Colophon</h1>
       <p className='mb-20'>Last updated Jul 13, 2023</p>
       
       <h2 className='mb-4 text-base'>Typography</h2>
       <p className='mb-20 leading-relaxed'>
-          <a href='https://floriankarsten.github.io/space-grotesk/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Space Grotesk</a> is a typeface designed and published by <a href='https://fonts.floriankarsten.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Florian Karsten Typefaces</a>. A proportional sans-serif typeface variant based on <a href='https://www.colophon-foundry.org/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Colophon Foundry</a>&rsquo;s fixed-width Space Mono family. Free for personal and commercial use.
+          <a href='https://klim.co.nz/retail-fonts/soehne/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Söhne</a> is a typeface designed and published by the <a href='https://klim.co.nz/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Klim Type Foundry</a>. It is the memory of Akzidenz-Grotesk framed through the reality of Helvetica. Söhne captures the analogue materiality of “Standard Medium” used in Unimark&rsquo;s legendary wayfinding system for the NYC Subway.
       </p>
       <h2 className='mb-4 text-base'>Tech stack</h2>
       <p className='mb-6 leading-relaxed'>
-          Built with <a href='https://nextjs.org/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Next.js</a>, <a href='https://tailwindcss.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Tailwind CSS</a>, and <a href='https://headlessui.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Headless UI</a>. Hosted on <a href='https://vercel.com/home' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel</a>. Privacy friendly analytics with <a href='https://vercel.com/analytics' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel Analytics</a>.
+          Built with <a href='https://nextjs.org/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Next.js</a>and <a href='https://tailwindcss.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Tailwind CSS</a>. Hosted on <a href='https://vercel.com/home' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel</a>. Privacy friendly analytics with <a href='https://vercel.com/analytics' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel Analytics</a>.
       </p>    
       <a href="https://github.com/antonstallboerger/antonstallboerger-v2" className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">GitHub Repository</a>
       
