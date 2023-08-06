@@ -15,7 +15,7 @@ export default function Footer() {
                     </p>
                     <a 
                         href="https://twitter.com/stallboerger" 
-                        className="hover:text-blue-600" 
+                        className="hover:text-blue-600 self-start" 
                         target="_blank" 
                         rel="noreferrer"
                     >
@@ -23,7 +23,7 @@ export default function Footer() {
                     </a>
                     <a 
                         href="imessage://anton@stallboerger.de" 
-                        className='hover:text-green-600'
+                        className='hover:text-green-600 self-start'
                         target="_blank" 
                         rel="noreferrer"
                     >
@@ -31,7 +31,7 @@ export default function Footer() {
                     </a>
                     <a 
                         href="https://www.cosmos.so/stallboerger" 
-                        className='' 
+                        className='self-start' 
                         target="_blank" 
                         rel="noreferrer"
                     >
@@ -39,7 +39,7 @@ export default function Footer() {
                     </a>
                     <a 
                         href="https://read.cv/stallboerger" 
-                        className='' 
+                        className='self-start' 
                         target="_blank" 
                         rel="noreferrer"
                     >
