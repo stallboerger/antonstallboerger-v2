@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 
 export default function ImprintPage() {
   return (
-    <section>
-        <h1 className="mb-4">Imprint</h1>
+    <section className='col-span-full md:col-span-12 lg:col-span-5 lg:top-[calc(53px_+_32px)] lg:self-start'>
+        <h1 className="">Imprint</h1>
         <p className='mb-20'>Last updated Jul 13, 2023</p>
         <h2 className='text-base mb-4 font-bold'>Information according to German §5 of TMG</h2>
         <p className='mb-20'>
