@@ -23,7 +23,7 @@ h1, h2 {
 }
 
 a {
-  @apply text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 hover:underline underline-offset-2;
+  @apply text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 underline-offset-2;
 }
 
 p {
