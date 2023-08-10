@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 export default function BoostPage() {
   return (
     <>
-      <section className="col-span-full md:col-span-12 lg:col-span-5 lg:top-[calc(53px_+_32px)] lg:self-start mb-20 lg:mb-0">
-        <div className='sticky lg:top-[53px] pb-10 pt-8 mt-[-32px] bg-gradient-to-b from-white via-white/90  dark:from-black dark:via-black/90 to-transparent'>
+      <section className="col-span-full md:col-span-12 lg:col-span-5 top-[calc(53px_+_32px)] lg:self-start mb-20 lg:mb-0">
+        <div className='sticky top-[53px] pb-10 pt-8 mt-[-32px] bg-gradient-to-b from-white via-white/90  dark:from-black dark:via-black/90 to-transparent'>
           <h1 className=''>Boost</h1>
           <p className=''>2023</p>
         </div>
