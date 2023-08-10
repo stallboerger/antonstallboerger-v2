@@ -20,7 +20,7 @@ const Card: React.FC<Props> = ({
 }) => {
   return (
     <div className='mb-24 [&:last-child]:mb-0 [&:last-child>div:last-child]:mb-0 [&:last-child>div:last-child>p]:mb-0 border-b border-zinc-200 dark:border-zinc-800 [&:last-child]:border-transparent'>
-      <p className='mb-8'>
+      <p className='mb-8 sticky lg:top-[53px] bg-gradient-to-b from-white via-white/90  dark:from-black dark:via-black/90 to-transparent z-10 pb-3 pt-8 mt-[-32px]'>
         <span className='font-bold'>{title}</span>
         <br />
         {year}
@@ -29,7 +29,7 @@ const Card: React.FC<Props> = ({
         <Link href={link}>
           <Image
             alt={imageAlt}
-            className='hover:scale-105 transform transition-all duration-300'
+            className='hover:scale-105 transform transition-all duration-300 select-none'
             src={imageSrc}
             width={3840}
             height={3840}
