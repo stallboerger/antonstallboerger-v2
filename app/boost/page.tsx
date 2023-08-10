@@ -10,11 +10,11 @@ export default function BoostPage() {
   return (
     <>
       <section className="col-span-full md:col-span-12 lg:col-span-5 lg:top-[calc(53px_+_32px)] lg:self-start mb-20 lg:mb-0">
-        <div className=''>
+        <div className='sticky lg:top-[53px] pb-10 pt-8 mt-[-32px] bg-gradient-to-b from-white via-white/90  dark:from-black dark:via-black/90 to-transparent'>
           <h1 className=''>Boost</h1>
-          <p className='mb-10'>2023</p>
+          <p className=''>2023</p>
         </div>
-        <p className='mb-20'>
+        <p className='mb-20 mt-10'>
           Boost is a app and product that focuses on personalized nutrients. It solves the problem of having to take multiple supplements with varying doses, by providing users with their own personalized nutrient pack. Boost has a seamless onboarding process that collects information about the user&rsquo;s lifestyle, basic information, and real-time data to calculate the exact nutrients that the user needs.
         </p>
         <h2 className='text-base mb-4 font-bold'>Onboarding</h2>
