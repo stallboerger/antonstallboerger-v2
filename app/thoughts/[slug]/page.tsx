@@ -3,6 +3,8 @@ import { format, parseISO } from 'date-fns'
 import Image from 'next/image'
 import { Mdx } from 'components/mdx'
 
+import styles from '../../../styles/views/thought.module.scss'
+
 export const generateStaticParams = async () => allThoughts.map((thought) => ({ slug: thought._raw.flattenedPath }))
 
 export const generateMetadata = ({ params }: { params: { slug: string; } }) => {
@@ -21,15 +23,16 @@ const ThoughtLayout = ({ params }: { params: { slug: string } }) => {
                     alt={thought.title}
                     width="1920" 
                     height="305"
-                    className='mt-[-140px] mb-2 col-span-full w-[calc(100%_+_(2_*_1rem))] translate-x-[-1rem] lg:w-[calc(100%_+_(2_*_2rem))] lg:translate-x-[-2rem] max-w-none h-[70vh] object-cover' />
-                <header className='col-span-full md:col-span-12 lg:col-span-8'>
-                    <h1 className=''>{thought.title}</h1>
-                    <time dateTime={thought.date} className="text-zinc-500">
+                    className={styles.cover} />
+
+                <header className={styles.header}>
+                    <h1 className={styles.title}>{thought.title}</h1>
+                    <time className={styles.date} dateTime={thought.date}>
                         {format(parseISO(thought.date), 'eee · LLLL d, yyyy')}
                     </time>
                 </header>
 
-                <article className='col-span-full lg:col-start-9 lg:col-span-6'>
+                <article className={styles.content}>
                     <Mdx code={thought.body.code} />
                 </article>
             </>
