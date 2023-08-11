@@ -1,0 +1,43 @@
+.footer {
+    @apply mt-40 grid-cols-8 sm:grid-cols-16 grid gap-6 md:gap-8 px-4 md:px-8 mb-8 text-sm;
+
+    .links {
+        @apply grid grid-cols-8 gap-y-12 gap-6 col-span-full lg:col-span-8 row-start-2 lg:row-auto self-start border-t border-zinc-200 pt-6 md:pt-8 dark:border-zinc-800;
+
+        .connect,
+        .explore {
+            @apply flex flex-col gap-2;
+
+            .title { @apply mb-1; }
+
+            .list {
+                @apply gap-1;
+
+                .link { @apply self-start; }
+                .twitter { @apply hover:text-[#1D9BF0] #{!important}; }
+                .imessage { @apply hover:text-green-600 #{!important}; }
+                .readcv { @apply hover:text-[#F2A93C] #{!important}; }
+            }
+        }
+
+        .connect {
+            @apply col-span-2;
+        }
+
+        .explore {
+            @apply col-start-5 col-span-4 lg:col-span-4 lg:col-start-5;
+        }
+
+        .copyright {
+            @apply font-bold col-span-full md:col-span-4 lg:col-span-3;
+        }
+
+        .legals {
+            @apply flex flex-row gap-4 col-span-full md:col-span-4 lg:col-start-5 mt-[-40px] md:mt-0;
+        }
+    }
+
+    .clock {
+        @apply col-span-full lg:col-start-9 lg:col-span-8 row-start-1 lg:row-auto self-start flex flex-col justify-between lg:border-t pt-6 border-zinc-200 dark:border-zinc-800;
+    }
+}
