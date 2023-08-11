@@ -5,6 +5,8 @@ import { allThoughts } from 'contentlayer/generated';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import styles from '../../styles/views/thoughts.module.scss'
+
 export const metadata: Metadata = {
   title: 'Thoughts',
   description: 'Digital Product Designer and Developer.',

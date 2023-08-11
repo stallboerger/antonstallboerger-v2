@@ -1,0 +1,11 @@
+.header {
+    @apply col-span-full md:col-span-12 lg:col-span-5 lg:sticky lg:top-[calc(53px_+_32px)] lg:self-start mb-20 lg:mb-0;
+
+    .count {
+        @apply inline-block text-zinc-500 mb-8;
+    }
+}
+
+.projects {
+    @apply col-span-full lg:col-start-9 lg:col-span-8;
+}

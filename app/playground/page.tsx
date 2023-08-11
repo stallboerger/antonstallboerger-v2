@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Card from '@/components/card'
 
+import styles from '../../styles/views/playground.module.scss'
 export const metadata: Metadata = {
   title: 'Playground',
   description: 'Software Designer',

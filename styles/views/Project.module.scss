@@ -22,7 +22,9 @@
     @apply col-span-full lg:col-start-9 lg:col-span-6;
 
     figure {
-        @apply flex flex-col gap-2 mb-8;
+        @apply flex flex-col gap-2 mb-8 w-full;
+
+        img { @apply w-full; }
 
         figcaption {
             @apply text-zinc-500 text-sm;

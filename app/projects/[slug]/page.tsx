@@ -4,7 +4,7 @@ import { format, parseISO } from 'date-fns'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styles from '../../../styles/views/Project.module.scss';
+import styles from '../../../styles/views/project.module.scss';
 
 export const generateStaticParams = async () => allProjects.map((project: any) => ({ slug: project._raw.flattenedPath }))
 
