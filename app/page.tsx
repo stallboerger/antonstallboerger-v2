@@ -1,53 +1,13 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import Card from '@/components/card'
 
-interface Props {
-  title: string;
-  imageSrc: string;
-  imageAlt: string;
-  description: string;
-  year: string;
-  link: string;
-}
+import { allProjects } from 'contentlayer/generated'
+import { format, parseISO, compareDesc } from 'date-fns'
 
-const Card: React.FC<Props> = ({
-  title,
-  imageSrc,
-  imageAlt,
-  description,
-  year,
-  link,
-}) => {
-  return (
-    <div className='mb-24 [&:last-child]:mb-0 [&:last-child>div:last-child]:mb-0 [&:last-child>div:last-child>p]:mb-0 border-b border-zinc-200 dark:border-zinc-800 [&:last-child]:border-transparent'>
-      <p className='mb-6 sticky top-[53px] bg-white pb-2 z-10 pt-4 lg:pt-8 mt-[-32px]'>
-        <span className='font-bold'>{title}</span>
-        <br />
-        {year}
-      </p>
-      <div className='mb-8 dark:bg-zinc-900 bg-zinc-100'>
-        <Link href={link}>
-          <Image
-            alt={imageAlt}
-            className='hover:scale-105 transform transition-all duration-300 select-none'
-            src={imageSrc}
-            width={3840}
-            height={3840}
-            priority
-          />
-        </Link>
-      </div>
-      <div className='mb-8 grid grid-cols-8 gap-8'>
-        <p className='col-span-full sm:col-span-6'>
-          {description}
-        </p>
-        <Link href={link} className='group hover:underline text-zinc-500 col-span-full sm:col-span-2 sm:justify-self-end'>
-          Learn more
-        </Link>
-      </div>
-    </div>
-  );
-};
+const filteredProjects = allProjects.filter((project) => !project.playground)
+const projects = filteredProjects.sort((a, b) =>
+  compareDesc(new Date(a.year), new Date(b.year))
+)
 
 export default function Home() {
   return (
@@ -70,7 +30,17 @@ export default function Home() {
       </section>
 
       <section className='col-span-full lg:col-start-9 lg:col-span-8'>
-        <Card
+        {projects.map((project, idx) => (
+          <Card
+            title={project.title}
+            imageSrc={`/images/projects/${project.slug}/${project.image}`}
+            imageAlt={project.title}
+            description={project.description}
+            year={format(parseISO(project.year), 'yyyy')}
+            link={`/projects/${project.slug}`}
+            key={idx} />
+        ))}
+        {/* <Card
           title='Boost'
           imageSrc='/images/main/boost.png'
           imageAlt='Boost · Anton Stallbörger'
@@ -93,7 +63,7 @@ export default function Home() {
           description='A redesign concept of the UPS App for a faster and easier way to send and track your packages.'
           year='2022'
           link='/ups'
-        />
+        /> */}
       </section>
     </>
   )

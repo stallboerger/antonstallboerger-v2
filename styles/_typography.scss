@@ -1,0 +1,19 @@
+h1, h2 {
+    @apply font-semibold
+}
+  
+a {
+    @apply text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 underline-offset-2;
+}
+  
+p {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-after: 6;
+    -ms-hyphenate-limit-chars: 10 4 6;
+    hyphenate-limit-chars: 10 4 6;
+}
+p {
+    @apply max-w-none sm:max-w-[80%] lg:max-w-none;
+}

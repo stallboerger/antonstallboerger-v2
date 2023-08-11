@@ -1,9 +1,9 @@
 import { defineDocumentType, makeSource, defineNestedType} from "contentlayer/source-files";
 
-const Post = defineDocumentType(() => ({
-    name: 'Post',
-    filePathPattern: `**/*.md`,
-    contentType: 'markdown',
+const Thought = defineDocumentType(() => ({
+    name: 'Thought',
+    filePathPattern: `thoughts/*.mdx`,
+    contentType: 'mdx',
     fields: {
         title: {
             type: 'string',
@@ -20,12 +20,87 @@ const Post = defineDocumentType(() => ({
     computedFields: {
         slug: {
             type: "string",
-            resolve: (doc) => doc._raw.sourceFileName.replace(/\.md/, ""),
+            resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx/, ""),
         },
     }
 }))
 
+const Collaborator = defineNestedType(() => ({
+    name: 'Collaborator',
+    fields: {
+        name: {
+            type: 'string',
+            required: true
+        },
+        url: {
+            type: 'string',
+            required: true
+        },
+        avatar: {
+            type: 'string',
+            required: true
+        }
+    }
+}))
+
+const LiveLink = defineNestedType(() => ({
+    name: 'LiveLink',
+    fields: {
+        title: {
+            type: 'string',
+            required: true
+        },
+        url: {
+            type: 'string',
+            required: true
+        }
+    }
+}))
+
+const Project = defineDocumentType(() => ({
+    name: 'Project',
+    filePathPattern: `projects/*.mdx`,
+    contentType: 'mdx',
+    fields: {
+        title: {
+            type: 'string',
+            required: true
+        },
+        year: {
+            type: 'date',
+            required: true
+        },
+        image: {
+            type: 'string',
+            // required: true
+        },
+        description: {
+            type: 'string',
+            required: true
+        },
+        playground: {
+            type: 'boolean',
+            required: true,
+            default: false
+        },
+        links: {
+            type: 'list',
+            of: LiveLink
+        },
+        collaborators: {
+            type: 'list',
+            of: Collaborator
+        }
+    },
+    computedFields: {
+        slug: {
+            type: 'string',
+            resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx/, "")
+        }
+    }
+}))
+
 export default makeSource({
-    contentDirPath: 'posts',
-    documentTypes: [Post],
+    contentDirPath: './content',
+    documentTypes: [Thought, Project]
 })
