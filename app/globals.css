@@ -60,13 +60,9 @@ article blockquote em {
 }
 
 a time {
-  display: block;
-  opacity: 0;
-  transform: translate(0, 2px);
-  transition: 300ms ease;
+  @apply block md:opacity-0 md:translate-y-[2px] md:duration-300 md:ease-in-out;
 }
 
 a:hover time {
-  transform: translate(0);
- opacity: 1;
+  @apply md:translate-y-0 md:opacity-100;
 }
