@@ -1,9 +1,5 @@
 .header {
     @apply col-span-full md:col-span-12 lg:col-span-4;
-
-    .year {
-        @apply inline-block text-zinc-500 mb-8;
-    }
 }
 
 .meta {
