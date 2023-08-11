@@ -34,3 +34,39 @@ p {
   -ms-hyphenate-limit-chars: 10 4 6;
   hyphenate-limit-chars: 10 4 6;
 }
+
+article p {
+  @apply font-serif dark:tracking-wide;
+}
+
+article p + p {
+  @apply indent-16;
+}
+
+article blockquote {
+  @apply border-l-2 border-l-zinc-200 pl-4 mb-8;
+}
+
+article blockquote p {
+  @apply indent-0;
+}
+
+article blockquote em {
+  @apply block mt-2;
+}
+
+.thought:first-of-type {
+  @apply col-span-8;
+}
+
+a time {
+  display: block;
+  opacity: 0;
+  transform: translate(0, 2px);
+  transition: 300ms ease;
+}
+
+a:hover time {
+  transform: translate(0);
+ opacity: 1;
+}

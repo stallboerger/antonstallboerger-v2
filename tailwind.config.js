@@ -15,7 +15,8 @@ module.exports = {
         'spin-slow': 'spin 3s linear infinite',
       },
       fontFamily: {
-        sans: ['Space-Grotesk', 'sans-serif'],
+        sans: ['soehne', 'sans-serif'],
+        serif: ['Bradford Trial', 'serif']
       },
     },
   },

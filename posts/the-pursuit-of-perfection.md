@@ -1,0 +1,13 @@
+---
+title: The Pursuit of Perfection
+date: 2023-04-28
+image: norm.png
+---
+
+> “[Human beings are] an entity in a universe and [they are] striving to find order in [themselves] in relation to that universe we desire a perfect understanding-a perfect balance-a full rightness in life.” *Ray Eames*
+                    
+Ray Eames’ quote is a powerful reminder of our innate desire for order, balance, and understanding in our lives. As human beings, we exist within a vast and complex universe, and we are constantly striving to find our place and purpose within it. We seek to understand the world around us and our relationship with it, as to create a sense of order and balance in our own lives.
+
+However, the pursuit of perfection and full rightness in life is a journey that is fraught with challenges and obstacles. Life is unpredictable and constantly changing, and our quest for perfection can often lead to disappointment and frustration. It is important to recognize that the pursuit of perfection is not about achieving a static state of being, but rather about embracing the process of growth and evolution.
+
+Ultimately, the search for order, balance, and understanding is a deeply personal and subjective journey. Each individual must find their own path and their own sense of meaning in life. However, by embracing the journey and striving towards our own personal ideals of perfection, we can find a sense of purpose and fulfillment in our lives, even in the midst of the chaos and uncertainty of the universe. Eames’ quote reminds us that while the pursuit of perfection may be challenging, it is a journey that is worth taking.

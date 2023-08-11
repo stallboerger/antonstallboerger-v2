@@ -1,4 +1,8 @@
+import { format, parseISO } from 'date-fns'
 import type { Metadata } from 'next';
+import { compareDesc } from 'date-fns';
+import { allPosts } from 'contentlayer/generated';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -6,18 +10,30 @@ export const metadata: Metadata = {
   description: 'Digital Product Designer and Developer.',
 };
 
+const posts = allPosts.sort((a, b) =>
+  compareDesc(new Date(a.date), new Date(b.date))
+);
+
 export default function ThoughtsPage() {
   return (
-    <section>
-      <h1 className="mb-10">Thoughts</h1>
-      <Image 
-        src='/images/boost/mockup.png'
-        alt='Boost Mockup · Anton Stallbörger'
-        width={3840}
-        height={2560}
-        className='w-full h-auto bg-zinc-100 dark:bg-zinc-900 mb-20'
-        priority
-      />
-    </section>
+    <>
+      <section className='col-span-full md:col-span-12 lg:col-span-8'>
+        <h1>Thoughts</h1>
+        <p className='text-zinc-500'>{allPosts.length} articles</p>
+      </section>
+      
+      {/* <section className='col-span-full md:col-span-14 lg:col-span-12'> */}
+        {posts.map((post, idx) => (
+          <Link id={post.slug} className='thought col-span-full md:col-span-4 text-black self-end' href={{ pathname: `/thoughts/${post.slug}` }}>
+            <Image 
+              src={`/images/thoughts/${post.image}`}
+              width="593" 
+              height="305"
+              className='mb-2 w-full' />
+            {post.title} <time className='text-zinc-500'>{format(parseISO(post.date), 'LLLL d, yyyy')}</time>
+          </Link>
+        ))}
+      {/* </section> */}
+    </>
   );
 }
