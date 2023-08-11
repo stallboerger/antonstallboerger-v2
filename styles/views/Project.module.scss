@@ -1,0 +1,41 @@
+.header {
+    @apply col-span-full md:col-span-12 lg:col-span-4;
+
+    .year {
+        @apply inline-block text-zinc-500 mb-8;
+    }
+
+    .collaborators {
+        @apply flex flex-col gap-2 mt-4;
+
+        .collaborator {
+            @apply flex gap-2;
+
+            .avatar {
+                @apply w-6 h-6 rounded-full;
+            }
+        }
+    }
+}
+
+.content {
+    @apply col-span-full lg:col-start-9 lg:col-span-6;
+
+    figure {
+        @apply flex flex-col gap-2 mb-8;
+
+        figcaption {
+            @apply text-zinc-500 text-sm;
+        }
+    }
+
+    h2 {
+        @apply mb-1;
+    }
+
+    p {
+        & + * { @apply mt-8; }
+        & + p { @apply mt-4; }
+        & + h2 { @apply mt-16; }
+    }
+}

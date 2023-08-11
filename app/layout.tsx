@@ -1,14 +1,9 @@
-import './globals.css'
+import '/styles/base.scss'
 import Soehne from 'next/font/local'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-
-// const spaceGrotesk = Space_Grotesk({
-//   src: '../public/font/SpaceGrotesk-Variable.woff2',
-//   display: 'swap',
-// });
 
 const soehne = Soehne({
   src: [

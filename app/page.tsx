@@ -1,6 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { allProjects } from 'contentlayer/generated'
+import { format, parseISO, compareDesc } from 'date-fns'
+
+const filteredProjects = allProjects.filter((project) => !project.playground)
+const projects = filteredProjects.sort((a, b) =>
+  compareDesc(new Date(a.date), new Date(b.date))
+)
+
 interface Props {
   title: string;
   imageSrc: string;
@@ -70,7 +78,17 @@ export default function Home() {
       </section>
 
       <section className='col-span-full lg:col-start-9 lg:col-span-8'>
-        <Card
+        {projects.map((project, idx) => (
+          <Card
+            title={project.title}
+            imageSrc={`/images/projects/${project.slug}/${project.image}`}
+            imageAlt={project.title}
+            description={project.description}
+            year={format(parseISO(project.year), 'yyyy')}
+            link={`/projects/${project.slug}`}
+            key={idx} />
+        ))}
+        {/* <Card
           title='Boost'
           imageSrc='/images/main/boost.png'
           imageAlt='Boost · Anton Stallbörger'
@@ -93,7 +111,7 @@ export default function Home() {
           description='A redesign concept of the UPS App for a faster and easier way to send and track your packages.'
           year='2022'
           link='/ups'
-        />
+        /> */}
       </section>
     </>
   )

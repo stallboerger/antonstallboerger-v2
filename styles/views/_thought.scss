@@ -1,0 +1,19 @@
+article p {
+    @apply font-serif dark:tracking-wide;
+}
+  
+article p + p {
+    @apply indent-16;
+}
+  
+article blockquote {
+    @apply border-l-2 border-l-zinc-200 pl-4 mb-8;
+}
+  
+article blockquote p {
+    @apply indent-0;
+}
+  
+article blockquote em {
+    @apply block mt-2;
+}

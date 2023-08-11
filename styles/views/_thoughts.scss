@@ -1,0 +1,13 @@
+.thought {
+    &:first-of-type { @apply col-span-8; }
+
+    time {
+        @apply block md:opacity-0 md:translate-y-[2px] md:duration-300 md:ease-in-out;
+    }
+      
+    &:hover {
+        time {
+            @apply md:translate-y-0 md:opacity-100;
+        }
+    }
+}

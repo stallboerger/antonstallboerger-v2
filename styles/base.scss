@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'normalize';
+@import 'typography';
+
+@import 'views/thoughts';
+@import 'views/thought';
+@import 'views/project';

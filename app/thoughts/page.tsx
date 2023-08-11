@@ -1,7 +1,7 @@
 import { format, parseISO } from 'date-fns'
 import type { Metadata } from 'next';
 import { compareDesc } from 'date-fns';
-import { allPosts } from 'contentlayer/generated';
+import { allThoughts } from 'contentlayer/generated';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'Digital Product Designer and Developer.',
 };
 
-const posts = allPosts.sort((a, b) =>
+const posts = allThoughts.sort((a, b) =>
   compareDesc(new Date(a.date), new Date(b.date))
 );
 
@@ -19,7 +19,7 @@ export default function ThoughtsPage() {
     <>
       <section className='col-span-full md:col-span-12 lg:col-span-8'>
         <h1>Thoughts</h1>
-        <p className='text-zinc-500'>{allPosts.length} articles</p>
+        <p className='text-zinc-500'>{allThoughts.length} articles</p>
       </section>
       
       {/* <section className='col-span-full md:col-span-14 lg:col-span-12'> */}
