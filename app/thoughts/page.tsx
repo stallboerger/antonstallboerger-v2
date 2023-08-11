@@ -24,7 +24,7 @@ export default function ThoughtsPage() {
       
       {/* <section className='col-span-full md:col-span-14 lg:col-span-12'> */}
         {posts.map((post, idx) => (
-          <Link id={post.slug} className='thought col-span-full md:col-span-4 text-black self-end' href={{ pathname: `/thoughts/${post.slug}` }}>
+          <Link id={post.slug} key={idx} className='thought col-span-full md:col-span-4 text-black self-end' href={{ pathname: `/thoughts/${post.slug}` }}>
             <Image 
               src={`/images/thoughts/${post.image}`}
               alt={post.title}
