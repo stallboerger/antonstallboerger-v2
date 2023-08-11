@@ -6,7 +6,7 @@ import { format, parseISO, compareDesc } from 'date-fns'
 
 const filteredProjects = allProjects.filter((project) => !project.playground)
 const projects = filteredProjects.sort((a, b) =>
-  compareDesc(new Date(a.date), new Date(b.date))
+  compareDesc(new Date(a.year), new Date(b.year))
 )
 
 interface Props {
