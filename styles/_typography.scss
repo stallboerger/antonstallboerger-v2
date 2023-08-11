@@ -14,3 +14,6 @@ p {
     -ms-hyphenate-limit-chars: 10 4 6;
     hyphenate-limit-chars: 10 4 6;
 }
+p {
+    @apply max-w-none sm:max-w-[80%] lg:max-w-none;
+}
