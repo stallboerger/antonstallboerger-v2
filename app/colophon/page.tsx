@@ -11,9 +11,9 @@ export default function ColophonPage() {
     <>
         <section className='col-span-full lg:col-span-8 md:col-span-12 lg:top-[calc(53px_+_32px)] lg:self-start'>
             <h1 className=''>Colophon</h1>
-            <p className='mb-20'>Last updated Jul 13, 2023</p>
+            <p className='mb-20'>Last updated Aug 11, 2023</p>
         </section>
-        <section className='col-span-6'>
+        <section className='lg:col-span-6'>
             <h2 className='mb-4 text-base'>Typography</h2>
             <p className='mb-20 leading-relaxed'>
                 <a href='https://klim.co.nz/retail-fonts/soehne/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Söhne</a> is a typeface designed and published by the <a href='https://klim.co.nz/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Klim Type Foundry</a>. It is the memory of Akzidenz-Grotesk framed through the reality of Helvetica. Söhne captures the analogue materiality of “Standard Medium” used in Unimark&rsquo;s legendary wayfinding system for the NYC Subway.
