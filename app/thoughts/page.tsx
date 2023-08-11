@@ -27,6 +27,7 @@ export default function ThoughtsPage() {
           <Link id={post.slug} className='thought col-span-full md:col-span-4 text-black self-end' href={{ pathname: `/thoughts/${post.slug}` }}>
             <Image 
               src={`/images/thoughts/${post.image}`}
+              alt={post.title}
               width="593" 
               height="305"
               className='mb-2 w-full' />
