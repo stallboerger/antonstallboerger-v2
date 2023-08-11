@@ -1,0 +1,25 @@
+.navbar {
+    @apply fixed grid-cols-16 grid gap-4 md:gap-8 justify-between items-center w-full h-[53px] z-50 px-4 lg:px-8 border-b border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black select-none;
+
+    .home {
+        @apply col-span-3;
+    }
+
+    .link {
+        @apply hover:underline;
+
+        &.active {
+            @apply text-black dark:text-white;
+        }
+    }
+
+    .pages {
+        @apply flex gap-3 md:gap-6 md:col-span-5 col-start-[16] justify-self-end md:justify-self-start md:col-start-9;
+    }
+
+    .logo {
+        @apply h-4 w-4 self-center dark:invert col-start-[16] justify-self-end hidden md:block;
+
+        &:hover { @apply animate-spin-slow; }
+    }
+}
