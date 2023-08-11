@@ -2,6 +2,10 @@ h1, h2 {
     @apply font-semibold
 }
   
+h2 {
+    @apply mb-4;
+}
+
 a {
     @apply text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 underline-offset-2;
 }
@@ -14,6 +18,18 @@ p {
     -ms-hyphenate-limit-chars: 10 4 6;
     hyphenate-limit-chars: 10 4 6;
 }
+
 p {
     @apply max-w-none sm:max-w-[80%] lg:max-w-none;
+
+    & + ul, 
+    & + p { @apply mt-2; }
+    & + h2 { @apply mt-20; }
+}
+
+ul {
+    @apply flex flex-col gap-2;
+
+    & + p { @apply mt-2; }
+    & + h2 { @apply mt-20; }
 }

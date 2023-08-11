@@ -39,10 +39,6 @@
         }
     }
 
-    h2 {
-        @apply mb-1;
-    }
-
     p {
         & + * { @apply mt-8; }
         & + p { @apply mt-4; }
