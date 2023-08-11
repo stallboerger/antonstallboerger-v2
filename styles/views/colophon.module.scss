@@ -1,0 +1,7 @@
+.header {
+    @apply col-span-full lg:col-span-8 md:col-span-12 lg:top-[calc(53px_+_32px)] lg:self-start mb-20;
+}
+
+.content {
+    @apply lg:col-span-6 col-span-full;
+}
