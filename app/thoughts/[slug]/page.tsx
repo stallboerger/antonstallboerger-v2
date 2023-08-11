@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
-type Params = {
-    slug: string;
-}
+// type Params = {
+//     slug: string;
+// }
 
-export const generateMetadata = (params: Params) => {
-    const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
-    return { title: post?.title }
-}
+// export const generateMetadata = (params: Params) => {
+//     const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
+//     return { title: post?.title }
+// }
 
 const PostLayout = ({ params }: { params: { slug: string } }) => {
     const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
