@@ -20,7 +20,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
                     alt={post.title}
                     width="1920" 
                     height="305"
-                    className='mt-[-140px] mb-2 col-span-full w-[calc(100%_+_(2_*_2rem))] translate-x-[-2rem] max-w-none h-[70vh] object-cover' />
+                    className='mt-[-140px] mb-2 col-span-full w-[calc(100%_+_(2_*_1rem))] translate-x-[-1rem] lg:w-[calc(100%_+_(2_*_2rem))] lg:translate-x-[-2rem] max-w-none h-[70vh] object-cover' />
                 <header className='col-span-full md:col-span-12 lg:col-span-8'>
                     <h1 className=''>{post?.title}</h1>
                     <time dateTime={post?.date} className="text-zinc-500">
