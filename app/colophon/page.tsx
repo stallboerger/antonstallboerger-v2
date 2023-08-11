@@ -18,7 +18,7 @@ export default function ColophonPage() {
       </p>
       <h2 className='mb-4 text-base'>Tech stack</h2>
       <p className='mb-6 leading-relaxed'>
-          Built with <a href='https://nextjs.org/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Next.js</a>and <a href='https://tailwindcss.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Tailwind CSS</a>. Hosted on <a href='https://vercel.com/home' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel</a>. Privacy friendly analytics with <a href='https://vercel.com/analytics' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel Analytics</a>.
+          Built with <a href='https://nextjs.org/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Next.js</a> and <a href='https://tailwindcss.com/' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Tailwind CSS</a>. Hosted on <a href='https://vercel.com/home' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel</a>. Privacy friendly analytics with <a href='https://vercel.com/analytics' className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">Vercel Analytics</a>.
       </p>    
       <a href="https://github.com/antonstallboerger/antonstallboerger-v2" className='text-zinc-500 w-fit hover:underline' target="_blank" rel="noreferrer">GitHub Repository</a>
       
@@ -73,14 +73,6 @@ export default function ColophonPage() {
               rel="noreferrer"
           >
               Goods
-          </a>
-          <a 
-              href="https://benjitaylor.info/" 
-              className='text-zinc-500 w-fit hover:underline' 
-              target="_blank" 
-              rel="noreferrer"
-          >
-              Benji Taylor
           </a>
           <a 
               href="https://ollyevans.xyz/" 
