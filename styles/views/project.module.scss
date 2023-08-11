@@ -1,9 +1,13 @@
 .header {
-    @apply col-span-full md:col-span-12 lg:col-span-4;
+    @apply col-span-full md:col-span-12 lg:col-span-4 mb-8;
+
+    .description {
+        @apply mt-4;
+    }
 }
 
 .meta {
-    @apply col-span-full md:col-span-8 lg:col-span-4;
+    @apply col-span-full md:col-span-8 lg:col-span-4 mb-20;
 
     .links {
         @apply mb-8;
