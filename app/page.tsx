@@ -20,7 +20,7 @@ const Card: React.FC<Props> = ({
 }) => {
   return (
     <div className='mb-24 [&:last-child]:mb-0 [&:last-child>div:last-child]:mb-0 [&:last-child>div:last-child>p]:mb-0 border-b border-zinc-200 dark:border-zinc-800 [&:last-child]:border-transparent'>
-      <p className='mb-6 sticky top-[53px] bg-white pb-2 z-10 pt-8 mt-[-32px]'>
+      <p className='mb-6 sticky top-[53px] bg-white pb-2 z-10 pt-4 lg:pt-8 mt-[-32px]'>
         <span className='font-bold'>{title}</span>
         <br />
         {year}
