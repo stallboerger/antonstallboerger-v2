@@ -46,7 +46,7 @@ export default function Footer() {
                         Read.cv
                     </a>
                 </div>
-                <div className="flex flex-col col-span-5 lg:col-span-4 col-start-3 lg:col-start-4 gap-2">
+                <div className="flex flex-col col-span-4 lg:col-span-4 col-start-5 lg:col-start-4 gap-2">
                     <p className="text-sm font-bold text-zinc-900 dark:text-zinc-200">
                         Explore
                     </p>
