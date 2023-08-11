@@ -2,7 +2,7 @@ import * as React from 'react'
 import NextImage from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
-function Image(props) {
+function Image(props: any) {
     return <NextImage alt={props.alt} {...props} />;
 }
 
