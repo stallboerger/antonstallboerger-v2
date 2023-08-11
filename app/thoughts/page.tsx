@@ -19,7 +19,7 @@ export default function ThoughtsPage() {
     <>
       <section className='col-span-full md:col-span-12 lg:col-span-8'>
         <h1>Thoughts</h1>
-        <p className='text-zinc-500'>{allPosts.length} articles</p>
+        <p className=''>{allPosts.length} articles</p>
       </section>
       
       {/* <section className='col-span-full md:col-span-14 lg:col-span-12'> */}
