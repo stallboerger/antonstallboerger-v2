@@ -34,6 +34,7 @@ export default function Playground() {
 					description={project.description}
 					year={format(parseISO(project.year), 'yyyy')}
 					link={`/projects/${project.slug}`}
+					key={idx}
 				/>
 			))}
       </section>
