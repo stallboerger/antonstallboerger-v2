@@ -5,10 +5,7 @@ import Image from 'next/image'
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
 type Params = {
-    title: string;
     slug: string;
-    date: Date;
-    image: string;
 }
 
 export const generateMetadata = (params: Params) => {
