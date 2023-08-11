@@ -15,7 +15,7 @@ export default function Navbar() {
             <Link href='/' className={currentRoute === "/" ? activeLinkStyle : defaultLinkStyle}>
                 Home
             </Link>
-            <div className='gap-6 flex col-span-5 col-start-9'>
+            <div className='gap-3 md:gap-6 flex md:col-span-5 col-start-[16] justify-self-end md:col-start-9'>
                 <Link href='/about' className={currentRoute === "/about" ? activeLinkStyle : defaultLinkStyle}>
                     About
                 </Link>
@@ -28,7 +28,7 @@ export default function Navbar() {
             </div>
             <Image 
                 alt='Logo · Anton Stallbörger'
-                className='hover:animate-spin-slow h-4 w-4 self-center dark:invert col-start-[16] justify-self-end'
+                className='hover:animate-spin-slow h-4 w-4 self-center dark:invert col-start-[16] justify-self-end hidden mb:visible'
                 src='/logo.svg'
                 width={24}
                 height={24}
