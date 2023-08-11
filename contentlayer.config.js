@@ -43,6 +43,20 @@ const Collaborator = defineNestedType(() => ({
     }
 }))
 
+const LiveLink = defineNestedType(() => ({
+    name: 'LiveLink',
+    fields: {
+        title: {
+            type: 'string',
+            required: true
+        },
+        url: {
+            type: 'string',
+            required: true
+        }
+    }
+}))
+
 const Project = defineDocumentType(() => ({
     name: 'Project',
     filePathPattern: `projects/*.mdx`,
@@ -69,8 +83,9 @@ const Project = defineDocumentType(() => ({
             required: true,
             default: false
         },
-        url: {
-            type: 'string',
+        links: {
+            type: 'list',
+            of: LiveLink
         },
         collaborators: {
             type: 'list',

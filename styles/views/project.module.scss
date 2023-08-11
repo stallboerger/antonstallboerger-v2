@@ -4,9 +4,21 @@
     .year {
         @apply inline-block text-zinc-500 mb-8;
     }
+}
+
+.meta {
+    @apply col-span-full md:col-span-8 lg:col-span-4;
+
+    .links {
+        @apply mb-8;
+
+        .url {
+            @apply block;
+        }
+    }
 
     .collaborators {
-        @apply flex flex-col gap-2 mt-4 mb-8;
+        @apply flex flex-col gap-2 mt-2;
 
         .collaborator {
             @apply flex gap-2;
@@ -22,7 +34,7 @@
     @apply col-span-full lg:col-start-9 lg:col-span-6;
 
     figure {
-        @apply flex flex-col gap-2 mb-8 w-full;
+        @apply flex flex-col gap-2 mb-16 w-full;
 
         img { @apply w-full; }
 

@@ -25,28 +25,45 @@ export default async function ProjectLayout({ params }: { params: { slug: string
                         {format(parseISO(project.year), 'yyyy')}
                     </time>
                     <p className={styles.description}>{project?.description}</p>
+                </header>
 
-                    <div className={styles.collaborators}>
-                        {project.collaborators?.map((collaborator, idx) => (
-                            <Link 
+                <aside className={styles.meta}>
+                    {project.links && 
+                        <div className={styles.links}>
+                            <h2>Visit live</h2>
+                            {project.links.map((url, idx) => (
+                                <Link
+                                    href={url.url}
+                                    target='_blank'
+                                    className={styles.url}
+                                    key={idx}>{url.title}</Link>
+                            ))}
+                        </div>
+                    }
+
+                    {project.collaborators && 
+                    <>
+                        <h2>Collaborators</h2>
+                        <div className={styles.collaborators}>
+                            {project.collaborators?.map((collaborator, idx) => (
+                                <Link 
                                 href={collaborator.url}
                                 target="_blank"
                                 className={styles.collaborator}
                                 key={idx}
-                            >
-                                <Image 
-                                    src={collaborator.avatar} 
-                                    alt={collaborator.name}
-                                    width={240}
-                                    height={240}
-                                    className={styles.avatar} />
-                                {collaborator.name}
-                            </Link>
-                        ))}
-                    </div>
-
-                    {project.url && <Link href={project.url} target='_blank'>Visit {project.title}</Link>}
-                </header>
+                                >
+                                    <Image 
+                                        src={collaborator.avatar} 
+                                        alt={collaborator.name}
+                                        width={240}
+                                        height={240}
+                                        className={styles.avatar} />
+                                    {collaborator.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </>}
+                </aside>
 
                 <section className={styles.content}>
                     <Mdx code={project.body.code} />
