@@ -12,13 +12,26 @@
 html {
 	height: 100%;
 
-	&.is-changing .transition-fade {
-		transition: opacity 0.25s;
+	.transition-fade {
+		transition: opacity 0.5s, transform 0.25s 0s;
 		opacity: 1;
+		transform: translate(0, 0);
+	}
+
+	&.is-changing .transition-fade {
 	}
 	
-	&.is-animating .transition-fade {
-  		opacity: 0;
+	// &.is-animating .transition-fade {
+  	// 	opacity: 0;
+	// 	// transform: translate(0, 64px);
+	// }
+	
+	&.is-leaving .transition-fade {
+		opacity: 0;
+	}
+
+	&.is-rendering .transition-fade {
+		transform: translate(0, 64px);
 	}
 }
   

@@ -10,6 +10,7 @@ import Footer from '../components/footer'
 
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
+import SwupSlideTheme from '@swup/slide-theme'
 
 const soehne = Soehne({
   src: [
@@ -90,7 +91,13 @@ export default function RootLayout({
 }) {
 	useEffect(() => {
 		const swup = new Swup({
-			plugins: [new SwupHeadPlugin({ persistAssets: true, awaitAssets: true })]
+			plugins: [
+				new SwupHeadPlugin({ 
+					persistAssets: true, 
+					awaitAssets: true 
+				}),
+				// new SwupSlideTheme()
+			]
 		});
 	})
 
