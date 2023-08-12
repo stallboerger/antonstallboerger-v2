@@ -109,7 +109,7 @@ export default function AboutPage() {
 
 			{experiences.map((experience, key) => (
 				<div className={styles.position} key={key}>
-					<div className={styles.header}>
+					<div className={styles.meta}>
 						<h3 className={styles.title}>
 							{
 								experience.url

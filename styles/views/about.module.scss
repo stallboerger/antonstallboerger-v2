@@ -43,21 +43,25 @@
          @apply border-b border-zinc-200 dark:border-zinc-800 pb-12 md:pb-20;
       }
 
-      .title {
-         @apply col-span-4 font-semibold;
+      .meta {
+         @apply col-span-full;
 
-         .company,
-         .role {
-            @apply block;
+         .title {
+            @apply col-span-4 font-semibold;
+            
+            .company,
+            .role {
+               @apply block;
+            }
+            
+            .company {
+               @apply font-semibold;
+            }
          }
          
-         .company {
-            @apply font-semibold;
+         .timeframe {
+            @apply block;
          }
-      }
-
-      .timeframe {
-         @apply block;
       }
 
       .description {
