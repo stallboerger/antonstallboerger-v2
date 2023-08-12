@@ -12,7 +12,7 @@
 
 .like,
 .dislike {
-   @apply col-span-full md:col-span-8 lg:col-span-4 border-t border-t-zinc-200 dark:border-t-zinc-800 pt-8;
+   @apply col-span-4 sm:col-span-8 lg:col-span-4 border-t border-t-zinc-200 dark:border-t-zinc-800 pt-8;
 }
 
 .like {
@@ -20,11 +20,11 @@
 }
 
 .experience {
-   @apply col-span-full md:col-span-12 md:col-start-5 border-t border-t-zinc-200 dark:border-t-zinc-800 pt-8 mt-20
-   grid grid-cols-12 gap-4 gap-y-8;
+   @apply col-span-full lg:col-span-12 lg:col-start-5 border-t border-t-zinc-200 dark:border-t-zinc-800 pt-8 mt-20
+   grid grid-cols-16 lg:grid-cols-12 gap-4 md:gap-8 md:gap-y-8;
 
    .title {
-      @apply col-span-4;
+      @apply col-span-8 lg:col-span-4;
 
       .link {
          @apply text-zinc-900 dark:text-zinc-200 hover:text-zinc-500;
@@ -32,11 +32,11 @@
    }
 
    .position {
-      @apply col-span-8 col-start-5
+      @apply col-span-full md:col-span-8 md:col-start-9 lg:col-start-5
       grid grid-cols-8 gap-4;
 
       &:not(:last-child) {
-         @apply border-b border-zinc-200 dark:border-zinc-800 pb-20;
+         @apply border-b border-zinc-200 dark:border-zinc-800 pb-12 md:pb-20;
       }
 
       .title {
@@ -57,7 +57,7 @@
       }
 
       .description {
-         @apply mt-4 col-span-5;
+         @apply mt-4 col-span-full lg:col-span-5 max-w-none;
       }
    }
 }
