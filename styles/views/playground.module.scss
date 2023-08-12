@@ -4,6 +4,10 @@
     .count {
         @apply inline-block mb-8;
     }
+
+    .intro {
+        @apply mt-0;
+    }
 }
 
 .projects {
