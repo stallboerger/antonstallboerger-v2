@@ -4,6 +4,10 @@
 
 .header {
     @apply col-span-full md:col-span-12 lg:col-span-8 mb-24;
+
+    .credits {
+        @apply mt-4;
+    }
 }
 
 .content {

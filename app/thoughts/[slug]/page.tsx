@@ -30,6 +30,10 @@ const ThoughtLayout = ({ params }: { params: { slug: string } }) => {
                     <time className={styles.date} dateTime={thought.date}>
                         {format(parseISO(thought.date), 'eee · LLLL d, yyyy')}
                     </time>
+
+                    {thought.credits && <>
+                        <p className={styles.credits}>Image credits <a href={thought.credits.url || ''} target="_blank">{thought.credits.name}</a></p>
+                    </>}
                 </header>
 
                 <article className={styles.content}>
