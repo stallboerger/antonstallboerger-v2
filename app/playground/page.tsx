@@ -23,6 +23,7 @@ export default function Playground() {
 		<header className={styles.header}>
 			<h1 className={styles.title}>Playground</h1>
 			<p className={styles.count}>{projects.length} concepts</p>
+			<p>Besides my main projects, I explore different areas of interest in my free time. This is the best way to discover useful solutions, train my eyes for details, and develop more specific insights in certain topics.</p>
 		</header>
 
 		<section className={styles.projects}>
