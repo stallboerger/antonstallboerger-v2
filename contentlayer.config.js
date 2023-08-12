@@ -1,5 +1,17 @@
 import { defineDocumentType, makeSource, defineNestedType} from "contentlayer/source-files";
 
+const Credits = defineNestedType(() => ({
+    name: 'Credits',
+    fields: {
+        name: {
+            type: 'string',
+        },
+        url: {
+            type: 'string',
+        }
+    }
+}))
+
 const Thought = defineDocumentType(() => ({
     name: 'Thought',
     filePathPattern: `thoughts/*.mdx`,
@@ -15,6 +27,10 @@ const Thought = defineDocumentType(() => ({
         },
         image: {
             type: 'string'
+        },
+        credits: {
+            type: 'nested',
+            of: Credits
         },
     },
     computedFields: {
