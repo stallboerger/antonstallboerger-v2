@@ -12,6 +12,10 @@
     .links {
         @apply mb-8;
 
+        .title {
+            @apply mb-0;
+        }
+
         .url {
             @apply block;
         }
@@ -19,6 +23,10 @@
 
     .collaborators {
         @apply flex flex-col gap-2 mt-2;
+
+        .title {
+            @apply mb-1;
+        }
 
         .collaborator {
             @apply flex gap-2;

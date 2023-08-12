@@ -30,7 +30,7 @@ export default async function ProjectLayout({ params }: { params: { slug: string
                 <aside className={styles.meta}>
                     {project.links && 
                         <div className={styles.links}>
-                            <h2>Visit live</h2>
+                            <h2 className={styles.title}>Visit live</h2>
                             {project.links.map((url, idx) => (
                                 <Link
                                     href={url.url}
@@ -43,8 +43,8 @@ export default async function ProjectLayout({ params }: { params: { slug: string
 
                     {project.collaborators && 
                     <>
-                        <h2>Collaborators</h2>
                         <div className={styles.collaborators}>
+                            <h2 className={styles.title}>Collaborators</h2>
                             {project.collaborators?.map((collaborator, idx) => (
                                 <Link 
                                 href={collaborator.url}
