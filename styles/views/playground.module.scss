@@ -1,8 +1,8 @@
 .header {
-    @apply col-span-full md:col-span-12 lg:col-span-5 lg:sticky lg:top-[calc(53px_+_32px)] lg:self-start mb-24 lg:mb-0;
+    @apply col-span-full md:col-span-12 lg:col-span-4 mb-24 lg:mb-0;
 
     .count {
-        @apply inline-block;
+        @apply inline-block mb-8;
     }
 }
 
