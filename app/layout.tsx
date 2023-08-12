@@ -10,7 +10,6 @@ import Footer from '../components/footer'
 
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
-import SwupSlideTheme from '@swup/slide-theme'
 
 const soehne = Soehne({
   src: [
