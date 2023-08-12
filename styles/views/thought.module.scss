@@ -16,7 +16,7 @@
     }
 
     blockquote {
-        @apply border-l-2 border-l-zinc-200 pl-4 mb-8;
+        @apply border-l-2 border-l-zinc-200 dark:border-l-zinc-800 pl-4 mb-8;
 
         p { @apply indent-0; }
         em { @apply block mt-2; }
