@@ -90,7 +90,7 @@ export default function AboutPage() {
 			<h2>Things I like</h2>
 			<ul>
 				<li>Quality goods</li>
-				<li>Black</li>
+				<li>The color black</li>
 				<li>Melodic House</li>
 				<li>Good food</li>
 			</ul>
@@ -101,6 +101,7 @@ export default function AboutPage() {
 				<li>Waiting for food</li>
 				<li>Smalltalk</li>
 				<li>Sparkling water</li>
+				<li>Alcohol</li>
 			</ul>
 		</section>
 
