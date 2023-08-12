@@ -3,7 +3,7 @@
 }
 
 .thought {
-    @apply col-span-full sm:col-span-8 md:col-span-4 text-black dark:text-white;
+    @apply col-span-full sm:col-span-8 md:col-span-4 text-black dark:text-white mb-6 md:mb-0;
 
     &:first-of-type { @apply md:col-span-8; }
 
