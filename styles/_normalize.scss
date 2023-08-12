@@ -4,6 +4,10 @@
       --background-rgb: 0, 0, 0;
     }
 }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
   
 html {
     height: 100%;
