@@ -10,9 +10,9 @@
     @apply col-span-full lg:col-start-9 lg:col-span-6;
 
     p {
-        @apply font-serif dark:tracking-wide;
+        // @apply font-serif dark:tracking-wide;
 
-        & + p { @apply indent-16; }
+        & + p { @apply indent-16 mt-0; }
     }
 
     blockquote {
