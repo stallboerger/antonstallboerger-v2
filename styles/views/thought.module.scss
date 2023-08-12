@@ -1,5 +1,5 @@
 .cover {
-    @apply mt-[-140px] mb-2 col-span-full w-[calc(100%_+_(2_*_1rem))] translate-x-[-1rem] lg:w-[calc(100%_+_(2_*_2rem))] lg:translate-x-[-2rem] max-w-none h-[70vh] object-cover;
+    @apply mt-[calc(-140px_+_53px)] lg:mt-[-140px] mb-2 col-span-full w-[calc(100%_+_(2_*_1rem))] translate-x-[-1rem] lg:w-[calc(100%_+_(2_*_2rem))] lg:translate-x-[-2rem] max-w-none h-[unset] lg:h-[70vh] object-cover;
 }
 
 .header {
