@@ -23,7 +23,7 @@ const experiences: Experience[] = [
 		company: 'Freelance',
 		start: new Date('2023-06-15'),
 		description: 'Available for world-changing projects.',
-		url: 'mailto:anton@stallboerger.de'
+		url: 'mailto:hi@antonstallboerger.com'
 	},
 	{
 		company: 'Essentry',
