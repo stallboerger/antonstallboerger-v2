@@ -9,7 +9,7 @@ const Clock = dynamic(() => import('./clock'), { ssr: false })
 
 export default function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={`transition-fade ${styles.footer}`}>
             <section className={styles.links}>
                 <div className={styles.connect}>
                     <h2 className={styles.title}>Connect</h2>

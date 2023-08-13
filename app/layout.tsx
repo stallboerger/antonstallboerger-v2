@@ -91,9 +91,9 @@ export default function RootLayout({
 				<main id='swup' className='transition-fade pt-[140px] md:pt-[180px] h-auto px-4 mb-auto lg:px-8 grid-cols-8 sm:grid-cols-16 grid gap-4 md:gap-8'>
 					{children}
 
-					<Footer />
 				</main>
 
+				<Footer />
 				<Analytics />
 			</body>
 		</html>
