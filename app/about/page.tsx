@@ -44,30 +44,38 @@ const experiences: Experience[] = [
 export default function AboutPage() {
 	return (
 	<>
-      <Image 
-      	src={`/images/about/anton-1.png`}
-			alt={`Anton Stallbörger`}
-			width="1920" 
-			height="305"
-			className={styles.image} />
-      <Image 
-      	src={`/images/about/anton-2.png`}
-			alt={`Anton Stallbörger`}
-			width="1920" 
-			height="305"
-			className={styles.image} />
-      <Image 
-      	src={`/images/about/anton-3.png`}
-			alt={`Anton Stallbörger`}
-			width="1920" 
-			height="305"
-			className={styles.image} />
-      <Image 
-      	src={`/images/about/anton-4.png`}
-			alt={`Anton Stallbörger`}
-			width="1920" 
-			height="305"
-			className={styles.image} />
+		<figure className={styles.figure}>
+			<Image 
+				src={`/images/about/anton-1.png`}
+				alt={`Anton Stallbörger`}
+				width="1920" 
+				height="305"
+				className={styles.image} />
+		</figure>
+		<figure className={styles.figure}>
+			<Image 
+				src={`/images/about/anton-2.png`}
+				alt={`Anton Stallbörger`}
+				width="1920" 
+				height="305"
+				className={styles.image} />
+		</figure>
+		<figure className={styles.figure}>
+			<Image 
+				src={`/images/about/anton-3.png`}
+				alt={`Anton Stallbörger`}
+				width="1920" 
+				height="305"
+				className={styles.image} />
+		</figure>
+		<figure className={styles.figure}>
+			<Image 
+				src={`/images/about/anton-4.png`}
+				alt={`Anton Stallbörger`}
+				width="1920" 
+				height="305"
+				className={styles.image} />
+		</figure>
 
 		<header className={styles.header}>
 			<h1 className={styles.title}>About Anton</h1>
