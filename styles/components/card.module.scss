@@ -1,0 +1,27 @@
+.card {
+   @apply mb-24 [&:last-child]:mb-0 [&:last-child>div:last-child]:mb-0 [&:last-child>div:last-child>p]:mb-0 border-b border-zinc-200 dark:border-zinc-800 [&:last-child]:border-transparent;
+
+   .header {
+      @apply flex flex-col mb-8;
+   }
+
+   .image-wrapper {
+      @apply dark:bg-zinc-900 bg-zinc-100 overflow-hidden mb-8;
+
+      .image {
+         @apply hover:scale-105 transform transition-all duration-300 select-none;
+      }
+   }
+
+   .footer {
+      @apply grid grid-cols-8 gap-8 mb-24;
+
+      .description {
+         @apply col-span-full sm:col-span-6;
+      }
+
+      .more {
+         @apply hover:underline text-zinc-500 col-span-full sm:col-span-2 sm:justify-self-end;
+      }
+   }
+}

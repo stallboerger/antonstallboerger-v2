@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import styles from '../styles/components/card.module.scss'
+
 interface Props {
 	title: string;
 	imageSrc: string;
@@ -19,17 +21,17 @@ const Card: React.FC<Props> = ({
 	link,
 }) => {
     return (
-        <div className='mb-24 [&:last-child]:mb-0 [&:last-child>div:last-child]:mb-0 [&:last-child>div:last-child>p]:mb-0 border-b border-zinc-200 dark:border-zinc-800 [&:last-child]:border-transparent'>
-            <p className='mb-8'>
-                <span className='font-bold'>{title}</span>
-                <time className="block">{year}</time>
-            </p>
+        <div className={styles.card}>
+            <div className={styles.header}>
+                <h3 className={styles.title}>{title}</h3>
+                <time className={styles.year}>{year}</time>
+            </div>
         
-            <div className='mb-8 dark:bg-zinc-900 bg-zinc-100 overflow-hidden'>
+            <div className={styles['image-wrapper']}>
                 <Link href={link}>
                     <Image
                         alt={imageAlt}
-                        className='hover:scale-105 transform transition-all duration-300 select-none'
+                        className={styles.image}
                         src={imageSrc}
                         width={3840}
                         height={3840}
@@ -38,12 +40,12 @@ const Card: React.FC<Props> = ({
                 </Link>
             </div>
         
-            <div className='mb-24 grid grid-cols-8 gap-8'>
-                <p className='col-span-full sm:col-span-6'>{description}</p>
+            <div className={styles.footer}>
+                <p className={styles.description}>{description}</p>
                 
                 <Link 
                     href={link}
-                    className='group hover:underline text-zinc-500 col-span-full sm:col-span-2 sm:justify-self-end'
+                    className={styles.more}
                 >
                     Learn more
                 </Link>
