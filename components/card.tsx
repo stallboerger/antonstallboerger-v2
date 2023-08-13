@@ -25,7 +25,7 @@ const Card: React.FC<Props> = ({
                 <time className="block">{year}</time>
             </p>
         
-            <div className='mb-8 dark:bg-zinc-900 bg-zinc-100'>
+            <div className='mb-8 dark:bg-zinc-900 bg-zinc-100 overflow-hidden'>
                 <Link href={link}>
                     <Image
                         alt={imageAlt}
