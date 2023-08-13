@@ -6,8 +6,6 @@ import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
-const server = process.env.VERCEL_URL
-
 const soehne = Soehne({
 	src: [
 		{
@@ -37,11 +35,11 @@ export const metadata: Metadata = {
   	openGraph: {
 		title: 'Anton Stallbörger',
     	description: 'Software Designer',
-    	url: `${server}`,
+    	url: `https://antonstallboerger.com`,
 		siteName: 'Anton Stallbörger',
 		images: [
 			{
-				url: `${server}/og.jpg`,
+				url: `https://antonstallboerger.com/og.jpg`,
 				width: 1920,
 				height: 1080,
 			},
@@ -66,14 +64,14 @@ export const metadata: Metadata = {
 		description: 'Software Designer',
 		images: [
 			{
-				url: `${server}/og.jpg`,
+				url: `https://antonstallboerger.com/og.jpg`,
 				width: 1920,
 				height: 1080,
 			},
 		],
 	},
 	icons: {
-		shortcut: `${server}/favicon.ico`,
+		shortcut: `https://antonstallboerger.com/favicon.ico`,
 	},
 };
 
