@@ -25,7 +25,7 @@ export default function Home() {
           Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-zinc-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-zinc-500 hover:underline'>side projects</Link>.
           <br />
           <br />
-          If you&rsquo;d like to <Link href="/about" className='text-zinc-500 hover:underline'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:anton@stallboerger.de" className='text-zinc-500 hover:underline'>reach out</a>. I&rsquo;m always happy to chat. 
+          If you&rsquo;d like to <Link href="/about" className='text-zinc-500 hover:underline'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:hi@antonstallboerger.com" className='text-zinc-500 hover:underline'>reach out</a>. I&rsquo;m always happy to chat. 
         </p>  
       </section>
 
