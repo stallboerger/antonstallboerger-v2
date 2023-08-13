@@ -61,6 +61,14 @@ export default function Footer() {
                     <h2 className={styles.title}>Explore</h2>
                     <ul className={styles.list}>
                         <li>
+                            <Link
+                                href='/'
+                                className={styles.link}
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
                             <Link 
                                 href='/about' 
                                 className={styles.link}
