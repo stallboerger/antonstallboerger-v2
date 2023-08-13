@@ -1,5 +1,9 @@
-.image {
-   @apply sm:mt-[calc(-180px_+_53px+32px)] col-span-4;
+.figure {
+   @apply sm:mt-[calc(-180px_+_53px+32px)] col-span-4 aspect-[4_/_5] bg-zinc-100 dark:bg-zinc-900;
+
+   .image {
+      @apply w-full h-full object-cover;
+   }
 
    &:nth-child(1), &:nth-child(2) {
       @apply mt-[calc(-140px_+_53px_+_16px)] sm:mt-[calc(-180px_+_53px+32px)];
