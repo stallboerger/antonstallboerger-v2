@@ -3,7 +3,7 @@
 }
 
 .content {
-    @apply lg:col-span-6 col-span-full;
+    @apply col-span-full md:col-span-12 lg:col-span-6;
 
     .link {
         @apply hover:underline; 

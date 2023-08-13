@@ -11,5 +11,6 @@
 }
 
 .projects {
-    @apply col-span-full lg:col-start-9 lg:col-span-8;
+    @apply col-span-full lg:col-start-9 lg:col-span-8
+    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4;
 }

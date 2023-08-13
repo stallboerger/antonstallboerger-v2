@@ -29,7 +29,7 @@ export default function Home() {
         </p>  
       </section>
 
-      <section className='col-span-full lg:col-start-9 lg:col-span-8'>
+      <section className='col-span-full lg:col-start-9 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4'>
         {projects.map((project, idx) => (
           <Card
             title={project.title}
@@ -38,7 +38,8 @@ export default function Home() {
             description={project.description}
             year={format(parseISO(project.year), 'yyyy')}
             link={`/projects/${project.slug}`}
-            key={idx} />
+            key={idx}
+            />
         ))}
         {/* <Card
           title='Boost'
