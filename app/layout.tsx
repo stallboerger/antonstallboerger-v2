@@ -6,6 +6,8 @@ import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
+import styles from '../styles/layout.module.scss'
+
 const soehne = Soehne({
 	src: [
 		{
@@ -85,12 +87,11 @@ export default function RootLayout({
 			lang="en"
 			className={soehne.className}
 		>
-			<body className='antialiased text-[#343433] bg-white dark:text-[#cbcbcc] dark:bg-black text-base selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35] min-h-full flex flex-col'>
+			<body className={styles.body}>
 				<Navbar />
 				
-				<main id='swup' className='transition-fade pt-[140px] md:pt-[180px] h-auto px-4 mb-auto lg:px-8 grid-cols-8 sm:grid-cols-16 grid gap-4 lg:gap-8'>
+				<main id='swup' className={`transition-fade ${styles.layout}`}>
 					{children}
-
 				</main>
 
 				<Footer />
