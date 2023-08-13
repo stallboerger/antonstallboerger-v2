@@ -18,12 +18,15 @@ const ThoughtLayout = ({ params }: { params: { slug: string } }) => {
     if (thought) {
         return (
             <>
-                <Image 
-                    src={`/images/thoughts/${thought.image}`}
-                    alt={thought.title}
-                    width="1920" 
-                    height="305"
-                    className={styles.cover} />
+                <div className={styles.cover}>
+                    <Image 
+                        src={`/images/thoughts/${thought.image}`}
+                        alt={thought.title}
+                        width="1920" 
+                        height="305"
+                        className={styles.image}
+                    />
+                </div>
 
                 <header className={styles.header}>
                     <h1 className={styles.title}>{thought.title}</h1>
