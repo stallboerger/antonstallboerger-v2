@@ -4,4 +4,8 @@
 
 .content {
     @apply lg:col-span-6 col-span-full;
+
+    .link {
+        @apply hover:underline; 
+    }
 }
