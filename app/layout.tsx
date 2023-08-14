@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 		shortcut: `https://antonstallboerger.com/favicon.ico`,
 	},
 	verification: {
-		google: 'stqJtLv8IK8j4XXD3FJI8PnEPdMd2Kb-BLJJusaZu',
+		google: 'stqJtLv8IK8j4XXD3FJI8PnEPdMd2Kb-BLJJusaZuuA',
 	 },
 };
 
