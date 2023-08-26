@@ -18,7 +18,7 @@
     }
 
     .logo {
-        @apply h-4 w-4 self-center dark:invert col-start-[16] justify-self-end hidden md:block;
+        @apply self-center dark:text-titan-50 col-start-[16] justify-self-end hidden md:block;
 
         &:hover { @apply animate-spin-slow; }
     }
