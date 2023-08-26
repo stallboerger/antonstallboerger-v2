@@ -2,6 +2,7 @@ import { allThoughts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
 import Image from 'next/image'
 import { Mdx } from 'components/mdx'
+import ToastWrapper from '../../../components/toastWrapper';
 
 import styles from '../../../styles/views/thought.module.scss'
 
@@ -29,7 +30,10 @@ const ThoughtLayout = ({ params }: { params: { slug: string } }) => {
                 </div>
 
                 <header className={styles.header}>
-                    <h1 className={styles.title}>{thought.title}</h1>
+                    <div className='flex flex-row gap-2'>
+                        <h1 className={styles.title}>{thought.title}</h1>
+                        <ToastWrapper />
+                    </div>
                     <time className={styles.date} dateTime={thought.date}>
                         {format(parseISO(thought.date), 'eee · LLLL d, yyyy')}
                     </time>
