@@ -98,9 +98,10 @@ export default function AboutPage() {
 			<h2>Things I like</h2>
 			<ul>
 				<li>Quality goods</li>
-				<li>The color black</li>
+				<li>Wearing black</li>
 				<li>Melodic House</li>
 				<li>Good food</li>
+				<li>Mountains</li>
 			</ul>
 		</section>
 		<section className={styles.dislike}>
