@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import PlausibleProvider from 'next-plausible'
 
 import styles from '../styles/layout.module.scss'
 
@@ -90,16 +91,18 @@ export default function RootLayout({
 			lang="en"
 			className={soehne.className}
 		>
-			<body className={styles.body}>
-				<Navbar />
-				
-				<main id='swup' className={`transition-fade ${styles.layout}`}>
-					{children}
-				</main>
+			<PlausibleProvider domain="antonstallboerger.com">
+				<body className={styles.body}>
+					<Navbar />
+					
+					<main id='swup' className={`transition-fade ${styles.layout}`}>
+						{children}
+					</main>
 
-				<Footer />
-				<Analytics />
-			</body>
+					<Footer />
+					<Analytics />
+				</body>
+			</PlausibleProvider>
 		</html>
 	)
 }
