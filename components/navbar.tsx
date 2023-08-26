@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { Logo } from '../components/icons'
 
 import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
@@ -53,14 +54,9 @@ export default function Navbar() {
                     Playground
                 </Link>
             </div>
-            <Image 
-                alt='Logo · Anton Stallbörger'
-                className={styles.logo}
-                src='/logo.svg'
-                width={24}
-                height={24}
-                priority
-            />
+            <div className={styles.logo}>
+                <Logo />
+            </div>
         </nav>
     );
-}
+} 
