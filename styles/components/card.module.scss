@@ -1,5 +1,5 @@
 .card {
-   @apply mb-12 lg:mb-24 border-b border-zinc-200 dark:border-zinc-800;
+   @apply mb-12 lg:mb-24 border-b border-titan-100 dark:border-titan-900;
 
    &:last-child {
       @apply mb-0 border-transparent;
@@ -22,7 +22,7 @@
    }
 
    .image-wrapper {
-      @apply dark:bg-zinc-900 bg-zinc-100 overflow-hidden mb-8;
+      @apply dark:bg-titan-950 bg-titan-50 overflow-hidden mb-8;
 
       .image {
          @apply hover:scale-105 transform transition-all duration-300 select-none;
@@ -37,7 +37,7 @@
       }
 
       .more {
-         @apply hover:underline text-zinc-500 col-span-full lg:col-span-2 lg:justify-self-end;
+         @apply hover:underline text-titan-500 hover:text-black dark:hover:text-titan-50 col-span-full lg:col-span-2 lg:justify-self-end;
       }
    }
 }
