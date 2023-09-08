@@ -37,7 +37,7 @@
       }
 
       .more {
-         @apply hover:underline text-titan-500 hover:text-black dark:hover:text-titan-50 col-span-full lg:col-span-2 lg:justify-self-end;
+         @apply text-titan-500 hover:text-black dark:hover:text-titan-50 col-span-full lg:col-span-2 lg:justify-self-end;
       }
    }
 }

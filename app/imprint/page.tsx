@@ -23,7 +23,7 @@ export default function ImprintPage() {
           <br />
           70192 Stuttgart, Germany
           <br />
-          <a href="mailto:hi@antonstallboerger.com" >anton@stallboerger.de</a>
+          <a className={styles.link} href="mailto:hi@antonstallboerger.com" >anton@stallboerger.de</a>
         </p>
         <h2>Copyright</h2>
         <p>

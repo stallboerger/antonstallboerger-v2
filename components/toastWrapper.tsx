@@ -12,7 +12,7 @@ function renderToast() {
 export default function ToastWrapper() {
     return (
         <>
-            <button aria-label='Copy link' className='text-titan-500' onClick={() => renderToast()}>
+            <button aria-label='Copy link' className='text-titan-500 hover:text-black dark:hover:text-white' onClick={() => renderToast()}>
                 <LinkIcon />
             </button>
             <Toaster theme="system" toastOptions={{ className: styles.toast }} />

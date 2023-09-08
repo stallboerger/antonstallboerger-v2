@@ -39,7 +39,7 @@ const ThoughtLayout = ({ params }: { params: { slug: string } }) => {
                     </time>
 
                     {thought.credits && <>
-                        <p className={styles.credits}>Image credits <a href={thought.credits.url || ''} target="_blank">{thought.credits.name}</a></p>
+                        <p className={styles.credits}>Image credits <a className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' href={thought.credits.url || ''} target="_blank">{thought.credits.name}</a></p>
                     </>}
                 </header>
 

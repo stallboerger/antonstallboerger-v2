@@ -4,4 +4,8 @@
 
 .content {
     @apply col-span-full md:col-span-12 lg:col-span-6;
+
+    .link {
+        @apply text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800;
+    }
 }

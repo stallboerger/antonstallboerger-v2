@@ -22,10 +22,10 @@ export default function Home() {
           Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
           <br />
           <br />
-          Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-titan-500 hover:underline' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-titan-500 hover:underline' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-titan-500 hover:underline'>side projects</Link>.
+          Currently studying at the <a href="https://www.hfg-gmuend.de/en" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">University of Design</a> in Schwäbisch Gmünd. Curating <a href="https://www.curations.tech/" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">Curations</a> and working on different <Link href="/playground" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>side projects</Link>.
           <br />
           <br />
-          If you&rsquo;d like to <Link href="/about" className='text-titan-500 hover:underline'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:hi@antonstallboerger.com" className='text-titan-500 hover:underline'>reach out</a>. I&rsquo;m always happy to chat. 
+          If you&rsquo;d like to <Link href="/about" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:hi@antonstallboerger.com" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>reach out</a>. I&rsquo;m always happy to chat. 
         </p>  
       </section>
 

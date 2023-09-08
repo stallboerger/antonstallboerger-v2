@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import styles from '../../styles/views/about.module.scss'
 import { format, isAfter } from 'date-fns';
@@ -90,7 +91,7 @@ export default function AboutPage() {
 				Pushing the boundaries of design and striving to create something truly unique and meaningful is a constant pursuit of mine. In addition to my work, I also value meaningful conversations and good music, which help to inspire and motivate me in my creative process.
 			</p>
 			<p>
-				My goal is to continue improving, learning, and exploring all the different areas life has to offer, with the ultimate goal of building a beloved home with the highly talented people at <a href="https://normcph.com/" target="_blank">Norm Architects</a>.
+				My goal is to continue improving, learning, and exploring all the different areas life has to offer, with the ultimate goal of building a beloved home with the highly talented people at <a href="https://normcph.com/" target="_blank" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>Norm Architects</a>.
 			</p>
 		</section>
 
@@ -102,6 +103,8 @@ export default function AboutPage() {
 				<li>Melodic House</li>
 				<li>Good food</li>
 				<li>Mountains</li>
+				<li><a href='https://www.cosmos.so/stallboerger/architecture' className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">Architecture</a></li>
+				<li><a href='https://www.cosmos.so/stallboerger/interior' className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">Interior Design</a></li>
 			</ul>
 		</section>
 		<section className={styles.dislike}>
@@ -111,6 +114,7 @@ export default function AboutPage() {
 				<li>Smalltalk</li>
 				<li>Sparkling water</li>
 				<li>Alcohol</li>
+				<li>Crowds</li>
 			</ul>
 		</section>
 

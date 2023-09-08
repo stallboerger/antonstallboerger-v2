@@ -6,8 +6,6 @@
     }
 
     .link {
-        @apply hover:underline;
-
         &.active {
             @apply text-black dark:text-titan-50;
         }
