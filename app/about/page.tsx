@@ -98,9 +98,9 @@ export default function AboutPage() {
 		<section className={styles.like}>
 			<h2>Things I like</h2>
 			<ul>
-				<li>Quality goods</li>
+				<li><a href='https://www.cosmos.so/stallboerger/goods' className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">Quality goods</a></li>
 				<li>Wearing black</li>
-				<li>Melodic House</li>
+				<li><a href='https://music.apple.com/de/playlist/con-amore/pl.u-r2yBDE4tdN97Zo?l=en-GB' className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">Piano music</a></li>
 				<li>Good food</li>
 				<li>Mountains</li>
 				<li><a href='https://www.cosmos.so/stallboerger/architecture' className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">Architecture</a></li>
