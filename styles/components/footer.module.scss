@@ -1,5 +1,5 @@
 .footer {
-    @apply col-span-full mt-40 grid-cols-8 sm:grid-cols-16 grid gap-6 md:gap-8 px-4 md:px-8 mb-8 text-base sm:text-sm;
+    @apply col-span-full mt-40 grid-cols-8 sm:grid-cols-16 grid gap-6 md:gap-8 px-4 md:px-8 mb-8;
 
     .links {
         @apply grid grid-cols-8 gap-y-12 gap-6 col-span-full lg:col-span-8 row-start-2 lg:row-auto self-start border-t border-titan-100 pt-6 md:pt-8 dark:border-titan-900;
