@@ -24,7 +24,7 @@ export default function ColophonPage() {
 
             <h2>Tech stack</h2>
             <p>
-                Built with <a href='https://nextjs.org/' className={styles.link} target="_blank" rel="noreferrer">Next.js</a> and <a href='https://tailwindcss.com/' className={styles.link} target="_blank" rel="noreferrer">Tailwind CSS</a>. Hosted on <a href='https://vercel.com/home' className={styles.link} target="_blank" rel="noreferrer">Vercel</a>. Privacy friendly analytics with <a href='https://vercel.com/analytics' className={styles.link} target="_blank" rel="noreferrer">Vercel Analytics</a>.
+                Built with <a href='https://nextjs.org/' className={styles.link} target="_blank" rel="noreferrer">Next.js</a> and <a href='https://tailwindcss.com/' className={styles.link} target="_blank" rel="noreferrer">Tailwind CSS</a>. Hosted on <a href='https://vercel.com/home' className={styles.link} target="_blank" rel="noreferrer">Vercel</a>. Privacy friendly analytics with <a href='https://plausible.io/' className={styles.link} target="_blank" rel="noreferrer">Plausible</a>.
             </p>    
             <p>
                 <a href="https://github.com/antonstallboerger/antonstallboerger-v2" className={styles.link} target="_blank" rel="noreferrer">GitHub Repository</a>
