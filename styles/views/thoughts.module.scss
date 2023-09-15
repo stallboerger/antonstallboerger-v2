@@ -1,6 +1,11 @@
 .header {
-    @apply col-span-full md:col-span-8 lg:col-span-8 mb-24;
+    @apply h-full col-span-full md:col-span-12 lg:col-span-8 mb-20 lg:mb-0;
+
+    .content {
+        @apply lg:sticky lg:top-[calc(53px_+_32px)] lg:self-start;
+    }
 }
+
 
 .thought {
     @apply col-span-full md:col-span-8 lg:col-span-4 text-black dark:text-titan-50 mb-6 md:mb-0;
