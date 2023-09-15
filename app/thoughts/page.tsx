@@ -20,8 +20,10 @@ export default function ThoughtsPage() {
   	return (
     	<>
 			<header className={styles.header}>
-        		<h1 className={styles.title}>Thoughts</h1>
-        		<p className={styles.count}>{allThoughts.length} articles</p>
+				<div className={styles.content}>
+					<h1 className={styles.title}>Thoughts</h1>
+        			<p className={styles.count}>{allThoughts.length} articles</p>
+				</div>
 			</header>
       
 			{thoughts.map((post, idx) => (
