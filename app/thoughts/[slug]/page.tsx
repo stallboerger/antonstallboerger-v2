@@ -2,7 +2,7 @@ import { allThoughts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
 import Image from 'next/image'
 import { Mdx } from 'components/mdx'
-import ToastWrapper from '../../../components/toastWrapper';
+import ToastWrapper from '../../../components/copyLink';
 
 import styles from '../../../styles/views/thought.module.scss'
 
