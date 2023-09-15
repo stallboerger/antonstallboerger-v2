@@ -11,7 +11,7 @@
 }
 
 .header {
-   @apply col-span-full md:col-span-12 lg:col-span-8 mb-24;
+   @apply col-span-full md:col-span-12 lg:col-span-8 lg:sticky lg:top-[calc(53px_+_32px)] lg:self-start mb-20 lg:mb-0;
 }
 
 .content {
