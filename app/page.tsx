@@ -23,9 +23,9 @@ export default function Home() {
           <br />
           <br />
           Currently working at <a href="https://essentry.com/en" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">essentry</a> for an internship, living in Berlin and exploring different <Link href="/playground" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>side projects</Link>.
+          {/* <br />
           <br />
-          <br />
-          If you&rsquo;d like to <Link href="/about" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:hi@antonstallboerger.com" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>reach out</a>. I&rsquo;m always happy to chat. 
+          If you&rsquo;d like to <Link href="/about" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:hi@antonstallboerger.com" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>reach out</a>. I&rsquo;m always happy to chat.  */}
         </p>  
       </section>
 
