@@ -39,6 +39,8 @@ export default function Navbar() {
 
     return (
         <nav className={styles.navbar}>
+            {/* <div className={styles.glass}></div>
+            <div className={styles.glassedge}></div> */}
             <Link href='/' className={`${styles.home} ${styles.link} ${currentRoute === "/" && styles.active}`}>
                 Home
             </Link>
