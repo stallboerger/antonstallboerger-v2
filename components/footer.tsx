@@ -16,22 +16,22 @@ export default function Footer() {
                     <ul className={styles.list}>
                         <li>
                             <a 
-                                href="https://twitter.com/stallboerger" 
+                                href="https://x.com/stallboerger" 
                                 className={`${styles.link} ${styles.twitter}`}
                                 target="_blank" 
                                 rel="noreferrer"
                             >
-                                Twitter
+                                X.com
                             </a>
                         </li>
                         <li>
                             <a 
-                                href="imessage://anton@stallboerger.de" 
+                                href="mailto:hi@antonstallboerger.com" 
                                 className={`${styles.link} ${styles.imessage}`}
                                 target="_blank" 
                                 rel="noreferrer"
                             >
-                                iMessage
+                                Mail
                             </a>
                         </li>
                         <li>
