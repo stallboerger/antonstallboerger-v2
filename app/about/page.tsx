@@ -47,7 +47,7 @@ export default function AboutPage() {
 	<>
 		<figure className={styles.figure}>
 			<Image 
-				src={`/images/about/anton-1.png`}
+				src={`/images/about/anton-1.jpeg`}
 				alt={`Anton Stallbörger`}
 				width="1920" 
 				height="305"
@@ -55,7 +55,7 @@ export default function AboutPage() {
 		</figure>
 		<figure className={styles.figure}>
 			<Image 
-				src={`/images/about/anton-2.png`}
+				src={`/images/about/anton-2.jpeg`}
 				alt={`Anton Stallbörger`}
 				width="1920" 
 				height="305"
@@ -63,7 +63,7 @@ export default function AboutPage() {
 		</figure>
 		<figure className={styles.figure}>
 			<Image 
-				src={`/images/about/anton-3.png`}
+				src={`/images/about/anton-3.jpeg`}
 				alt={`Anton Stallbörger`}
 				width="1920" 
 				height="305"
@@ -71,7 +71,7 @@ export default function AboutPage() {
 		</figure>
 		<figure className={styles.figure}>
 			<Image 
-				src={`/images/about/anton-4.png`}
+				src={`/images/about/anton-4.jpeg`}
 				alt={`Anton Stallbörger`}
 				width="1920" 
 				height="305"
