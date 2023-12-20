@@ -21,11 +21,8 @@ export default function Home() {
         <p className=''>
           Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful.
           <br />
-          Currently working at <a href="https://essentry.com/en" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">essentry</a> for an internship, living in Berlin and exploring different <Link href="/playground" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>side projects</Link>.
-          {/* <br />
           <br />
-          If you&rsquo;d like to <Link href="/about" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>learn more about me</Link>, or discuss design, technology or life in general, feel free to <a href="mailto:hi@antonstallboerger.com" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>reach out</a>. I&rsquo;m always happy to chat.  */}
-        </p>  
+          Currently working at <a href="https://essentry.com/en" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">essentry</a> for an internship, living in Berlin and exploring different <Link href="/playground" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>side projects</Link>.
       </section>
 
       <section className='col-span-full lg:col-start-9 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4'>
