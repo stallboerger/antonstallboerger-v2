@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import PlausibleProvider from 'next-plausible'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import styles from '../styles/layout.module.scss'
 
@@ -101,6 +102,7 @@ export default function RootLayout({
 
 					<Footer />
 					<Analytics />
+					<SpeedInsights/>
 				</body>
 			</PlausibleProvider>
 		</html>
