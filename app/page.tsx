@@ -19,8 +19,7 @@ export default function Home() {
           Software Designer
         </p>
         <p className=''>
-          Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful. My goal is to continue improving, learning, and exploring all the different areas life has to offer.
-          <br />
+          Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful.
           <br />
           Currently working at <a href="https://essentry.com/en" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">essentry</a> for an internship, living in Berlin and exploring different <Link href="/playground" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>side projects</Link>.
           {/* <br />
