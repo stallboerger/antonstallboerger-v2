@@ -23,6 +23,7 @@ export default function Home() {
           <br />
           <br />
           Currently working at <a href="https://essentry.com/en" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' target='_blank' rel="noreferrer">essentry</a> for an internship, living in Berlin and exploring different <Link href="/playground" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800'>side projects</Link>.
+        </p>
       </section>
 
       <section className='col-span-full lg:col-start-9 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4'>
