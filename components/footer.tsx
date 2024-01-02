@@ -95,7 +95,7 @@ export default function Footer() {
                     </ul>
                 </div>   
 
-                <p className={styles.copyright}>&copy; <script>document.write(new Date().getFullYear())</script> Anton Stallbörger</p>
+                <p className={styles.copyright}>&copy;{(new Date).getFullYear()} Anton Stallbörger</p>
                 <div className={styles.legals}>
                     <Link 
                         href='/colophon' 
