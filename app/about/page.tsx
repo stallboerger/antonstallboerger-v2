@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import styles from '../../styles/views/about.module.scss'
 import { format, isAfter } from 'date-fns';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Digital Product Designer and Developer.',
+  description: 'Software Designer',
 };
 
 interface Experience {
@@ -20,6 +19,12 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
+	{
+		company: 'Saman Collective',
+		description: 'The combined efforts of Linus Rogge and me, forming intuitive and reflective software and brands.',
+		url: 'https://saman.design',
+		start: new Date('2023-10-01')
+	},
 	{
 		company: 'Freelance',
 		start: new Date('2023-06-15'),
@@ -39,6 +44,12 @@ const experiences: Experience[] = [
 		role: 'Internship',
 		start: new Date('2021-02-01'),
 		end: new Date('2021-06-30'),
+	},
+	{
+		company: 'UP Design',
+		role: 'Internship',
+		start: new Date('2018-08-01'),
+		end: new Date('2018-08-30'),
 	}
 ]
 
@@ -55,7 +66,7 @@ export default function AboutPage() {
 		</figure>
 		<figure className={styles.figure}>
 			<Image 
-				src={`/images/about/anton-2.jpeg`}
+				src={`/images/about/anton-hamburg-shoes.jpeg`}
 				alt={`Anton Stallbörger`}
 				width="1920" 
 				height="305"
@@ -63,7 +74,7 @@ export default function AboutPage() {
 		</figure>
 		<figure className={styles.figure}>
 			<Image 
-				src={`/images/about/anton-3.jpeg`}
+				src={`/images/about/anton-close-up-black-and-white.jpg`}
 				alt={`Anton Stallbörger`}
 				width="1920" 
 				height="305"
@@ -71,7 +82,7 @@ export default function AboutPage() {
 		</figure>
 		<figure className={styles.figure}>
 			<Image 
-				src={`/images/about/anton-4.jpeg`}
+				src={`/images/about/anton-flims-gelbes-haus.jpeg`}
 				alt={`Anton Stallbörger`}
 				width="1920" 
 				height="305"
