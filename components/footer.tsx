@@ -113,7 +113,6 @@ export default function Footer() {
             </section>
 
             <section className={styles.clock}> 
-                <Clock />
             </section>
         </footer>
     );
