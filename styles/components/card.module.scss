@@ -25,7 +25,7 @@
       @apply dark:bg-titan-950 bg-titan-50 overflow-hidden mb-8;
 
       .image {
-         @apply hover:scale-105 transform transition-all duration-300 select-none;
+         @apply hover:scale-105 transform transition-all duration-200 select-none ease-out;
       }
    }
 
