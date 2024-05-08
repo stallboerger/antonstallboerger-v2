@@ -22,10 +22,10 @@
    }
 
    .image-wrapper {
-      @apply dark:bg-titan-950 bg-titan-50 overflow-hidden mb-8;
+      @apply dark:bg-titan-950 bg-titan-50 shadow-[0_0_0_1px_rgba(0,0,0,0.08)] overflow-hidden mb-8;
 
       .image {
-         @apply hover:scale-105 transform transition-all duration-200 select-none ease-out;
+         @apply hover:scale-[1.02] transform transition-all duration-200 select-none ease-out;
       }
    }
 

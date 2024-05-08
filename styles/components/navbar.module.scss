@@ -1,5 +1,5 @@
 .navbar {
-    @apply fixed grid-cols-16 grid gap-4 lg:gap-8 justify-between items-center w-full h-[53px] z-50 px-4 lg:px-8 border-b border-titan-100 bg-white dark:border-titan-900 dark:bg-black select-none;
+    @apply fixed grid-cols-16 grid gap-4 lg:gap-8 justify-between items-center w-full h-[53px] z-50 px-4 lg:px-8  bg-[#FDFDFC] dark:bg-[#111110] dark:border-titan-900 border-b border-titan-100 select-none;
 
     .home {
         @apply col-span-3;

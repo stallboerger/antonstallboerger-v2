@@ -1,5 +1,5 @@
 .body {
-   @apply antialiased text-black dark:text-titan-50 bg-white dark:bg-black text-[14px] selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35] min-h-full flex flex-col;
+   @apply antialiased text-black dark:text-titan-50 bg-[#FDFDFC] dark:bg-[#111110] text-[14px] selection:bg-[#D8ECFC] selection:text-[#008CFF] dark:selection:bg-[#0E1E35] min-h-full flex flex-col;
 
    .layout {
       @apply pt-[140px] md:pt-[180px] h-auto px-4 mb-auto lg:px-8 
