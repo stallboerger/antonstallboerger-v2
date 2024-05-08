@@ -101,7 +101,6 @@ export default function RootLayout({
 					</main>
 
 					<Footer />
-					<Analytics />
 					<SpeedInsights/>
 				</body>
 			</PlausibleProvider>
