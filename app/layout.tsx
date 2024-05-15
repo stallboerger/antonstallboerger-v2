@@ -1,5 +1,4 @@
 import '/styles/base.scss'
-import { useEffect } from 'react'
 import Soehne from 'next/font/local'
 import type { Metadata } from 'next'
 import Navbar from '../components/navbar'
