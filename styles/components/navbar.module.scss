@@ -1,5 +1,5 @@
 .navbar {
-    @apply fixed grid-cols-16 grid gap-4 lg:gap-8 justify-between items-center w-full h-[53px] z-50 px-4 lg:px-8  bg-[#FDFDFC] dark:bg-[#111110] dark:border-titan-900 border-b border-titan-100 select-none;
+    @apply fixed grid-cols-16 grid gap-4 lg:gap-8 justify-between items-center w-full h-[53px] z-50 px-4 lg:px-8  bg-sand-100 dark:bg-sand-dark-100 border-b border-sand-600 dark:border-sand-dark-600 select-none;
 
     .home {
         @apply col-span-3;
@@ -7,7 +7,7 @@
 
     .link {
         &.active {
-            @apply text-black dark:text-titan-50;
+            @apply text-sand-1200 dark:text-sand-dark-1200;
         }
     }
 
@@ -16,7 +16,7 @@
     }
 
     .logo {
-        @apply self-center dark:text-titan-50 col-start-[16] justify-self-end hidden md:block;
+        @apply self-center dark:text-sand-dark-1200 col-start-[16] justify-self-end hidden md:block;
 
         &:hover { @apply animate-spin-slow; }
     }

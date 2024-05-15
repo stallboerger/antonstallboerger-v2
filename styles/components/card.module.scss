@@ -1,5 +1,5 @@
 .card {
-   @apply mb-12 lg:mb-24 border-b border-titan-100 dark:border-titan-900;
+   @apply mb-12 lg:mb-24 border-b border-sand-600 dark:border-sand-dark-600;
 
    &:last-child {
       @apply mb-0 border-transparent;
@@ -19,10 +19,10 @@
 
    .header {
       @apply flex flex-col mb-8;
-   }
+   } 
 
    .image-wrapper {
-      @apply dark:bg-titan-950 bg-titan-50 shadow-[0_0_0_1px_rgba(0,0,0,0.08)] dark:shadow-[0_0_0_1px_rgba(255,255,255,0.08)] overflow-hidden mb-8;
+      @apply  bg-white dark:bg-black shadow-[0_0_0_1px_rgba(0,0,0,0.08)] dark:shadow-[0_0_0_1px_rgba(255,255,255,0.08)] overflow-hidden mb-8;
 
       .image {
          @apply hover:scale-[1.02] transform transition-all duration-200 select-none ease-out;
@@ -37,7 +37,7 @@
       }
 
       .more {
-         @apply text-titan-500 hover:text-black dark:hover:text-titan-50 col-span-full lg:col-span-2 lg:justify-self-end;
+         @apply text-sand-1100 dark:text-sand-dark-1100 hover:text-sand-1200 dark:hover:text-sand-dark-1200 col-span-full lg:col-span-2 lg:justify-self-end;
       }
    }
 }
