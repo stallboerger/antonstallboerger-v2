@@ -2,7 +2,6 @@ import '/styles/base.scss'
 import { useEffect } from 'react'
 import Soehne from 'next/font/local'
 import type { Metadata } from 'next'
-import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import PlausibleProvider from 'next-plausible'
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
   	openGraph: {
 		title: 'Anton Stallbörger',
     	description: 'Software Designer',
-    	url: `https://antonstallboerger.com`,
+    	url: `https://stallboerger.com`,
 		siteName: 'Anton Stallbörger',
 		images: [
 			{
