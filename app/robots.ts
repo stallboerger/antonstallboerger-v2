@@ -6,6 +6,6 @@ export default function robots() {
         },
       ],
     //   sitemap: 'https://antonstallboerger.com/sitemap.xml',
-      host: 'https://antonstallboerger.com',
+      host: 'https://stallboerger.com',
     };
   }
