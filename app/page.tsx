@@ -18,11 +18,11 @@ export default function Home() {
           <br />
           Software Designer
         </p>
-        <p className=''>
+        <p>
           Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful.
           <br />
           <br />
-          Currently building icons for <a href='https://icons.saman.design' className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-600'>Saman Icons</a>, exploring different <Link href="/playground" className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-600'>side projects</Link> and studying at <a href='https://hfg-gmuend.de/en' className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-600'>HfG Schwäbisch Gmünd</a>.
+          Currently building icons for <a href='https://icons.saman.design' className='text-sand-1200 dark:text-sand-dark-1200 underline hover:decoration-sand-800 dark:hover:decoration-sand-dark-800'>Saman Icons</a>, exploring different <Link href="/playground" className='text-sand-1200 dark:text-sand-dark-1200 underline hover:decoration-sand-800 dark:hover:decoration-sand-dark-800'>side projects</Link> and studying at <a href='https://hfg-gmuend.de/en' className='text-sand-1200 dark:text-sand-dark-1200 underline hover:decoration-sand-800 dark:hover:decoration-sand-dark-800'>HfG Schwäbisch Gmünd</a>.
         </p>
       </section>
 
