@@ -36,7 +36,8 @@ export default async function ProjectLayout({ params }: { params: { slug: string
                                     href={url.url}
                                     target='_blank'
                                     className={styles.url}
-                                    key={idx}>{url.title}</Link>
+                                    key={idx}>{url.title}
+                                </Link>
                             ))}
                         </div>
                     }
@@ -47,17 +48,18 @@ export default async function ProjectLayout({ params }: { params: { slug: string
                             <h2 className={styles.title}>Collaborators</h2>
                             {project.collaborators?.map((collaborator, idx) => (
                                 <Link 
-                                href={collaborator.url}
-                                target="_blank"
-                                className={styles.collaborator}
-                                key={idx}
+                                    href={collaborator.url}
+                                    target="_blank"
+                                    className={styles.collaborator}
+                                    key={idx}
                                 >
                                     <Image 
                                         src={collaborator.avatar} 
                                         alt={collaborator.name}
                                         width={240}
                                         height={240}
-                                        className={styles.avatar} />
+                                        className={styles.avatar} 
+                                    />
                                     {collaborator.name}
                                 </Link>
                             ))}
