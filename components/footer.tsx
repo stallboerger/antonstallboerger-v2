@@ -1,11 +1,8 @@
 'use client';
 
-import dynamic from 'next/dynamic'
 import Link from 'next/link';
 
 import styles from '../styles/components/footer.module.scss'
-
-const Clock = dynamic(() => import('./clock'), { ssr: false })
 
 export default function Footer() {
     return (

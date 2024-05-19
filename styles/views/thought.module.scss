@@ -1,5 +1,5 @@
 .cover {
-    @apply mt-[calc(-140px_+_53px)] lg:mt-[calc(-180px_+_53px)] mb-2 col-span-full w-[calc(100%_+_(2_*_1rem))] translate-x-[-1rem] lg:w-[calc(100%_+_(2_*_2rem))] lg:translate-x-[-2rem] max-w-none h-[30vh] lg:h-[70vh] bg-titan-100 dark:bg-titan-900;
+    @apply mt-[calc(-140px_+_53px)] lg:mt-[calc(-180px_+_53px)] mb-2 col-span-full w-[calc(100%_+_(2_*_1rem))] translate-x-[-1rem] lg:w-[calc(100%_+_(2_*_2rem))] lg:translate-x-[-2rem] max-w-none h-[30vh] lg:h-[70vh] bg-sand-2 dark:bg-sand-dark-2;
 
     .image {
         @apply w-full h-full object-cover;
@@ -18,13 +18,11 @@
     @apply col-span-full lg:col-start-9 lg:col-span-6;
 
     p {
-        // @apply font-serif dark:tracking-wide;
-
         & + p { @apply indent-16 mt-0; }
     }
 
     blockquote {
-        @apply border-l-2 border-l-titan-200 dark:border-l-titan-800 pl-4 mb-8;
+        @apply border-l-2 border-l-sand-6 dark:border-l-sand-dark-6 pl-4 mb-8;
 
         p { @apply indent-0; }
         em { @apply block mt-2; }

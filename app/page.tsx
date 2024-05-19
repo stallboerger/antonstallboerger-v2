@@ -4,6 +4,8 @@ import Card from '@/components/card'
 import { allProjects } from 'contentlayer/generated'
 import { format, parseISO, compareDesc } from 'date-fns'
 
+import styles from '../styles/views/home.module.scss'
+
 const filteredProjects = allProjects.filter((project) => !project.playground)
 const projects = filteredProjects.sort((a, b) =>
   compareDesc(new Date(a.year), new Date(b.year))
@@ -22,7 +24,7 @@ export default function Home() {
           Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful.
           <br />
           <br />
-          Currently building icons for <a href='https://icons.saman.design' className='text-sand-1200 dark:text-sand-dark-1200 underline hover:decoration-sand-800 dark:hover:decoration-sand-dark-800'>Saman Icons</a>, exploring different <Link href="/playground" className='text-sand-1200 dark:text-sand-dark-1200 underline hover:decoration-sand-800 dark:hover:decoration-sand-dark-800'>side projects</Link> and studying at <a href='https://hfg-gmuend.de/en' className='text-sand-1200 dark:text-sand-dark-1200 underline hover:decoration-sand-800 dark:hover:decoration-sand-dark-800'>HfG Schwäbisch Gmünd</a>.
+          Currently building icons for <a href='https://icons.saman.design' className={styles.link}>Saman Icons</a>, exploring different <Link href="/playground" className={styles.link}>side projects</Link> and studying at <a href='https://hfg-gmuend.de/en' className={styles.link}>HfG Schwäbisch Gmünd</a>.
         </p>
       </section>
 

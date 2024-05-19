@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 
 import styles from '../../styles/views/colophon.module.scss'
 
 export const metadata: Metadata = {
   title: 'Colophon',
-  description: 'Digital Product Designer and Developer.',
+  description: 'Software Designer',
 };
 
 export default function ColophonPage() {
@@ -13,7 +12,7 @@ export default function ColophonPage() {
     <>
         <header className={styles.header}>
             <h1 className={styles.title}>Colophon</h1>
-            <p className={styles.date}>Last updated Aug 11, 2023</p>
+            <p className={styles.date}>Last updated May 19, 2024</p>
         </header>
 
         <section className={styles.content}>
@@ -37,7 +36,7 @@ export default function ColophonPage() {
 
             <h2>Mockups</h2>
             <p>
-                All mockups are by  <a href='https://shots.so/' className={styles.link} target="_blank" rel="noreferrer">Shots</a> or <a href='https://supply.family/' className={styles.link} target="_blank" rel="noreferrer">Supply Family</a>. 
+                All mockups are by  <a href='https://www.pixelmator.com/pro/' className={styles.link} target="_blank" rel="noreferrer">Pixelmator Pro</a> or <a href='https://supply.family/' className={styles.link} target="_blank" rel="noreferrer">Supply Family</a>. 
             </p>
 
             <h2>Inspiration</h2>
@@ -64,16 +63,6 @@ export default function ColophonPage() {
                 </li>
                 <li>
                     <a 
-                        href="https://www.wireframe.co/" 
-                        className={styles.link} 
-                        target="_blank" 
-                        rel="noreferrer"
-                    >
-                        Wireframe
-                    </a>
-                </li>
-                <li>
-                    <a 
                         href="https://www.studiolenzing.com/" 
                         className={styles.link} 
                         target="_blank" 
@@ -84,12 +73,12 @@ export default function ColophonPage() {
                 </li>
                 <li>
                     <a 
-                        href="https://goods.wtf/" 
+                        href="https://emilkowal.ski/" 
                         className={styles.link} 
                         target="_blank" 
                         rel="noreferrer"
                     >
-                        Goods
+                        Emil Kowalski
                     </a>
                 </li>
                 <li>
@@ -106,7 +95,7 @@ export default function ColophonPage() {
 
             <h2>Great humans</h2>
             <p>
-                I am especially grateful for the support of the following humans:
+                I am especially grateful for the support and inspiration of the following humans:
             </p>
             <ul>
                 <li>
@@ -137,6 +126,26 @@ export default function ColophonPage() {
                         rel="noreferrer"
                     >
                         Nils Eller
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://leonardgorges.com/" 
+                        className={styles.link}
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        Leonard Gorges
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://www.henribredt.de/" 
+                        className={styles.link}
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        Henri Bredt
                     </a>
                 </li>
             </ul>

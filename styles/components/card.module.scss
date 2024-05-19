@@ -1,5 +1,5 @@
 .card {
-   @apply mb-12 lg:mb-24 border-b border-sand-600 dark:border-sand-dark-600;
+   @apply mb-12 lg:mb-24 border-b border-sand-6 dark:border-sand-dark-6;
 
    &:last-child {
       @apply mb-0 border-transparent;
@@ -37,7 +37,7 @@
       }
 
       .more {
-         @apply text-sand-1100 dark:text-sand-dark-1100 hover:text-sand-1200 dark:hover:text-sand-dark-1200 col-span-full lg:col-span-2 lg:justify-self-end;
+         @apply text-sand-11 dark:text-sand-dark-11 hover:text-sand-12 dark:hover:text-sand-dark-12 col-span-full lg:col-span-2 lg:justify-self-end;
       }
    }
 }

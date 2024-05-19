@@ -8,7 +8,7 @@
 
 
 .thought {
-    @apply col-span-full md:col-span-8 lg:col-span-4 text-black dark:text-titan-50 mb-6 md:mb-0;
+    @apply col-span-full md:col-span-8 lg:col-span-4 text-sand-12 dark:text-sand-dark-12 mb-6 md:mb-0;
 
     &:first-of-type { @apply md:col-span-8; }
 

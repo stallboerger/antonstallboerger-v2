@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Logo } from '../components/icons'
 
@@ -39,8 +38,6 @@ export default function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            {/* <div className={styles.glass}></div>
-            <div className={styles.glassedge}></div> */}
             <Link href='/' className={`${styles.home} ${styles.link} ${currentRoute === "/" && styles.active}`}>
                 Home
             </Link>

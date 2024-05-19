@@ -2,7 +2,6 @@ import { allThoughts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
 import Image from 'next/image'
 import { Mdx } from 'components/mdx'
-import ToastWrapper from '../../../components/copyLink';
 
 import styles from '../../../styles/views/thought.module.scss'
 
@@ -19,7 +18,7 @@ const ThoughtLayout = ({ params }: { params: { slug: string } }) => {
     if (thought) {
         return (
             <>
-                <div className={styles.cover}>
+                {/* <div className={styles.cover}>
                     <Image 
                         src={`/images/thoughts/${thought.image}`}
                         alt={thought.title}
@@ -27,19 +26,18 @@ const ThoughtLayout = ({ params }: { params: { slug: string } }) => {
                         height="305"
                         className={styles.image}
                     />
-                </div>
+                </div> */}
 
                 <header className={styles.header}>
                     <div className='flex flex-row gap-2'>
                         <h1 className={styles.title}>{thought.title}</h1>
-                        <ToastWrapper />
                     </div>
                     <time className={styles.date} dateTime={thought.date}>
                         {format(parseISO(thought.date), 'eee · LLLL d, yyyy')}
                     </time>
 
                     {thought.credits && <>
-                        <p className={styles.credits}>Image credits <a className='text-black dark:text-white underline hover:decoration-titan-200 dark:hover:decoration-titan-800' href={thought.credits.url || ''} target="_blank">{thought.credits.name}</a></p>
+                        <p className={styles.credits}>Image credits <a className='text-sand-12 dark:text-sand-dark-12 underline hover:decoration-sand-8 dark:hover:decoration-sand-dark-8' href={thought.credits.url || ''} target="_blank">{thought.credits.name}</a></p>
                     </>}
                 </header>
 

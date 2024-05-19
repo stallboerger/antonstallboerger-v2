@@ -5,7 +5,6 @@ export default function robots() {
           userAgent: '*',
         },
       ],
-    //   sitemap: 'https://antonstallboerger.com/sitemap.xml',
       host: 'https://stallboerger.com',
     };
   }
