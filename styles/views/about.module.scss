@@ -1,5 +1,5 @@
 .figure {
-   @apply sm:mt-[calc(-180px_+_53px+32px)] col-span-4 aspect-[4_/_5] bg-titan-100 dark:bg-titan-900;
+   @apply sm:mt-[calc(-180px_+_53px+32px)] col-span-4 aspect-[4_/_5] bg-sand-2 dark:bg-sand-dark-2;
 
    .image {
       @apply w-full h-full object-cover;
@@ -20,22 +20,26 @@
 
 .like,
 .dislike {
-   @apply col-span-4 sm:col-span-8 lg:col-span-4 border-t border-t-titan-200 dark:border-t-titan-800 pt-8;
+   @apply col-span-4 sm:col-span-8 lg:col-span-4 border-t border-t-sand-6 dark:border-t-sand-dark-6 pt-8;
 }
 
 .like {
    @apply lg:col-start-9;
+
+   .link {
+      @apply text-sand-12 dark:text-sand-dark-12 underline hover:decoration-sand-8 dark:hover:decoration-sand-dark-8;
+   }
 }
 
 .experience {
-   @apply col-span-full lg:col-span-12 lg:col-start-5 border-t border-t-titan-200 dark:border-t-titan-800 pt-8 mt-20
+   @apply col-span-full lg:col-span-12 lg:col-start-5 border-t border-t-sand-6 dark:border-t-sand-dark-6 pt-8 mt-20
    grid grid-cols-16 lg:grid-cols-12 gap-4 md:gap-8 md:gap-y-8;
 
    .title {
       @apply col-span-8 lg:col-span-4;
 
       .link {
-         @apply text-titan-900 dark:text-titan-200 hover:text-titan-500;
+         @apply text-sand-12 dark:text-sand-dark-12 hover:text-sand-11 hover:dark:text-sand-dark-11;
       }
    }
 
@@ -44,7 +48,7 @@
       grid grid-cols-8 gap-4;
 
       &:not(:last-child) {
-         @apply border-b border-titan-200 dark:border-titan-800 pb-12 md:pb-20;
+         @apply border-b border-sand-6 dark:border-sand-dark-6 pb-12 md:pb-20;
       }
 
       .meta {
