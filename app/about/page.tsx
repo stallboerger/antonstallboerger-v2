@@ -113,6 +113,7 @@ export default function AboutPage() {
 				<li>Mountains</li>
 				<li><a href='https://www.cosmos.so/stallboerger/architecture' className={styles.link} target='_blank' rel="noreferrer">Architecture</a></li>
 				<li><a href='https://www.cosmos.so/stallboerger/interior' className={styles.link} target='_blank' rel="noreferrer">Interior Design</a></li>
+				<li><a href='https://www.cosmos.so/stallboerger/concrete' className={styles.link} target='_blank' rel="noreferrer">Concrete</a></li>
 			</ul>
 		</section>
 		<section className={styles.dislike}>
