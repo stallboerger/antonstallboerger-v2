@@ -7,7 +7,8 @@ h2 {
 }
 
 a {
-    @apply text-sand-11 dark:text-sand-dark-11 hover:text-sand-12 dark:hover:text-sand-dark-12 underline-offset-2 decoration-[1px];
+    @apply text-sand-10 dark:text-sand-dark-10 hover:text-sand-12 dark:hover:text-sand-dark-12 underline-offset-2 decoration-[1px];
+    transition: all .2s ease;
 }
   
 p {
