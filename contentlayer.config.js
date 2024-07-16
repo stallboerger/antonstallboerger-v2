@@ -1,4 +1,4 @@
-import { defineDocumentType, makeSource, defineNestedType} from "contentlayer/source-files";
+import { defineDocumentType, makeSource, defineNestedType } from 'contentlayer2/source-files';
 
 const Credits = defineNestedType(() => ({
     name: 'Credits',
