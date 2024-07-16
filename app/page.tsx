@@ -14,7 +14,7 @@ const projects = filteredProjects.sort((a, b) =>
 export default function Home() {
   return (
     <>
-      <section className='col-span-full md:col-span-12 lg:col-span-5 lg:sticky lg:top-[calc(53px_+_32px)] lg:self-start mb-20 lg:mb-0'>
+      <section className='col-span-full md:col-span-12 lg:col-span-5 lg:sticky lg:top-[32px] lg:self-start mb-20 lg:mb-0'>
         <p className='mb-8'>
           <span className='font-bold'>Anton Stallbörger</span>
           <br />
