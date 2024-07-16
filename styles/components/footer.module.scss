@@ -15,7 +15,6 @@
 
                 .link { @apply self-start; }
                 .twitter { @apply hover:text-[#1D9BF0] #{!important}; }
-                .imessage { @apply hover:text-green-600 #{!important}; }
                 .readcv { @apply hover:text-[#F2A93C] #{!important}; }
             }
         }
