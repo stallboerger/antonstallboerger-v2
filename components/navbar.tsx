@@ -53,9 +53,6 @@ export default function Navbar() {
                     Playground
                 </Link>
             </div>
-            <div className={styles.logo}>
-                <Logo />
-            </div>
         </nav>
     );
 } 
