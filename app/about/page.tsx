@@ -99,7 +99,7 @@ export default function AboutPage() {
 				I am a passionate designer and developer who is driven by a love for great, high-quality and thoughtful design. Design is an integral part of my everyday life, and I believe that it has the power to shape and improve the world around us.
 			</p>
 			<p>
-				Pushing the boundaries of design and striving to create something truly unique and meaningful is a constant pursuit of mine. In addition to my work, I also value meaningful conversations and good music, which help to inspire and motivate me in my creative process.
+				In addition to my work, I also value meaningful conversations and good music, which help to inspire and motivate me in my creative process.
 			</p>
 		</section>
 
