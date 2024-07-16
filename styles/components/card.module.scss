@@ -37,7 +37,7 @@
       }
 
       .more {
-         @apply text-sand-11 dark:text-sand-dark-11 hover:text-sand-12 dark:hover:text-sand-dark-12 col-span-full lg:col-span-2 lg:justify-self-end;
+         @apply col-span-full lg:col-span-2 lg:justify-self-end;
       }
    }
 }
