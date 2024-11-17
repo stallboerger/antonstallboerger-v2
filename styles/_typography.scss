@@ -1,36 +1,36 @@
 h1, h2, h3 {
-    @apply font-semibold dark:tracking-wide;
+  @apply font-semibold dark:tracking-wide;
 }
   
 h2 {
-    @apply mb-4;
+  @apply mb-4;
 }
 
 a {
-    @apply text-sand-11 dark:text-sand-dark-11 hover:text-sand-12 dark:hover:text-sand-dark-12 underline-offset-2 decoration-[1px];
-    transition: all .2s ease;
+  @apply text-sand-11 dark:text-sand-dark-11 hover:text-sand-12 dark:hover:text-sand-dark-12 underline-offset-2 decoration-[1px];
+  transition: all .2s ease;
 }
   
 p {
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    -webkit-hyphenate-limit-before: 4;
-    -webkit-hyphenate-limit-after: 6;
-    -ms-hyphenate-limit-chars: 10 4 6;
-    hyphenate-limit-chars: 10 4 6;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-limit-before: 4;
+  -webkit-hyphenate-limit-after: 6;
+  -ms-hyphenate-limit-chars: 10 4 6;
+  hyphenate-limit-chars: 10 4 6;
 }
 
 p {
-    @apply max-w-none sm:max-w-[80%] lg:max-w-none;
+  @apply max-w-none sm:max-w-[80%] lg:max-w-none;
 
-    & + ul, 
-    & + p { @apply mt-2; }
-    & + h2 { @apply mt-20; }
+  & + ul, 
+  & + p { @apply mt-2; }
+  & + h2 { @apply mt-20; }
 }
 
 ul {
-    @apply flex flex-col gap-2;
+  @apply flex flex-col gap-2;
 
-    & + p { @apply mt-2; }
-    & + h2 { @apply mt-20; }
+  & + p { @apply mt-2; }
+  & + h2 { @apply mt-20; }
 }
