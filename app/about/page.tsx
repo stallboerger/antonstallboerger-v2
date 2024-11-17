@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import styles from '../../styles/views/about.module.scss'
 import { format, isAfter } from 'date-fns';
+import LiteralBooks from '@/components/books';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -125,6 +126,12 @@ export default function AboutPage() {
 				<li>Alcohol</li>
 				<li>Crowds</li>
 			</ul>
+		</section>
+
+		<section className='col-span-full grid grid-cols-subgrid lg:col-span-8 lg:col-start-9 border-t border-t-sand-6 dark:border-t-sand-dark-6 pt-8 mt-20'>
+			<h2 className='col-span-8 md:col-span-8'>Currently reading</h2>
+
+			<LiteralBooks customClass='col-span-8' />
 		</section>
 
 		<section className={styles.experience}>
