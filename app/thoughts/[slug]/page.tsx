@@ -6,13 +6,13 @@ import styles from '../../../styles/views/thought.module.css'
 
 export const generateStaticParams = async () => allThoughts.map((thought) => ({ slug: thought._raw.flattenedPath }))
 
-export const generateMetadata = async ({ params }: { params: { slug: string; } }) => {
+export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const thought = allThoughts.find((thought) => thought._raw.flattenedPath === 'thoughts/' + slug)
   return { title: thought?.title }
 }
 
-const ThoughtLayout = async ({ params }: { params: { slug: string } }) => {
+const ThoughtLayout = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const thought = allThoughts.find((thought) => thought._raw.flattenedPath === 'thoughts/' + slug)
 

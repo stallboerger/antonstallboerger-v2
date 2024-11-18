@@ -8,13 +8,13 @@ import styles from '../../../styles/views/project.module.css';
 
 export const generateStaticParams = async () => allProjects.map((project: any) => ({ slug: project._raw.flattenedPath }))
 
-export const generateMetadata = async ({ params }: { params: { slug: string; } }) => {
+export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const project = allProjects.find((project: any) => project.slug === slug)
   return { title: project?.title }
 }
 
-export default async function ProjectLayout({ params }: { params: { slug: string } }) {
+export default async function ProjectLayout({params}: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = allProjects.find((project: any) => project.slug === slug)
 
