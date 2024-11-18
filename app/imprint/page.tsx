@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 
-import styles from '../../styles/views/imprint.module.scss'
+import styles from '../../styles/views/imprint.module.css'
 
 export const metadata: Metadata = {
-  title: 'Imprint',
-  description: 'Digital Product Designer and Developer.',
+  title: 'Imprint'
 };
 
 export default function ImprintPage() {
@@ -12,7 +11,7 @@ export default function ImprintPage() {
     <>
       <header className={styles.header}>
         <h1>Imprint</h1>
-        <p>Last updated Aug 11, 2023</p>
+        <p>Last updated Nov 18, 2024</p>
       </header>
       <section className={styles.content}>
         <h2>Information according to German §5 of TMG</h2>
@@ -23,7 +22,7 @@ export default function ImprintPage() {
           <br />
           70192 Stuttgart, Germany
           <br />
-          <a className={styles.link} href="mailto:hi@antonstallboerger.com" >anton@stallboerger.de</a>
+          <a className={styles.link} href="mailto:hi@antonstallboerger.com" >hi@antonstallboerger.com</a>
         </p>
         <h2>Copyright</h2>
         <p>
@@ -40,7 +39,6 @@ export default function ImprintPage() {
           My obligation to remove or block the use of information under generally applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).
         </p>
       </section>
-          
     </>
   );
 }
