@@ -29,7 +29,7 @@ const experiences: Experience[] = [
 	{
 		company: 'Freelance',
 		start: new Date('2023-06-15'),
-		description: 'Available for world-changing projects.',
+		description: 'Available for projects.',
 		url: 'mailto:hi@antonstallboerger.com'
 	},
 	{
