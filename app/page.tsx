@@ -4,7 +4,7 @@ import Card from '@/components/card'
 import { allProjects } from 'contentlayer/generated'
 import { format, parseISO, compareDesc } from 'date-fns'
 
-import styles from '../styles/views/home.module.scss'
+import styles from '../styles/views/home.module.css'
 
 const filteredProjects = allProjects.filter((project) => !project.playground)
 const projects = filteredProjects.sort((a, b) =>

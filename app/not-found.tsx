@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from '../styles/notfound.module.scss'
+import styles from '../styles/notfound.module.css'
 
 export default async function NotFound() {
     return (

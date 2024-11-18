@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Card from '@/components/card'
 
-import styles from '../../styles/views/playground.module.scss'
+import styles from '../../styles/views/playground.module.css'
 import { allProjects } from 'contentlayer/generated';
 import { compareDesc, format, parseISO } from 'date-fns';
 
@@ -25,7 +25,7 @@ export default function Playground() {
 			<p className={styles.count}>{projects.length} concepts</p>
 			<p className={styles.intro}>
 				Besides my main projects, I explore different areas of interest in my free time. This is the best way to discover useful solutions, train my eyes for details, and develop more specific insights in certain topics.
-				</p>
+			</p>
 		</header>
 
 		<section className={styles.projects}>
