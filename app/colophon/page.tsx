@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 
-import styles from '../../styles/views/colophon.module.scss'
+import styles from '../../styles/views/colophon.module.css'
 
 export const metadata: Metadata = {
-  title: 'Colophon',
-  description: 'Software Designer',
+  title: 'Colophon'
 };
 
 export default function ColophonPage() {
