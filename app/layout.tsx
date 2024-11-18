@@ -1,4 +1,4 @@
-import '/styles/base.scss'
+import '/styles/base.css'
 import Soehne from 'next/font/local'
 import type { Metadata } from 'next'
 import Navbar from '../components/navbar'
@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import PlausibleProvider from 'next-plausible'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-import styles from '../styles/layout.module.scss'
+import styles from '../styles/layout.module.css'
 
 const soehne = Soehne({
 	src: [
