@@ -73,7 +73,7 @@ export default async function LiteralBooks({ customClass }: Props) {
   return (
     <ul className={`grid lg:grid-cols-2 gap-3 ${customClass}`}>
       {books?.map((book: Book) => (
-        <li className='col-span-1'>
+        <li className='col-span-1' key={book.slug}>
           <Link href={`https://literal.club/stallboerger/book/${book.slug}`} target='_blank' className='flex gap-4'>
             <figure className='w-9 shrink-0 relative overflow-hidden'>
               <Image src={book.cover} alt={`Cover of ${book.title}`} fill className='!relative w-full !h-auto object-cover' />
