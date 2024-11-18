@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import styles from '../styles/components/card.module.scss'
+import styles from '../styles/components/card.module.css'
 
 interface Props {
 	title: string;
@@ -20,38 +20,38 @@ const Card: React.FC<Props> = ({
 	year,
 	link,
 }) => {
-    return (
-        <div className={styles.card}>
-            <div className={styles.header}>
-                <h3 className={styles.title}>{title}</h3>
-                <time className={styles.year}>{year}</time>
-            </div>
+  return (
+    <div className={styles.card}>
+      <div className={styles.header}>
+        <h3 className={styles.title}>{title}</h3>
+        <time className={styles.year}>{year}</time>
+      </div>
+    
+      <div className={styles['image-wrapper']}>
+        <Link href={link}>
+          <Image
+              alt={imageAlt}
+              className={styles.image}
+              src={imageSrc}
+              width={3840}
+              height={3840}
+              priority
+          />
+        </Link>
+      </div>
+      
+      <div className={styles.footer}>
+        <p className={styles.description}>{description}</p>
         
-            <div className={styles['image-wrapper']}>
-                <Link href={link}>
-                    <Image
-                        alt={imageAlt}
-                        className={styles.image}
-                        src={imageSrc}
-                        width={3840}
-                        height={3840}
-                        priority
-                    />
-                </Link>
-            </div>
-        
-            <div className={styles.footer}>
-                <p className={styles.description}>{description}</p>
-                
-                <Link 
-                    href={link}
-                    className={styles.more}
-                >
-                    Learn more
-                </Link>
-            </div>
-        </div>
-    );
+        <Link 
+          href={link}
+          className={styles.more}
+        >
+          Learn more
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Card

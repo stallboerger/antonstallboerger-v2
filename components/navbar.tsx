@@ -8,7 +8,7 @@ import Swup from 'swup'
 import SwupHeadPlugin from '@swup/head-plugin'
 import SwupScrollPlugin from '@swup/scroll-plugin'
 
-import styles from '../styles/components/navbar.module.scss'
+import styles from '../styles/components/navbar.module.css'
 import { useEffect, useState } from 'react';
 
 export default function Navbar() {
