@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-import styles from '../../styles/views/about.module.scss'
+import styles from '../../styles/views/about.module.css'
 import { format, isAfter } from 'date-fns';
 import LiteralBooks from '@/components/books';
 
@@ -163,5 +163,5 @@ export default function AboutPage() {
 
 		</section>
 	</>
-  	);
+	);
 }
