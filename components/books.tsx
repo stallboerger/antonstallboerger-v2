@@ -15,12 +15,12 @@ export default async function LiteralBooks({ customClass }: Props) {
     cover: string
     authors: [Author]
   };
-
+  
   type Author = {
     id: string
     name: string
   }
-
+  
   const { data }: any = await fetch(process.env.LITERAL_API_URL!, {
     method: 'POST',
     headers: {
@@ -31,7 +31,7 @@ export default async function LiteralBooks({ customClass }: Props) {
         query booksByReadingStateAndProfile(
           $limit: Int!
           $offset: Int!
-          $readingStatus: ReadingStatus!   # find fragments below
+          $readingStatus: ReadingStatus!
           $profileId: String!
         ) {
           booksByReadingStateAndProfile(
@@ -43,7 +43,7 @@ export default async function LiteralBooks({ customClass }: Props) {
             ...BookParts
           }
         }
-
+      
         fragment BookParts on Book {
           id
           slug
@@ -67,9 +67,9 @@ export default async function LiteralBooks({ customClass }: Props) {
       next: { revalidate: 10 },
     })
   }).then((res) => res.json())
-
+  
   let books = data?.booksByReadingStateAndProfile;
-
+  
   return (
     <ul className={`grid lg:grid-cols-2 gap-3 ${customClass}`}>
       {books?.map((book: Book) => (
@@ -78,7 +78,7 @@ export default async function LiteralBooks({ customClass }: Props) {
             <figure className='w-9 shrink-0 relative overflow-hidden'>
               <Image src={book.cover} alt={`Cover of ${book.title}`} fill className='!relative w-full !h-auto object-cover' />
             </figure>
-            
+      
             <div className='flex flex-col'>
               <span className='text-sand-12 dark:text-sand-dark-12 text-balance'>{book.title}</span>
               <span>{book.authors.map(author => author.name).join(', ')}</span>
