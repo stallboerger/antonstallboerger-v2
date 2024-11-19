@@ -73,7 +73,7 @@ export const metadata: Metadata = {
 		],
 	},
 	icons: {
-		shortcut: `https://antonstallboerger.com/favicon.ico`,
+		icon: `https://antonstallboerger.com/favicon.ico`,
 	},
 	verification: {
 		google: 'stqJtLv8IK8j4XXD3FJI8PnEPdMd2Kb-BLJJusaZuuA',
