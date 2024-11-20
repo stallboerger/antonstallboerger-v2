@@ -120,7 +120,6 @@ export default function AboutPage() {
 		<section className={styles.dislike}>
 			<h2>Things I don’t like</h2>
 			<ul>
-				<li>Waiting for food</li>
 				<li>Smalltalk</li>
 				<li>Sparkling water</li>
 				<li>Alcohol</li>
