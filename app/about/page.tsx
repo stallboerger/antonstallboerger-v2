@@ -125,6 +125,7 @@ export default function AboutPage() {
 				<li>Sparkling water</li>
 				<li>Alcohol</li>
 				<li>Crowds</li>
+				<li>Marble</li>
 			</ul>
 		</section>
 
