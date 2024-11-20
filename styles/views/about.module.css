@@ -10,6 +10,10 @@
   }
 }
 
+.link {
+  @apply underline
+}
+
 .header {
   @apply col-span-full md:col-span-12 lg:col-span-8 lg:sticky lg:top-8 lg:self-start mb-20 lg:mb-0;
 }
