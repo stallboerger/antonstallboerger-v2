@@ -10,11 +10,11 @@ export default function Footer() {
       <section className={styles.links}>
         <div className={styles.connect}>
           <h2 className={styles.title}>Connect</h2>
-          <ul className={styles.list}>
+          <ul className="gap-2">
             <li>
               <a 
                 href="mailto:hi@antonstallboerger.com" 
-                className={`${styles.link}`}
+                className="self-start"
                 target="_blank" 
                 rel="noreferrer"
               >
@@ -24,7 +24,7 @@ export default function Footer() {
             <li>
               <a 
                 href="https://x.com/stallboerger" 
-                className={`${styles.link} ${styles.twitter}`}
+                className="self-start hover:!text-[#1D9BF0]"
                 target="_blank" 
                 rel="noreferrer"
               >
@@ -33,8 +33,8 @@ export default function Footer() {
             </li>
             <li>
               <a 
-                href="https://www.cosmos.so/stallboerger" 
-                className={styles.link} 
+                href="https://cosmos.so/stallboerger" 
+                className="self-start"
                 target="_blank" 
                 rel="noreferrer"
               >
@@ -44,7 +44,7 @@ export default function Footer() {
             <li>
               <a 
                 href="https://read.cv/stallboerger" 
-                className={`${styles.link} ${styles.readcv}`}
+                className="self-start hover:!text-[#F2A93C]"
                 target="_blank" 
                 rel="noreferrer"
               >
@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
       </section>
 
-      <section className={styles.clock}> 
+      <section className="@apply col-span-full lg:col-start-9 lg:col-span-8 row-start-1 lg:row-auto lg:border-t border-sand-6 dark:border-sand-dark-6"> 
       </section>
     </footer>
   );
