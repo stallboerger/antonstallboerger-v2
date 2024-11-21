@@ -38,7 +38,7 @@
     @apply col-span-8 lg:col-span-4;
     
     .link {
-      @apply text-sand-12 dark:text-sand-dark-12 hover:text-sand-11 hover:dark:text-sand-dark-11;
+      @apply text-sand-12 dark:text-sand-dark-12 hover:text-sand-11 hover:dark:text-sand-dark-11 no-underline;
     }
   }
   
