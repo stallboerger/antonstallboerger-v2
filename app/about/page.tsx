@@ -7,7 +7,6 @@ import LiteralBooks from '@/components/books';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'Software Designer',
 };
 
 interface Experience {
