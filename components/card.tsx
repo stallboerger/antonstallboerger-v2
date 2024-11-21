@@ -30,12 +30,12 @@ const Card: React.FC<Props> = ({
       <div className={styles['image-wrapper']}>
         <Link href={link}>
           <Image
-              alt={imageAlt}
-              className={styles.image}
-              src={imageSrc}
-              width={3840}
-              height={3840}
-              priority
+            alt={imageAlt}
+            className={styles.image}
+            src={imageSrc}
+            width={4000}
+            height={4000}
+            priority
           />
         </Link>
       </div>
