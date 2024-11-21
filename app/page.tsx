@@ -4,8 +4,6 @@ import Card from '@/components/card'
 import { allProjects } from 'contentlayer/generated'
 import { format, parseISO, compareDesc } from 'date-fns'
 
-import styles from '../styles/views/home.module.css'
-
 const filteredProjects = allProjects.filter((project) => !project.playground)
 const projects = filteredProjects.sort((a, b) =>
   compareDesc(new Date(a.year), new Date(b.year))
@@ -24,7 +22,7 @@ export default function Home() {
           Driven by curiosity and a love for great, high-quality and thoughtful design. Pushing the boundaries and striving to create something truly unique and meaningful.
           <br />
           <br />
-          Currently building icons for <a href='https://icons.saman.design' className={styles.link}>Saman Icons</a>, exploring different <Link href="/playground" className={styles.link}>side projects</Link> and studying at <a href='https://hfg-gmuend.de/en' className={styles.link}>HfG Schwäbisch Gmünd</a>.
+          Currently building icons for <a href='https://icons.saman.design' className='underline'>Saman Icons</a>, exploring different <Link href="/playground" className='underline'>side projects</Link> and studying at <a href='https://hfg-gmuend.de/en' className='underline'>HfG Schwäbisch Gmünd</a>.
         </p>
       </section>
 
@@ -38,7 +36,7 @@ export default function Home() {
             year={format(parseISO(project.year), 'yyyy')}
             link={`/projects/${project.slug}`}
             key={idx}
-            />
+          />
         ))}
       </section>
     </>
