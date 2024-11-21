@@ -29,15 +29,15 @@ const soehne = Soehne({
 })
 
 export const metadata: Metadata = {
-  	title: {
+	title: {
 		default: 'Anton Stallbörger',
-    	template: '%s · Anton Stallbörger',
-  	},
-  	description: 'Software Designer',
-  	openGraph: {
+		template: '%s · Anton Stallbörger',
+	},
+	description: 'Software Designer',
+	openGraph: {
 		title: 'Anton Stallbörger',
-    	description: 'Software Designer',
-    	url: `https://stallboerger.com`,
+			description: 'Software Designer',
+			url: `https://stallboerger.com`,
 		siteName: 'Anton Stallbörger',
 		images: [
 			{
@@ -45,11 +45,11 @@ export const metadata: Metadata = {
 				width: 1920,
 				height: 1080,
 			},
-    	],
-    	locale: 'en-US',
-    	type: 'website',
-  	},
-  	robots: {
+		],
+		locale: 'en-US',
+		type: 'website',
+	},
+	robots: {
 		index: true,
 		follow: true,
 		googleBot: {
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 			'max-image-preview': 'large',
 			'max-snippet': -1,
 		},
-  	},
+	},
 	twitter: {
 		title: 'Anton Stallbörger',
 		card: 'summary_large_image',
@@ -77,13 +77,13 @@ export const metadata: Metadata = {
 	},
 	verification: {
 		google: 'stqJtLv8IK8j4XXD3FJI8PnEPdMd2Kb-BLJJusaZuuA',
-	 },
+	},
 };
 
 export default function RootLayout({
-  	children,
+  children,
 }: {
-  	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
 	return (
 		<html 
