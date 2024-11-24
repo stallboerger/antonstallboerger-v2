@@ -2,14 +2,12 @@
 
 import Link from 'next/link';
 
-import styles from '../styles/components/footer.module.css'
-
 export default function Footer() {
   return (
-    <footer className={`transition-fade ${styles.footer}`}>
-      <section className={styles.links}>
-        <div className={styles.connect}>
-          <h2 className={styles.title}>Connect</h2>
+    <footer className="col-span-full mt-40 grid-cols-8 sm:grid-cols-16 grid gap-6 md:gap-8 px-4 md:px-8 mb-8">
+      <section className="grid grid-cols-8 gap-y-12 gap-6 col-span-full lg:col-span-8 row-start-2 lg:row-auto self-start border-t border-sand-6 dark:border-sand-dark-6 pt-6 md:pt-8">
+        <div className="col-span-2 flex flex-col gap-2">
+          <h2 className="mb-4">Connect</h2>
           <ul className="gap-2">
             <li>
               <a 
@@ -54,13 +52,13 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className={styles.explore}>
-          <h2 className={styles.title}>Explore</h2>
-          <ul className={styles.list}>
+        <div className="col-start-5 col-span-4 lg:col-span-4 lg:col-start-5">
+          <h2 className="mb-4 flex flex-col gap-2">Explore</h2>
+          <ul>
             <li>
               <Link
                 href='/'
-                className={styles.link}
+                className="self-start"
               >
                 Home
               </Link>
@@ -68,7 +66,7 @@ export default function Footer() {
             <li>
               <Link 
                 href='/about' 
-                className={styles.link}
+                className="self-start"
               >
                 About
               </Link>
@@ -76,7 +74,7 @@ export default function Footer() {
             <li>
               <Link 
                 href='/thoughts' 
-                className={styles.link}
+                className="self-start"
               >
                 Thoughts
               </Link>
@@ -84,7 +82,7 @@ export default function Footer() {
             <li>
               <Link 
                 href='/playground' 
-                className='self-start'
+                className="self-start"
               >
                 Playground
               </Link>
@@ -92,17 +90,17 @@ export default function Footer() {
           </ul>
         </div>   
 
-        <p className={styles.copyright}>&copy;{(new Date).getFullYear()} Anton Stallbörger</p>
-        <div className={styles.legals}>
+        <p className="font-bold col-span-full md:col-span-4 lg:col-span-3">&copy;{(new Date).getFullYear()} Anton Stallbörger</p>
+        <div className="flex flex-row gap-4 col-span-full md:col-span-4 lg:col-start-5 mt-[-40px] md:mt-0">
           <Link 
             href='/colophon' 
-            className={styles.link}
+            className="self-start"
           >
             Colophon
           </Link>
           <Link 
             href='/imprint' 
-            className={styles.link}
+            className="self-start"
           >
             Imprint
           </Link> 
