@@ -1,6 +1,4 @@
 .card {
-  @apply mb-12 lg:mb-24 border-b border-sand-6 dark:border-sand-dark-6;
-  
   &:last-child {
     @apply mb-0 border-transparent;
     
@@ -15,29 +13,5 @@
   
   &:nth-child(3) {
     @apply md:border-transparent;
-  }
-  
-  .header {
-    @apply flex flex-col mb-8;
-  } 
-  
-  .image-wrapper {
-    @apply  bg-white dark:bg-black shadow-[0_0_0_1px_rgba(0,0,0,0.08)] dark:shadow-[0_0_0_1px_rgba(255,255,255,0.08)] overflow-hidden mb-8;
-    
-    .image {
-      @apply hover:scale-[1.02] transform transition-all duration-200 select-none ease-out;
-    }
-  }
-  
-  .footer {
-    @apply grid grid-cols-8 gap-8 mb-12 lg:mb-24;
-    
-    .description {
-      @apply col-span-full lg:col-span-6;
-    }
-    
-    .more {
-      @apply col-span-full lg:col-span-2 lg:justify-self-end;
-    }
   }
 }
