@@ -11,7 +11,7 @@ export default function Footer() {
           <ul className="gap-2">
             <li>
               <a 
-                href="mailto:hi@antonstallboerger.com" 
+                href="mailto:anton@stallboerger.de" 
                 className="self-start"
                 target="_blank" 
                 rel="noreferrer"
@@ -36,7 +36,7 @@ export default function Footer() {
                 target="_blank" 
                 rel="noreferrer"
               >
-                Cosmos
+                Cosmos.so
               </a>
             </li>
             <li>
