@@ -1,8 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import styles from '../styles/components/card.module.css'
-
 interface Props {
 	title: string;
 	imageSrc: string;
@@ -21,17 +19,17 @@ const Card: React.FC<Props> = ({
 	link,
 }) => {
   return (
-    <div className="mb-12 lg:mb-24 border-b border-sand-6 dark:border-sand-dark-6">
+    <div className="mb-12 lg:mb-24 border-b border-sand-6 dark:border-sand-dark-6 last:border-transparent last:mb-0">
       <div className="flex flex-col mb-8">
-        <h3 className={styles.title}>{title}</h3>
-        <time className={styles.year}>{year}</time>
+        <h3>{title}</h3>
+        <time>{year}</time>
       </div>
     
       <div className="bg-white dark:bg-black shadow-[0_0_0_1px_rgba(0,0,0,0.08)] dark:shadow-[0_0_0_1px_rgba(255,255,255,0.08)] overflow-hidden mb-8">
         <Link href={link}>
           <Image
             alt={imageAlt}
-            className="hover:scale-[1.02] transform transition-all duration-200 select-none ease-out"
+            className="select-none"
             src={imageSrc}
             width={4000}
             height={4000}
