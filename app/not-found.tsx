@@ -1,16 +1,14 @@
 import Link from 'next/link';
 
-import styles from '../styles/notfound.module.css'
-
 export default async function NotFound() {
   return (
     <>
-      <header className={styles.header}>
+      <header className="col-span-full sm:col-span-8">
         <h1>404</h1>
         <p>Page not found</p>
       </header>
 
-      <section className={styles.content}>
+      <section className="col-span-8 col-start-9">
         <p>
           You just hit a route that doesn&rsquo;t exist.
         </p>
@@ -18,7 +16,7 @@ export default async function NotFound() {
           This page is just as lost as you are.
         </p>
 
-        <ul className={styles.pages}>
+        <ul className="mt-12">
           <li>
             <Link 
               href='/' 
