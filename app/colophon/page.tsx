@@ -90,6 +90,16 @@ export default function ColophonPage() {
                   benji.org
               </a>
           </li>
+          <li>
+              <a 
+                  href="https://thu-le.com" 
+                  className={styles.link} 
+                  target="_blank" 
+                  rel="noreferrer"
+              >
+                  thu-le.com
+              </a>
+          </li>
         </ul>
 
         <h2>Great humans</h2>
