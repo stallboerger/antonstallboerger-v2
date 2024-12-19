@@ -11,7 +11,7 @@
     height: 100%;
   
     &.is-changing .transition-fade {
-      transition: opacity 0.25s;
+      transition: opacity 0.2s;
       opacity: 1;
     }
     
@@ -37,8 +37,8 @@
   }
   
   a {
-    @apply text-sand-11 dark:text-sand-dark-11 hover:text-sand-12 dark:hover:text-sand-dark-12 underline-offset-2 decoration-[1px];
-    transition: all .2s ease;
+    @apply text-sand-12 dark:text-sand-dark-12 underline-offset-2 decoration-[1px] decoration-sand-8 dark:decoration-sand-dark-8 hover:decoration-sand-12 dark:hover:decoration-sand-dark-12;
+    transition: all .2s ease-out;
   }
     
   p {
