@@ -64,7 +64,9 @@ export default async function LiteralBooks({ customClass }: Props) {
         readingStatus: 'IS_READING',
         profileId: process.env.LITERAL_PROFILE_ID
       },
-      next: { revalidate: 10 },
+      next: { revalidate: 100 },
+      cache: 'force-cache',
+      timeout: 5000,
     })
   }).then((res) => res.json())
   
