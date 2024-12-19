@@ -14,10 +14,4 @@
   .pages {
     @apply flex gap-3 md:gap-6 md:col-span-5 col-start-[16] justify-self-end md:justify-self-start md:col-start-9;
   }
-  
-  .logo {
-    @apply self-center dark:text-sand-dark-12 col-start-[16] justify-self-end hidden md:block;
-    
-    &:hover { @apply animate-spin-slow; }
-  }
 }
