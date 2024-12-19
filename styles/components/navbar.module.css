@@ -6,6 +6,8 @@
   }
   
   .link {
+    @apply text-sand-11 dark:text-sand-dark-11 no-underline;
+
     &.active {
       @apply text-sand-12 dark:text-sand-dark-12;
     }
